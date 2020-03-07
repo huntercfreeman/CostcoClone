@@ -9,8 +9,6 @@ namespace CostcoClone.Shared.HeaderComponents
     public partial class TopLinkItem : ComponentBase
     {
         [Parameter]
-        public string Text { get; set; }
-        [Parameter]
         public string MarkupText { get; set; }
         [Parameter]
         public RenderFragment ChildContent { get; set; }
