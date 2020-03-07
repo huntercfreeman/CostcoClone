@@ -30,7 +30,7 @@ namespace CostcoClone.Shared.HeaderComponents
         {
             if (OnMouseOutEventCallback.HasDelegate) await OnMouseOutEventCallback.InvokeAsync(this);
 
-            DisplayDropdownContent = false;
+            //DisplayDropdownContent = false;
         }
     }
 }
