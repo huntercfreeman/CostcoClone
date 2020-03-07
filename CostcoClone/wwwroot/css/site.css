@@ -1,0 +1,19 @@
+﻿.header {
+    height: 151px;
+    background-color: #eee;
+}
+
+img.branding {
+    max-height: 55.9px;
+    max-width: 190px;
+}
+
+.topLinkItem {
+    display: inline;
+    color: #0060a9;
+    cursor: pointer;
+}
+
+.topLinkItem:hover {
+    text-decoration: underline;
+}

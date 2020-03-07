@@ -1,0 +1,12 @@
+﻿<div @onmouseover="OnMouseOver" @onmouseout="OnMouseOut" class="topLinkItem" style="position: relative;">
+    @Text
+    @if(DisplayDropdownContent)
+    {
+        if (DropdownContent != null)
+        {
+            <div style="position: absolute;">
+                @DropdownContent
+            </div>
+        }
+    }
+</div>
