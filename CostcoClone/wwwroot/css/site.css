@@ -53,3 +53,7 @@ img.branding {
     background-color: #eee;
     width: 100%;
 }
+
+    .footer > div:not(:last-child) {
+        border-bottom: 1px solid black;
+    }
