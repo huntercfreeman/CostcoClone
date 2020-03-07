@@ -16,6 +16,8 @@ namespace CostcoClone.Shared.HeaderComponents
         public EventCallback OnMouseOverEventCallback { get; set; }
         [Parameter]
         public EventCallback OnMouseOutEventCallback { get; set; }
+        [Parameter]
+        public int Left { get; set; }
 
         public bool DisplayDropdownContent { get; set; }
 
