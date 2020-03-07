@@ -1,5 +1,5 @@
 ﻿<div @onmouseover="OnMouseOver" @onmouseout="OnMouseOut" class="topLinkItem" style="position: relative;">
-    @Text@((MarkupString)MarkupText)
+    @((MarkupString)MarkupText)
     @if (ChildContent != null)
     {
         <span style="font-size: 12px;" class='oi oi-caret-bottom' aria-hidden='true'></span>
