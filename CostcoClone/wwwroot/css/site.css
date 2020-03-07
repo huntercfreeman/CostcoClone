@@ -8,8 +8,12 @@ img.branding {
     max-width: 190px;
 }
 
+.topLinks div:not(:first-child) {
+    margin-left: 10px;
+}
+
 .topLinkItem {
-    display: inline;
+    display: inline-block;
     color: #0060a9;
     cursor: pointer;
 }
@@ -17,3 +21,15 @@ img.branding {
 .topLinkItem:hover {
     text-decoration: underline;
 }
+
+    .topLinkItem .dropdownContent {
+        position: absolute;
+        top: 24px;
+        cursor: default;
+        background-color: #fff;
+        box-shadow: 0 6px 12px rgba(0,0,0,.175);
+        border: 1px solid rgba(0,0,0,.15);
+        z-index: 20010;
+        min-width: 100px;
+        min-height: 100px;
+    }

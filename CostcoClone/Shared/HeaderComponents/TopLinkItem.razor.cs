@@ -13,7 +13,7 @@ namespace CostcoClone.Shared.HeaderComponents
         [Parameter]
         public string MarkupText { get; set; }
         [Parameter]
-        public RenderFragment DropdownContent { get; set; }
+        public RenderFragment ChildContent { get; set; }
         [Parameter]
         public EventCallback OnMouseOverEventCallback { get; set; }
         [Parameter]
