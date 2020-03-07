@@ -47,3 +47,9 @@ img.branding {
     align-items: center;
     justify-content: space-between;
 }
+
+.footer {
+    height: 711.37px;
+    background-color: #eee;
+    width: 100%;
+}
