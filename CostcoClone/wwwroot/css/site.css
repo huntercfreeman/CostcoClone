@@ -4,13 +4,16 @@
 }
 
 img.branding {
-    max-height: 55.9px;
-    max-width: 190px;
+    max-width: 16.9375rem;
 }
 
-.topLinks > div:not(:first-child) {
-    margin-left: 10px;
+.topLinks {
+    font-size: 16px;
 }
+
+    .topLinks > div:not(:first-child) {
+        margin-left: 10px;
+    }
 
 .topLinkItem {
     display: inline-block;
