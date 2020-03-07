@@ -1,0 +1,12 @@
+﻿<div @onmouseover="OnMouseOver" @onmouseout="OnMouseOut" class="shopAllDepartmentsItem" style="position: relative;">
+    @((MarkupString)MarkupText)
+    @if (DisplayDropdownContent)
+    {
+        if (ChildContent != null)
+        {
+            <div class="dropdownContent" style="left: @(Left)px">
+                @ChildContent
+            </div>
+        }
+    }
+</div>
