@@ -67,6 +67,10 @@ img.branding {
     color: white;
 }
 
+    .shopAllDepartments > .shopAllDepartmentsItem:not(:first-child) {
+        margin-left: 20px;
+    }
+
 .shopAllDepartmentsItem {
     display: inline-block;
 }
