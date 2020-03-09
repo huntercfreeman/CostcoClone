@@ -1,0 +1,13 @@
+﻿<div style="width: 100%;">
+    <a href="@HrefURL">
+        <img style="max-width: 100%;" src="@ImageURL" />
+    </a>
+</div>
+
+@code
+{
+    [Parameter]
+    public string HrefURL { get; set; } = "javascript:void(0);";
+    [Parameter]
+    public string ImageURL { get; set; } = "content/d-homepage-lg-banner-20w0786-essentials.jpg";
+}
