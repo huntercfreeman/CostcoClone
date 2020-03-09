@@ -25,5 +25,9 @@ namespace CostcoClone.Components
 
         public int Index { get; set; }
 
+        public string IsSelectedCSS(int index)
+        {
+            return Index == index ? "background-color: blue;" : "";
+        }
     }
 }

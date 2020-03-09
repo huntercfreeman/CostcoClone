@@ -1,10 +1,10 @@
-﻿<div class="imageCarousel">
-    <img src="@ImageURLs[Index]" />
-    <div>
+﻿<div class="imageCarousel" style="width: 100%;">
+    <img src="@ImageURLs[Index]" style="max-width: 100%;" />
+    <div style="display: flex; justify-content: space-between;">
         @for (int i = 0; i < ImageURLs.Count; i++)
         {
             int k = i;
-            <span @onclick="(() => Index = k)" class="oi oi-circle-x" style="font-size: 12px;"></span>
+            <span @onclick="(() => Index = k)" class="oi oi-circle-x" style="font-size: 12px; cursor: pointer; @IsSelectedCSS(k)"></span>
         }
     </div>
 </div>
