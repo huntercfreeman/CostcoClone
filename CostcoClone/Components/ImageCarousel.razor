@@ -6,5 +6,6 @@
             int k = i;
             <span @onclick="(() => Index = k)" class="oi oi-circle-x" style="font-size: 12px; cursor: pointer; @IsSelectedCSS(k)"></span>
         }
+        <span @onclick="(() => IsSpinning = !IsSpinning)" class="oi oi-media-pause" style="font-size: 12px; cursor: pointer; @IsSpinningCSS"></span>
     </div>
 </div>

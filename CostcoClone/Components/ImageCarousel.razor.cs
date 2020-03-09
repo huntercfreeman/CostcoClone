@@ -23,6 +23,13 @@ namespace CostcoClone.Components
             "content/d-20w0725-fq-200302-travel.webp"
         };
 
+        public string IsSpinningCSS 
+        {
+            get => IsSpinning ? "" : "background-color: red;";
+        }
+
+        public bool IsSpinning { get; set; } = true;
+
         private int _index;
         public int Index 
         { 
@@ -58,7 +65,7 @@ namespace CostcoClone.Components
             while(Alive)
             {
                 await Task.Delay(5000);
-                Index++;
+                if(IsSpinning) Index++;
                 await InvokeAsync(StateHasChanged);
             }
 
