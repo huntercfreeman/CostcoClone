@@ -1,14 +1,14 @@
 ﻿<div class="topLinks">
-    <TopLinkItem MarkupText="View Warehouse Savings"/>
-    <TopLinkItem MarkupText="Shop Our Top 20 Grocery Items" />
-    <TopLinkItem MarkupText="Find a Warehouse">
+    <TopLinkItem TViewModel="FindAWarehouse" MarkupText="View Warehouse Savings"/>
+    <TopLinkItem TViewModel="FindAWarehouse" MarkupText="Shop Our Top 20 Grocery Items" />
+    <TopLinkItem TViewModel="FindAWarehouse" MarkupText="Find a Warehouse">
         <FindAWarehouse/>
     </TopLinkItem>
-    <TopLinkItem MarkupText="Get Email Offers">
-        <GetEmailOffers/>
+    <TopLinkItem TViewModel="GetEmailOffersViewModel" ViewModel="new GetEmailOffersViewModel()" MarkupText="Get Email Offers">
+        <GetEmailOffers ViewModel="context"/>
     </TopLinkItem>
-    <TopLinkItem MarkupText="Customer Service" />
-    <TopLinkItem MarkupText="US" Left="-120">
+    <TopLinkItem TViewModel="FindAWarehouse" MarkupText="Customer Service" />
+    <TopLinkItem TViewModel="FindAWarehouse" MarkupText="US" Left="-120">
         <SelectCountryRegion/>
     </TopLinkItem>
 </div>

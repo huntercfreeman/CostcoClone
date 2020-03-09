@@ -1,5 +1,7 @@
-﻿<div @onmouseover="OnMouseOver" @onmouseout="OnMouseOut" class="topLinkItem" style="position: relative;">
-    @((MarkupString)MarkupText)
+﻿@typeparam TViewModel
+
+<div @onmouseover="OnMouseOver" @onmouseout="OnMouseOut" class="topLinkItem" style="position: relative;">
+    <span>@((MarkupString)MarkupText)</span>
     @if (ChildContent != null)
     {
         <span style="font-size: 12px;" class='oi oi-caret-bottom' aria-hidden='true'></span>
@@ -9,8 +11,9 @@
         if (ChildContent != null)
         {
             <div class="dropdownContent" style="left: @(Left)px">
-                @ChildContent
+                @ChildContent(ViewModel)
             </div>
         }
     }
 </div>
+

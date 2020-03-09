@@ -1,11 +1,13 @@
-﻿<div @onmouseover="OnMouseOver" @onmouseout="OnMouseOut" class="shopAllDepartmentsItem" style="position: relative; cursor: pointer;">
+﻿@typeparam TViewModel
+
+<div @onmouseover="OnMouseOver" @onmouseout="OnMouseOut" class="shopAllDepartmentsItem" style="position: relative; cursor: pointer;">
     @((MarkupString)MarkupText)
     @if (DisplayDropdownContent)
     {
         if (ChildContent != null)
         {
             <div class="dropdownContent" style="left: @(Left)px">
-                @ChildContent
+                @ChildContent(ViewModel)
             </div>
         }
     }

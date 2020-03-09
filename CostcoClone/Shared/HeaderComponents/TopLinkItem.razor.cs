@@ -6,16 +6,18 @@ using System.Threading.Tasks;
 
 namespace CostcoClone.Shared.HeaderComponents
 {
-    public partial class TopLinkItem : ComponentBase
+    public partial class TopLinkItem<TViewModel> : ComponentBase
     {
         [Parameter]
         public string MarkupText { get; set; }
         [Parameter]
-        public RenderFragment ChildContent { get; set; }
+        public TViewModel ViewModel { get; set; }
         [Parameter]
-        public EventCallback OnMouseOverEventCallback { get; set; }
+        public RenderFragment<TViewModel> ChildContent { get; set; }
         [Parameter]
-        public EventCallback OnMouseOutEventCallback { get; set; }
+        public EventCallback<TViewModel> OnMouseOverEventCallback { get; set; }
+        [Parameter]
+        public EventCallback<TViewModel> OnMouseOutEventCallback { get; set; }
         [Parameter]
         public int Left { get; set; }
 
@@ -23,14 +25,14 @@ namespace CostcoClone.Shared.HeaderComponents
 
         public async void OnMouseOver()
         {
-            if (OnMouseOverEventCallback.HasDelegate) await OnMouseOverEventCallback.InvokeAsync(this);
+            if (OnMouseOverEventCallback.HasDelegate) await OnMouseOverEventCallback.InvokeAsync(default);
 
             DisplayDropdownContent = true;
         }
 
         public async void OnMouseOut()
         {
-            if (OnMouseOutEventCallback.HasDelegate) await OnMouseOutEventCallback.InvokeAsync(this);
+            if (OnMouseOutEventCallback.HasDelegate) await OnMouseOutEventCallback.InvokeAsync(default);
 
             DisplayDropdownContent = false;
         }
