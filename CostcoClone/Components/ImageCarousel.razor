@@ -1,6 +1,10 @@
 ﻿<div class="imageCarousel">
-    @foreach (string imageURL in ImageURLs)
-    {
-        <img src="@imageURL" />
-    }
+    <img src="@ImageURLs[Index]" />
+    <div>
+        @for (int i = 0; i < ImageURLs.Count; i++)
+        {
+            int k = i;
+            <span @onclick="(() => Index = k)" class="oi oi-circle-x" style="font-size: 12px;"></span>
+        }
+    </div>
 </div>

@@ -22,8 +22,8 @@ namespace CostcoClone.Components
             "content/d-homepage-hero-20w06140-bridgestone.jpg",
             "content/d-20w0725-fq-200302-travel.webp"
         };
-        
 
+        public int Index { get; set; }
 
     }
 }
