@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace CostcoClone.Interfaces.Departments.Appliances
 {
-    public interface IWasherDryer
+    public interface IMicrowave
     {
     }
 }
