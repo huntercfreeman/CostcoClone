@@ -5,8 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Repository\" />
     <Folder Include="Shared\FooterComponents\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TypeaheadBlazor\DM2BD.Typeahead.csproj" />
   </ItemGroup>
 
 </Project>

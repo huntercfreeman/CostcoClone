@@ -1,4 +1,13 @@
-﻿<div style="display: inline-block;">
+﻿@using DM2BD.Typeahead
+
+<div style="display: inline-block; width: -webkit-fill-available;">
     <div style="display: inline;">All<span style="font-size: 12px;" class='oi oi-caret-bottom' aria-hidden='true'></span></div>
-    <div style="display: inline;"><input placeholder="Search" /><span style="font-size: 12px;" class='oi oi-magnifying-glass' aria-hidden='true'></span></div>
+    <Typeahead ItemType="ProgrammingProject" Filter="(async (x) => ProgrammingProjectRepository.FilterByTitle(x))"
+               OnAutocomplete="((x) => { ProgrammingProjects = x; InvokeAsync(StateHasChanged); })" Selector="((ProgrammingProject x) => x.Title)" Placeholder="Filter Results">
+        <AutocompleteDropdownItemTemplate Context="searchContext">
+            <div>@searchContext.Title</div>
+        </AutocompleteDropdownItemTemplate>
+        <SubmitButtonTemplate>
+        </SubmitButtonTemplate>
+    </Typeahead>
 </div>
