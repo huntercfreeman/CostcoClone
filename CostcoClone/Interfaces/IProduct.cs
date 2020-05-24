@@ -13,6 +13,7 @@ namespace CostcoClone.Interfaces
         public List<string> Categories { get; set; }
         public List<string> Tags { get; set; }
         public int Stock { get; set; }
+        public string ImageURL { get; set; }
         public MarkupString ProductDetails { get; set; }
     }
 }
