@@ -1,6 +1,7 @@
 ﻿using CostcoClone.Interfaces;
 using CostcoClone.Interfaces.Departments;
 using CostcoClone.Interfaces.Departments.Appliances;
+using CostcoClone.Repository;
 using Microsoft.AspNetCore.Components;
 using System;
 using System.Collections.Generic;
@@ -11,7 +12,7 @@ namespace CostcoClone.Models.Products.Appliances
 {
     public class Fridge : IProduct, IAppliance, IQuickShipAppliance
     {
-        public Fridge(string title, decimal price, int stock, MarkupString productDetails)
+        public Fridge(string title, decimal price, int stock, MarkupString productDetails, IProductRepository productRepository)
         {
             Title = title;
             Price = price;
@@ -19,6 +20,8 @@ namespace CostcoClone.Models.Products.Appliances
             Tags = new List<string> { "Appliances", "Quick Ship Appliances", "Fridge" };
             Stock = stock;
             ProductDetails = productDetails;
+
+            productRepository.AddAppliance(this);
         }
 
         public string Title { get; set; }
@@ -27,5 +30,6 @@ namespace CostcoClone.Models.Products.Appliances
         public List<string> Tags { get; set; }
         public int Stock { get; set; }
         public MarkupString ProductDetails { get; set; }
+        public string ImageURL { get; set; }
     }
 }
