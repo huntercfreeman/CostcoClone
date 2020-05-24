@@ -1,5 +1,19 @@
 ﻿@page "/"
 @using CostcoClone.Components
+@using Repository
+@using Models
+@using Interfaces
+@inject IProductRepository ProductRepository
+
+@{IProduct k = ProductRepository.GetProducts().ElementAt(0);}
+
+    <div>
+        @k.Title
+        @k.Price
+        <div>
+            @k.ProductDetails
+        </div>
+    </div>
 
 <ImageCarousel/>
 

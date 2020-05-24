@@ -1,12 +1,13 @@
-﻿using Microsoft.AspNetCore.Components;
+﻿using CostcoClone.Interfaces;
+using Microsoft.AspNetCore.Components;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CostcoClone.Interfaces
+namespace CostcoClone.Models.Products
 {
-    public interface IProduct
+    public class Product : IProduct
     {
         public string Title { get; set; }
         public decimal Price { get; set; }
