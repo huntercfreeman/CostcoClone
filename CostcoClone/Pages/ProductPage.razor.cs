@@ -20,7 +20,17 @@ namespace CostcoClone.Pages
         protected override void OnParametersSet()
         {
             base.OnParametersSet();
-            Product =   ProductRepository.GetProductById(ProductId);
+            
+        }
+
+        protected override void OnAfterRender(bool firstRender)
+        {
+            base.OnAfterRender(firstRender);
+            if(firstRender)
+            {
+                Product = ProductRepository.GetProductById(ProductId);
+                StateHasChanged();
+            }
         }
     }
 }

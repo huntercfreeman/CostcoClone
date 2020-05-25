@@ -38,9 +38,8 @@ namespace CostcoClone.Repository
                         <li class='list-group-item'><a href='/wcsstore/CostcoUSBCCatalogAssetStore/Attachment/1259272_Spec.pdf' class='pdf-link' target='_blank'><img class='pdf' src='/wcsstore/CostcoGLOBALSAS/images/pdf.svg' alt='PDF format'>
                         Refrigerator Specifications</a></li></ul></figure></div>   </div></div>",
                     this,
-                    new List<string> { "content/Appliances/fridge-c45bedda-ccae-4078-ae48-c8bf0ba21802.jpg" }
-                ),
-                new Product { }
+                    new List<string> { "content/appliances/fridge-c45bedda-ccae-4078-ae48-c8bf0ba21802.jpg" }
+                )
             };
         }
 

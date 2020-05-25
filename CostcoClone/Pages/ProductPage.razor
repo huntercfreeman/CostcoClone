@@ -1,5 +1,10 @@
 ﻿@page "/Products/{ProductId}"
 
-<h3>@Product.Title</h3>
+@if (Product != null)
+{
+    <h3>@Product.Title</h3>
 
-<image src="@Product.ImageURLs.ElementAt(0)" style="width: 500px; height: 500px;"/>
+    <img src="@Product.ImageURLs.ElementAt(0)" style="width: 500px; height: 500px;" />
+
+    <h3>@Product.Title</h3>
+}
