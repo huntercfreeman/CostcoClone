@@ -12,7 +12,7 @@ namespace CostcoClone.Models.Products.Appliances
 {
     public class Fridge : IProduct, IAppliance, IQuickShipAppliance
     {
-        public Fridge(string title, decimal price, int stock, MarkupString productDetails, IProductRepository productRepository)
+        public Fridge(string title, decimal price, int stock, MarkupString productDetails, IProductRepository productRepository, List<string> imageURLs)
         {
             Title = title;
             Price = price;
@@ -20,6 +20,8 @@ namespace CostcoClone.Models.Products.Appliances
             Tags = new List<string> { "Appliances", "Quick Ship Appliances", "Fridge" };
             Stock = stock;
             ProductDetails = productDetails;
+            ProductId = Guid.NewGuid().ToString();
+            ImageURLs = imageURLs;
 
             productRepository.AddAppliance(this);
         }
@@ -30,6 +32,7 @@ namespace CostcoClone.Models.Products.Appliances
         public List<string> Tags { get; set; }
         public int Stock { get; set; }
         public MarkupString ProductDetails { get; set; }
-        public string ImageURL { get; set; }
+        public string ProductId { get; set; }
+        public List<string> ImageURLs { get; set; }
     }
 }

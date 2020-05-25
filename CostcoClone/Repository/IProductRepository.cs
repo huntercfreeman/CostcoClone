@@ -12,5 +12,6 @@ namespace CostcoClone.Repository
         public void AddAppliance(IAppliance appliance);
         public IList<IProduct> GetProducts();
         public IList<IProduct> GetProductsByTitle(string title);
+        public IProduct GetProductById(string productId);
     }
 }

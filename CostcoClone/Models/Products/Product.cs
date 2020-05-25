@@ -15,6 +15,7 @@ namespace CostcoClone.Models.Products
         public List<string> Tags { get; set; }
         public int Stock { get; set; }
         public MarkupString ProductDetails { get; set; }
-        public string ImageURL { get; set; }
+        public string ProductId { get; set; }
+        public List<string> ImageURLs { get; set; }
     }
 }

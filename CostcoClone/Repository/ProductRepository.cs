@@ -37,7 +37,8 @@ namespace CostcoClone.Repository
                         Warranty Information</a></li><li class='list-group-item'><a href='/wcsstore/CostcoUSBCCatalogAssetStore/Attachment/1202695GEApplianceHomeDeliveryGuidelines.PDF' class='pdf-link' target='_blank'><img class='pdf' src='/wcsstore/CostcoGLOBALSAS/images/pdf.svg' alt='PDF format'>GE Appliance Home Delivery Guidelines</a></li>
                         <li class='list-group-item'><a href='/wcsstore/CostcoUSBCCatalogAssetStore/Attachment/1259272_Spec.pdf' class='pdf-link' target='_blank'><img class='pdf' src='/wcsstore/CostcoGLOBALSAS/images/pdf.svg' alt='PDF format'>
                         Refrigerator Specifications</a></li></ul></figure></div>   </div></div>",
-                    this
+                    this,
+                    new List<string> { "content/Appliances/fridge-c45bedda-ccae-4078-ae48-c8bf0ba21802.jpg" }
                 ),
                 new Product { }
             };
@@ -59,6 +60,11 @@ namespace CostcoClone.Repository
         public IList<IProduct> GetProductsByTitle(string title)
         {
             return _products.Where(x => x.Title.Contains(title)).ToList();
+        }
+
+        public IProduct GetProductById(string productId)
+        {
+            return _products.Where(x => x.ProductId.CompareTo(productId) == 0).FirstOrDefault();
         }
     }
 }
