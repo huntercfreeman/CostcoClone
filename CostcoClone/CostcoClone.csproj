@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Models\Products\Computers\" />
     <Folder Include="Shared\FooterComponents\" />
   </ItemGroup>
 
