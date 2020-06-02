@@ -1,0 +1,9 @@
+﻿@page "/search"
+@page "/search/{Department}/{Query}"
+
+<h3>SearchPage</h3>
+
+@foreach(var item in ProductRepository.GetProducts())
+{
+    @item.Title
+}
