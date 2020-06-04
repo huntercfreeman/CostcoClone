@@ -8,9 +8,10 @@ namespace CostcoClone.Repository
 {
     public class ClothingLuggageHandbagsRepository : IClothingLuggageHandbagsRepository
     {
-        public void AddClothingLuggageHandbags(IClothingLuggageHandbags toyBook)
+        private List<IClothingLuggageHandbags> _clothingLuggageHandbags = new List<IClothingLuggageHandbags>();
+        public void AddClothingLuggageHandbags(IClothingLuggageHandbags clothingLuggageHandbags)
         {
-            throw new NotImplementedException();
+            _clothingLuggageHandbags.Add(clothingLuggageHandbags);
         }
     }
 }

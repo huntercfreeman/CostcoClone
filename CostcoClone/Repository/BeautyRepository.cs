@@ -8,9 +8,10 @@ namespace CostcoClone.Repository
 {
     public class BeautyRepository : IBeautyRepository
     {
-        public void AddBeauty(IBeauty toyBook)
+        private List<IBeauty> _beauties = new List<IBeauty>();
+        public void AddBeauty(IBeauty beauty)
         {
-            throw new NotImplementedException();
+            _beauties.Add(beauty);
         }
     }
 }

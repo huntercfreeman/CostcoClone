@@ -8,9 +8,10 @@ namespace CostcoClone.Repository
 {
     public class OfficeProductsRepository : IOfficeProductsRepository
     {
-        public void AddOfficeProducts(IOfficeProducts toyBook)
+        private List<IOfficeProducts> _officeProducts = new List<IOfficeProducts>();
+        public void AddOfficeProducts(IOfficeProducts officeProducts)
         {
-            throw new NotImplementedException();
+            this._officeProducts.Add(officeProducts);
         }
     }
 }

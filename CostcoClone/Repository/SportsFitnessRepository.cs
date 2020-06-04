@@ -8,9 +8,10 @@ namespace CostcoClone.Repository
 {
     public class SportsFitnessRepository : ISportsFitnessRepository
     {
-        public void AddSportsFitness(ISportsFitness toyBook)
+        private List<ISportsFitness> _sportsFitnesses = new List<ISportsFitness>();
+        public void AddSportsFitness(ISportsFitness sportsFitness)
         {
-            throw new NotImplementedException();
+            _sportsFitnesses.Add(sportsFitness);
         }
     }
 }

@@ -8,9 +8,11 @@ namespace CostcoClone.Repository
 {
     public class BabyRepository : IBabyRepository
     {
+        private List<IBaby> _babies = new List<IBaby>();
+
         public void AddBaby(IBaby baby)
         {
-            throw new NotImplementedException();
+            _babies.Add(baby);
         }
     }
 }

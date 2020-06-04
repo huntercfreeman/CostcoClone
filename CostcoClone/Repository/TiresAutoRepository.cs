@@ -8,9 +8,10 @@ namespace CostcoClone.Repository
 {
     public class TiresAutoRepository : ITiresAutoRepository
     {
-        public void AddTiresAuto(ITiresAuto toyBook)
+        private List<ITiresAuto> _tiresAutos = new List<ITiresAuto>();
+        public void AddTiresAuto(ITiresAuto tiresAuto)
         {
-            throw new NotImplementedException();
+            _tiresAutos.Add(tiresAuto);
         }
     }
 }

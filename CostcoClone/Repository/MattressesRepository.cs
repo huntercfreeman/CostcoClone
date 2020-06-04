@@ -8,9 +8,10 @@ namespace CostcoClone.Repository
 {
     public class MattressesRepository : IMattressesRepository
     {
-        public void AddMattresses(IMattresses toyBook)
+        private List<IMattresses> _mattresses = new List<IMattresses>();
+        public void AddMattresses(IMattresses mattresses)
         {
-            throw new NotImplementedException();
+            _mattresses.Add(mattresses);
         }
     }
 }

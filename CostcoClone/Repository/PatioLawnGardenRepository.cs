@@ -8,9 +8,10 @@ namespace CostcoClone.Repository
 {
     public class PatioLawnGardenRepository : IPatioLawnGardenRepository
     {
-        public void AddPatioLawnGarden(IPatioLawnGarden toyBook)
+        private List<IPatioLawnGarden> _patioLawnGardens = new List<IPatioLawnGarden>();
+        public void AddPatioLawnGarden(IPatioLawnGarden patioLawnGarden)
         {
-            throw new NotImplementedException();
+            _patioLawnGardens.Add(patioLawnGarden);
         }
     }
 }

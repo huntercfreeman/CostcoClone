@@ -8,9 +8,10 @@ namespace CostcoClone.Repository
 {
     public class JewelryWatchesSunglassesRepository : IJewelryWatchesSunglassesRepository
     {
-        public void AddJewelryWatchesSunglasses(IJewelryWatchesSunglasses toyBook)
+        private List<IJewelryWatchesSunglasses> _jewelryWatchesSunglasses = new List<IJewelryWatchesSunglasses>();
+        public void AddJewelryWatchesSunglasses(IJewelryWatchesSunglasses jewelryWatchesSunglasses)
         {
-            throw new NotImplementedException();
+            _jewelryWatchesSunglasses.Add(jewelryWatchesSunglasses);
         }
     }
 }
