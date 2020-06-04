@@ -13,9 +13,31 @@ namespace CostcoClone.Repository
 {
     public class ProductRepository : IProductRepository
     {
+        private List<IProduct> _products;
+        private IApplianceRepository _applianceRepository;
+        private IBabyRepository _babyRepository;
+        private IBeautyRepository _beautyRepository;
+        private IClothingLuggageHandbagsRepository _clothingLuggageHandbagsRepository;
+        private IComputerRepository _computerRepository;
+        private IElectronicsRepository _electronicsRepository;
+        private IFloralGiftBasketsRepository _floralGiftBasketsRepository;
+        private IFoodHouseholdPetRepository _foodHouseholdPetRepository;
+        private IFurnitureRepository _furnitureRepository;
+        private IGiftCardsTicketsRepository _giftCardsTicketsRepository;
+        private IGourmetFoodsRepository _gourmetFoodsRepository;
+        private IHealthPersonalCareRepository _healthPersonalCareRepository;
+        private IHomeImprovementRepository _homeImprovementRepository;
+        private IHomeKitchenRepository _homeKitchenRepository;
+        private IJewelryWatchesSunglassesRepository _jewelryWatchesSunglassesRepository;
+        private IMattressesRepository _mattressesRepository;
+        private IOfficeProductsRepository _officeProductsRepository;
+        private IPatioLawnGardenRepository _patioLawnGardenRepository;
+        private ISportsFitnessRepository _sportsFitnessRepository;
+        private ITiresAutoRepository _tiresAutoRepository;
+        private IToysBooksRepository _toysBooksRepository;
+
         public ProductRepository()
         {
-            _appliances = new List<IAppliance>();
             _products = new List<IProduct>
             {
                 new Fridge
@@ -43,8 +65,7 @@ namespace CostcoClone.Repository
             };
         }
 
-        private List<IAppliance> _appliances;
-        private List<IProduct> _products;
+        
 
         public void AddAppliance(IAppliance appliance)
         {

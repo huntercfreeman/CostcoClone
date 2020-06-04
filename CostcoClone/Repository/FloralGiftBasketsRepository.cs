@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace CostcoClone.Repository
 {
-    interface OfficeProducts : IOfficeProducts
+    public class FloralGiftBasketsRepository : IFloralGiftBasketsRepository
     {
     }
 }

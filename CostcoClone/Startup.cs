@@ -30,7 +30,6 @@ namespace CostcoClone
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
-            services.AddSingleton<IProductRepository, ProductRepository>();
             services.AddSingleton<IApplianceRepository, ApplianceRepository>();
             services.AddSingleton<IBabyRepository, BabyRepository>();
             services.AddSingleton<IBeautyRepository, BeautyRepository>();
@@ -47,11 +46,13 @@ namespace CostcoClone
             services.AddSingleton<IHomeKitchenRepository, HomeKitchenRepository>();
             services.AddSingleton<IJewelryWatchesSunglassesRepository, JewelryWatchesSunglassesRepository>();
             services.AddSingleton<IMattressesRepository, MattressesRepository>();
-            services.AddSingleton<IOfficeProducts, OfficeProducts>();
+            services.AddSingleton<IOfficeProductsRepository, OfficeProductsRepository>();
             services.AddSingleton<IPatioLawnGardenRepository, PatioLawnGardenRepository>();
             services.AddSingleton<ISportsFitnessRepository, SportsFitnessRepository>();
             services.AddSingleton<ITiresAutoRepository, TiresAutoRepository>();
             services.AddSingleton<IToysBooksRepository, ToysBooksRepository>();
+            services.AddSingleton<IProductRepository, ProductRepository>();
+            services.AddSingleton<OfficeProductsRepository, OfficeProductsRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
