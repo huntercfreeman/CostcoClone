@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace CostcoClone.Interfaces.Departments
 {
-    interface IOfficeProducts
+    public interface IOfficeProducts
     {
     }
 }
