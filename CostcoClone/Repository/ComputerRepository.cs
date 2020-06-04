@@ -8,9 +8,10 @@ namespace CostcoClone.Repository
 {
     public class ComputerRepository : IComputerRepository
     {
-        public void AddComputers(IComputers toyBook)
+        private List<IComputers> _computers = new List<IComputers>();
+        public void AddComputers(IComputers computers)
         {
-            throw new NotImplementedException();
+            _computers.Add(computers);
         }
     }
 }

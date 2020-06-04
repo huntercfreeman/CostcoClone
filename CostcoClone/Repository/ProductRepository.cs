@@ -15,7 +15,7 @@ namespace CostcoClone.Repository
 {
     public class ProductRepository : IProductRepository
     {
-        private List<IProduct> _products;
+        private List<IProduct> _products = new List<IProduct>();
         private IApplianceRepository _applianceRepository;
         private IBabyRepository _babyRepository;
         private IBeautyRepository _beautyRepository;
@@ -70,8 +70,7 @@ namespace CostcoClone.Repository
             _tiresAutoRepository = tiresAutoRepository;
             _toysBooksRepository = toysBooksRepository;
 
-            _products = new List<IProduct>
-            {
+            Fridge k =
                 new Fridge
                 (
                     "GE 27 cu. ft. ENERGY STAR French-Door Refrigerator with Internal Water Dispenser",
@@ -93,7 +92,8 @@ namespace CostcoClone.Repository
                         Refrigerator Specifications</a></li></ul></figure></div>   </div></div>",
                     this,
                     new List<string> { "content/appliances/fridge-c45bedda-ccae-4078-ae48-c8bf0ba21802.jpg" }
-                ),
+                );
+            WindowsLaptop kz =
                 new WindowsLaptop
                 (
                     "Dell Inspiron 15 3000 Touchscreen Laptop - 10th Gen Intel Core i7-1065G7 - 1080p",
@@ -103,7 +103,8 @@ namespace CostcoClone.Repository
                     this,
                     new List<string> { "content/appliances/fridge-c45bedda-ccae-4078-ae48-c8bf0ba21802.jpg" },
                     Color.Red
-                ),
+                );
+            WindowsLaptop kze =
                 new WindowsLaptop
                 (
                     "TestGreen",
@@ -113,7 +114,8 @@ namespace CostcoClone.Repository
                     this,
                     new List<string> { "content/appliances/fridge-c45bedda-ccae-4078-ae48-c8bf0ba21802.jpg" },
                     Color.Green
-                ),
+                );
+            WindowsLaptop kzae =
                 new WindowsLaptop
                 (
                     "TestRed",
@@ -123,8 +125,7 @@ namespace CostcoClone.Repository
                     this,
                     new List<string> { "content/appliances/fridge-c45bedda-ccae-4078-ae48-c8bf0ba21802.jpg" },
                     Color.Red
-                )
-            };
+                );
         }
 
         
@@ -161,9 +162,9 @@ namespace CostcoClone.Repository
             throw new NotImplementedException();
         }
 
-        public void AddComputer(IComputers appliance)
+        public void AddComputer(IComputers computer)
         {
-            //throw new NotImplementedException();
+            _computerRepository.AddComputers(computer);
         }
 
         public void AddElectronic(IElectronics appliance)
@@ -248,7 +249,7 @@ namespace CostcoClone.Repository
 
         public void AddProduct(IProduct product)
         {
-            throw new NotImplementedException();
+            _products.Add(product);
         }
     }
 }
