@@ -47,7 +47,7 @@ namespace CostcoClone.Repository
                                 IHomeKitchenRepository homeKitchenRepository, IJewelryWatchesSunglassesRepository jewelryWatchesSunglassesRepository,
                                 IMattressesRepository mattressesRepository, IOfficeProductsRepository officeProductsRepository,
                                 IPatioLawnGardenRepository patioLawnGardenRepository, ITiresAutoRepository tiresAutoRepository,
-                                IToysBooksRepository toysBooksRepository)
+                                IToysBooksRepository toysBooksRepository, ISportsFitnessRepository sportsFitnessRepository)
         {
             _applianceRepository = applianceRepository;
             _babyRepository = babyRepository;
@@ -69,6 +69,7 @@ namespace CostcoClone.Repository
             _patioLawnGardenRepository = patioLawnGardenRepository;
             _tiresAutoRepository = tiresAutoRepository;
             _toysBooksRepository = toysBooksRepository;
+            _sportsFitnessRepository = sportsFitnessRepository;
 
             Fridge k =
                 new Fridge

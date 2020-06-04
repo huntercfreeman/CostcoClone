@@ -8,9 +8,10 @@ namespace CostcoClone.Repository
 {
     public class FloralGiftBasketsRepository : IFloralGiftBasketsRepository
     {
-        public void AddFloralGiftBaskets(IFloralGiftBaskets toyBook)
+        private List<IFloralGiftBaskets> _floralGiftBaskets = new List<IFloralGiftBaskets>();
+        public void AddFloralGiftBaskets(IFloralGiftBaskets floralGiftBaskets)
         {
-            throw new NotImplementedException();
+            _floralGiftBaskets.Add(floralGiftBaskets);
         }
     }
 }

@@ -8,9 +8,10 @@ namespace CostcoClone.Repository
 {
     public class HealthPersonalCareRepository : IHealthPersonalCareRepository
     {
-        public void AddHealthPersonalCare(IHealthPersonalCare toyBook)
+        private List<IHealthPersonalCare> _healthPersonalCares = new List<IHealthPersonalCare>();
+        public void AddHealthPersonalCare(IHealthPersonalCare healthPersonalCare)
         {
-            throw new NotImplementedException();
+            _healthPersonalCares.Add(healthPersonalCare);
         }
     }
 }

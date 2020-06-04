@@ -8,9 +8,10 @@ namespace CostcoClone.Repository
 {
     public class FurnitureRepository : IFurnitureRepository
     {
-        public void AddFurniture(IFurniture toyBook)
+        private List<IFurniture> _furnitures = new List<IFurniture>();
+        public void AddFurniture(IFurniture furniture)
         {
-            throw new NotImplementedException();
+            _furnitures.Add(furniture);
         }
     }
 }

@@ -8,9 +8,10 @@ namespace CostcoClone.Repository
 {
     public class GourmetFoodsRepository : IGourmetFoodsRepository
     {
-        public void AddGourmetFoods(IGourmetFoods toyBook)
+        private List<IGourmetFoods> _gourmetFoods = new List<IGourmetFoods>();
+        public void AddGourmetFoods(IGourmetFoods gourmetFoods)
         {
-            throw new NotImplementedException();
+            _gourmetFoods.Add(gourmetFoods);
         }
     }
 }

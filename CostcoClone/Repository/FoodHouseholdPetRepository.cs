@@ -8,9 +8,10 @@ namespace CostcoClone.Repository
 {
     public class FoodHouseholdPetRepository : IFoodHouseholdPetRepository
     {
-        public void AddFoodhouseholdPet(IFoodhouseholdPet toyBook)
+        private List<IFoodhouseholdPet> _foodhouseholdPets = new List<IFoodhouseholdPet>();
+        public void AddFoodhouseholdPet(IFoodhouseholdPet foodhouseholdPets)
         {
-            throw new NotImplementedException();
+            _foodhouseholdPets.Add(foodhouseholdPets);
         }
     }
 }

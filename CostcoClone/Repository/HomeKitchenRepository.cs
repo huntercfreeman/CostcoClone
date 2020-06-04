@@ -8,9 +8,10 @@ namespace CostcoClone.Repository
 {
     public class HomeKitchenRepository : IHomeKitchenRepository
     {
-        public void AddHomeKitchen(IHomeKitchen toyBook)
+        private List<IHomeKitchen> _homeKitchens = new List<IHomeKitchen>();
+        public void AddHomeKitchen(IHomeKitchen homeKitchen)
         {
-            throw new NotImplementedException();
+            _homeKitchens.Add(homeKitchen);
         }
     }
 }

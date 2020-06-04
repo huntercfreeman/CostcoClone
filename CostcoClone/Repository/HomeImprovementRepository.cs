@@ -8,9 +8,10 @@ namespace CostcoClone.Repository
 {
     public class HomeImprovementRepository : IHomeImprovementRepository
     {
-        public void AddHomeImprovement(IHomeImprovement toyBook)
+        private List<IHomeImprovement> _homeImprovements = new List<IHomeImprovement>();
+        public void AddHomeImprovement(IHomeImprovement homeImprovement)
         {
-            throw new NotImplementedException();
+            _homeImprovements.Add(homeImprovement);
         }
     }
 }

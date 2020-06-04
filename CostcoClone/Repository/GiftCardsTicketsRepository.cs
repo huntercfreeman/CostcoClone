@@ -8,9 +8,10 @@ namespace CostcoClone.Repository
 {
     public class GiftCardsTicketsRepository : IGiftCardsTicketsRepository
     {
-        public void AddGiftCardsTickets(IGiftCardsTickets toyBook)
+        private List<IGiftCardsTickets> _giftCardsTickets = new List<IGiftCardsTickets>();
+        public void AddGiftCardsTickets(IGiftCardsTickets giftCardsTickets)
         {
-            throw new NotImplementedException();
+            _giftCardsTickets.Add(giftCardsTickets);
         }
     }
 }
