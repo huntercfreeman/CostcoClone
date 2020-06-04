@@ -16,5 +16,6 @@ namespace CostcoClone.Interfaces
         public List<string> ImageURLs { get; set; }
         public MarkupString ProductDetails { get; set; }
         public string ProductId { get; set; }
+        public bool Display { get; set; }
     }
 }

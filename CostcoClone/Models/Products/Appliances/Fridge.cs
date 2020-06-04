@@ -34,5 +34,6 @@ namespace CostcoClone.Models.Products.Appliances
         public MarkupString ProductDetails { get; set; }
         public string ProductId { get; set; }
         public List<string> ImageURLs { get; set; }
+        public bool Display { get; set; }
     }
 }

@@ -3,9 +3,11 @@ using CostcoClone.Interfaces.Departments;
 using CostcoClone.Models;
 using CostcoClone.Models.Products;
 using CostcoClone.Models.Products.Appliances;
+using CostcoClone.Models.Products.Computers.Laptops;
 using Microsoft.AspNetCore.Components;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -91,6 +93,36 @@ namespace CostcoClone.Repository
                         Refrigerator Specifications</a></li></ul></figure></div>   </div></div>",
                     this,
                     new List<string> { "content/appliances/fridge-c45bedda-ccae-4078-ae48-c8bf0ba21802.jpg" }
+                ),
+                new WindowsLaptop
+                (
+                    "Dell Inspiron 15 3000 Touchscreen Laptop - 10th Gen Intel Core i7-1065G7 - 1080p",
+                    (decimal)649.99,
+                    10,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/appliances/fridge-c45bedda-ccae-4078-ae48-c8bf0ba21802.jpg" },
+                    Color.Red
+                ),
+                new WindowsLaptop
+                (
+                    "TestGreen",
+                    (decimal)649.99,
+                    10,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/appliances/fridge-c45bedda-ccae-4078-ae48-c8bf0ba21802.jpg" },
+                    Color.Green
+                ),
+                new WindowsLaptop
+                (
+                    "TestRed",
+                    (decimal)649.99,
+                    10,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/appliances/fridge-c45bedda-ccae-4078-ae48-c8bf0ba21802.jpg" },
+                    Color.Red
                 )
             };
         }
@@ -131,7 +163,7 @@ namespace CostcoClone.Repository
 
         public void AddComputer(IComputers appliance)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
         public void AddElectronic(IElectronics appliance)

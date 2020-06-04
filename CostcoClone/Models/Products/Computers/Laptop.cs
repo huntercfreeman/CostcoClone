@@ -12,7 +12,9 @@ namespace CostcoClone.Models.Products.Computers
 {
     public class Laptop : IProduct, IComputers
     {
-        public Laptop(string title, decimal price, int stock, MarkupString productDetails, IProductRepository productRepository, List<string> imageURLs)
+        public static Dictionary<Color, List<Laptop>> ColorFilter = new Dictionary<Color, List<Laptop>>();
+        
+        public Laptop(string title, decimal price, int stock, MarkupString productDetails, IProductRepository productRepository, List<string> imageURLs, Color color)
         {
             Title = title;
             Price = price;
@@ -22,6 +24,15 @@ namespace CostcoClone.Models.Products.Computers
             ProductDetails = productDetails;
             ProductId = Guid.NewGuid().ToString();
             ImageURLs = imageURLs;
+
+            this.Color = color;
+            if (ColorFilter.ContainsKey(color))
+                ColorFilter[color].Add(this);
+            else
+            {
+                ColorFilter.Add(color, new List<Laptop>());
+                ColorFilter[color].Add(this);
+            }
 
             productRepository.AddComputer(this);
         }
@@ -45,5 +56,6 @@ namespace CostcoClone.Models.Products.Computers
         public string Processor { get; set; }
         public string ScreenSize { get; set; }
         public string ScreenType { get; set; }
+        public bool Display { get; set; }
     }
 }
