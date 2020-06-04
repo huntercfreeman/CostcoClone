@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace CostcoClone.Repository
 {
-    interface IFoodHouseholdPetRepository
+    public interface IFoodHouseholdPetRepository
     {
     }
 }

@@ -86,5 +86,100 @@ namespace CostcoClone.Repository
         {
             return _products.Where(x => x.ProductId.CompareTo(productId) == 0).FirstOrDefault();
         }
+
+        public void AddBaby(IBaby appliance)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void AddClothingLuggageHandbags(IClothingLuggageHandbags appliance)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void AddComputer(IComputers appliance)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void AddElectronic(IElectronics appliance)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void AddFloralGiftBasket(IFloralGiftBaskets appliance)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void AddFoodhouseholdPet(IFoodhouseholdPet appliance)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void AddFurniture(IFurniture appliance)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void AddGiftCardTicket(IGiftCardsTickets appliance)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void AddGourmetFood(IGourmetFoods appliance)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void AddHealthPersonalCare(IHealthPersonalCare appliance)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void AddHomeImprovement(IHomeImprovement appliance)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void AddHomeKitchen(IHomeKitchen appliance)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void AddJewelryWatchSunglasses(IJewelryWatchesSunglasses appliance)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void AddMattress(IMattresses appliance)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void AddOfficeProduct(IOfficeProducts appliance)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void AddPatioLawnGarden(IPatioLawnGarden appliance)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void AddSportFitness(ISportsFitness appliance)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void AddTireAuto(ITiresAuto appliance)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void AddToyBook(IToysBooks appliance)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

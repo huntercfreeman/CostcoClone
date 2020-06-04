@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace CostcoClone.Repository
 {
-    interface IFurnitureRepository
+    public interface IFurnitureRepository
     {
     }
 }
