@@ -1,9 +1,13 @@
 ﻿@page "/search"
 @page "/search/{Department}/{Query}"
-
-<h3>SearchPage</h3>
-
-@foreach(var item in ProductRepository.GetProducts())
-{
-    @item.Title
-}
+@using CostcoClone.Components
+@using Interfaces
+<div style="display: flex;">
+    <FilterMenu/>
+    <GenericGridList TItem="IProduct" Items="@ProductRepository.GetProducts().ToList()">
+        <ItemTemplate>
+            <img src="@context.ImageURLs[0]" style="max-width:200px;" />
+            @context.Title
+        </ItemTemplate>
+    </GenericGridList>
+</div>
