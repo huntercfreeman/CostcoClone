@@ -152,14 +152,14 @@ namespace CostcoClone.Repository
             _applianceRepository.AddAppliance(appliance);
         }
 
-        public void AddBaby(IBaby appliance)
+        public void AddBaby(IBaby baby)
         {
-            throw new NotImplementedException();
+            _babyRepository.AddBaby(baby);
         }
 
-        public void AddClothingLuggageHandbags(IClothingLuggageHandbags appliance)
+        public void AddClothingLuggageHandbags(IClothingLuggageHandbags clothingLuggageHandbags)
         {
-            throw new NotImplementedException();
+            _clothingLuggageHandbagsRepository.AddClothingLuggageHandbags(clothingLuggageHandbags);
         }
 
         public void AddComputer(IComputers computer)
@@ -167,84 +167,84 @@ namespace CostcoClone.Repository
             _computerRepository.AddComputers(computer);
         }
 
-        public void AddElectronic(IElectronics appliance)
+        public void AddElectronic(IElectronics electronic)
         {
-            throw new NotImplementedException();
+            _electronicsRepository.AddElectronics(electronic);
         }
 
-        public void AddFloralGiftBasket(IFloralGiftBaskets appliance)
+        public void AddFloralGiftBasket(IFloralGiftBaskets floralGiftBasket)
         {
-            throw new NotImplementedException();
+            _floralGiftBasketsRepository.AddFloralGiftBaskets(floralGiftBasket);
         }
 
-        public void AddFoodhouseholdPet(IFoodhouseholdPet appliance)
+        public void AddFoodhouseholdPet(IFoodhouseholdPet foodhouseholdPet)
         {
-            throw new NotImplementedException();
+            _foodHouseholdPetRepository.AddFoodhouseholdPet(foodhouseholdPet);
         }
 
-        public void AddFurniture(IFurniture appliance)
+        public void AddFurniture(IFurniture furniture)
         {
-            throw new NotImplementedException();
+            _furnitureRepository.AddFurniture(furniture);
         }
 
-        public void AddGiftCardTicket(IGiftCardsTickets appliance)
+        public void AddGiftCardTicket(IGiftCardsTickets giftCardTicket)
         {
-            throw new NotImplementedException();
+            _giftCardsTicketsRepository.AddGiftCardsTickets(giftCardTicket);
         }
 
-        public void AddGourmetFood(IGourmetFoods appliance)
+        public void AddGourmetFood(IGourmetFoods gourmetFood)
         {
-            throw new NotImplementedException();
+            _gourmetFoodsRepository.AddGourmetFoods(gourmetFood);
         }
 
-        public void AddHealthPersonalCare(IHealthPersonalCare appliance)
+        public void AddHealthPersonalCare(IHealthPersonalCare healthPersonalCare)
         {
-            throw new NotImplementedException();
+            _healthPersonalCareRepository.AddHealthPersonalCare(healthPersonalCare);
         }
 
-        public void AddHomeImprovement(IHomeImprovement appliance)
+        public void AddHomeImprovement(IHomeImprovement homeImprovement)
         {
-            throw new NotImplementedException();
+            _homeImprovementRepository.AddHomeImprovement(homeImprovement);
         }
 
-        public void AddHomeKitchen(IHomeKitchen appliance)
+        public void AddHomeKitchen(IHomeKitchen homeKitchen)
         {
-            throw new NotImplementedException();
+            _homeKitchenRepository.AddHomeKitchen(homeKitchen);
         }
 
-        public void AddJewelryWatchSunglasses(IJewelryWatchesSunglasses appliance)
+        public void AddJewelryWatchSunglasses(IJewelryWatchesSunglasses jewelryWatchesSunglasses)
         {
-            throw new NotImplementedException();
+            _jewelryWatchesSunglassesRepository.AddJewelryWatchesSunglasses(jewelryWatchesSunglasses);
         }
 
-        public void AddMattress(IMattresses appliance)
+        public void AddMattress(IMattresses mattress)
         {
-            throw new NotImplementedException();
+            _mattressesRepository.AddMattresses(mattress);
         }
 
-        public void AddOfficeProduct(IOfficeProducts appliance)
+        public void AddOfficeProduct(IOfficeProducts officeProduct)
         {
-            throw new NotImplementedException();
+            _officeProductsRepository.AddOfficeProducts(officeProduct);
         }
 
-        public void AddPatioLawnGarden(IPatioLawnGarden appliance)
+        public void AddPatioLawnGarden(IPatioLawnGarden patioLawnGarden)
         {
-            throw new NotImplementedException();
+            _patioLawnGardenRepository.AddPatioLawnGarden(patioLawnGarden);
         }
 
-        public void AddSportFitness(ISportsFitness appliance)
+        public void AddSportFitness(ISportsFitness sportFitness)
         {
-            throw new NotImplementedException();
+            _sportsFitnessRepository.AddSportsFitness(sportFitness);
         }
 
-        public void AddTireAuto(ITiresAuto appliance)
+        public void AddTireAuto(ITiresAuto tireAuto)
         {
-            throw new NotImplementedException();
+            _tiresAutoRepository.AddTiresAuto(tireAuto);
         }
 
-        public void AddToyBook(IToysBooks appliance)
+        public void AddToyBook(IToysBooks toysBooks)
         {
-            throw new NotImplementedException();
+            _toysBooksRepository.AddToyBook(toysBooks);
         }
 
         public void AddProduct(IProduct product)
