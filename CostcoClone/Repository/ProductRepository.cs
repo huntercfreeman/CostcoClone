@@ -36,8 +36,38 @@ namespace CostcoClone.Repository
         private ITiresAutoRepository _tiresAutoRepository;
         private IToysBooksRepository _toysBooksRepository;
 
-        public ProductRepository()
+        public ProductRepository(IApplianceRepository applianceRepository, IBabyRepository babyRepository, IBeautyRepository beautyRepository,
+                                IClothingLuggageHandbagsRepository clothingLuggageHandbagsRepository, IComputerRepository computerRepository,
+                                IElectronicsRepository electronicsRepository, IFloralGiftBasketsRepository floralGiftBasketsRepository,
+                                IFoodHouseholdPetRepository foodHouseholdPetRepository, IFurnitureRepository furnitureRepository,
+                                IGiftCardsTicketsRepository giftCardsTicketsRepository, IGourmetFoodsRepository gourmetFoodsRepository,
+                                IHealthPersonalCareRepository healthPersonalCareRepository, IHomeImprovementRepository homeImprovementRepository,
+                                IHomeKitchenRepository homeKitchenRepository, IJewelryWatchesSunglassesRepository jewelryWatchesSunglassesRepository,
+                                IMattressesRepository mattressesRepository, IOfficeProductsRepository officeProductsRepository,
+                                IPatioLawnGardenRepository patioLawnGardenRepository, ITiresAutoRepository tiresAutoRepository,
+                                IToysBooksRepository toysBooksRepository)
         {
+            _applianceRepository = applianceRepository;
+            _babyRepository = babyRepository;
+            _beautyRepository = beautyRepository;
+            _clothingLuggageHandbagsRepository = clothingLuggageHandbagsRepository;
+            _computerRepository = computerRepository;
+            _electronicsRepository = electronicsRepository;
+            _floralGiftBasketsRepository = floralGiftBasketsRepository;
+            _foodHouseholdPetRepository = foodHouseholdPetRepository;
+            _furnitureRepository = furnitureRepository;
+            _giftCardsTicketsRepository = giftCardsTicketsRepository;
+            _gourmetFoodsRepository = gourmetFoodsRepository;
+            _healthPersonalCareRepository = healthPersonalCareRepository;
+            _homeImprovementRepository = homeImprovementRepository;
+            _homeKitchenRepository = homeKitchenRepository;
+            _jewelryWatchesSunglassesRepository = jewelryWatchesSunglassesRepository;
+            _mattressesRepository = mattressesRepository;
+            _officeProductsRepository = officeProductsRepository;
+            _patioLawnGardenRepository = patioLawnGardenRepository;
+            _tiresAutoRepository = tiresAutoRepository;
+            _toysBooksRepository = toysBooksRepository;
+
             _products = new List<IProduct>
             {
                 new Fridge
@@ -67,10 +97,7 @@ namespace CostcoClone.Repository
 
         
 
-        public void AddAppliance(IAppliance appliance)
-        {
-            _appliances.Add(appliance);
-        }
+        
 
         public IList<IProduct> GetProducts()
         {
@@ -85,6 +112,11 @@ namespace CostcoClone.Repository
         public IProduct GetProductById(string productId)
         {
             return _products.Where(x => x.ProductId.CompareTo(productId) == 0).FirstOrDefault();
+        }
+
+        public void AddAppliance(IAppliance appliance)
+        {
+            _applianceRepository.AddAppliance(appliance);
         }
 
         public void AddBaby(IBaby appliance)

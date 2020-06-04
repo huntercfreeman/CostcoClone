@@ -8,6 +8,6 @@ namespace CostcoClone.Repository
 {
     public interface IApplianceRepository
     {
-        public void AddToyBook(IAppliance appliance);
+        public void AddAppliance(IAppliance appliance);
     }
 }

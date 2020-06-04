@@ -8,9 +8,16 @@ namespace CostcoClone.Repository
 {
     public class ApplianceRepository : IApplianceRepository
     {
-        public void AddToyBook(IAppliance appliance)
+        private List<IAppliance> _appliances;
+
+        public ApplianceRepository()
         {
-            throw new NotImplementedException();
+            _appliances = new List<IAppliance>();
+        }
+
+        public void AddAppliance(IAppliance appliance)
+        {
+            _appliances.Add(appliance);
         }
     }
 }
