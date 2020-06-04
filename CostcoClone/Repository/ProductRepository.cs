@@ -181,5 +181,10 @@ namespace CostcoClone.Repository
         {
             throw new NotImplementedException();
         }
+
+        public void AddProduct(IProduct product)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -30,7 +30,8 @@ namespace CostcoClone.Repository
         public void AddSportFitness(ISportsFitness appliance);
         public void AddTireAuto(ITiresAuto appliance);
         public void AddToyBook(IToysBooks appliance);
-        
+        public void AddProduct(IProduct product);
+
         public IList<IProduct> GetProducts();
         public IList<IProduct> GetProductsByTitle(string title);
         public IProduct GetProductById(string productId);
