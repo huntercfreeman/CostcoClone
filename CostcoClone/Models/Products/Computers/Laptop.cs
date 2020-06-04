@@ -10,21 +10,13 @@ using System.Threading.Tasks;
 
 namespace CostcoClone.Models.Products.Computers
 {
-    public class Laptop : IProduct, IComputers
+    public class Laptop : Product, IComputers
     {
         public static Dictionary<Color, List<Laptop>> ColorFilter = new Dictionary<Color, List<Laptop>>();
         
         public Laptop(string title, decimal price, int stock, MarkupString productDetails, IProductRepository productRepository, List<string> imageURLs, Color color)
+            : base(title, price, stock, productDetails, productRepository, imageURLs)
         {
-            Title = title;
-            Price = price;
-            Categories = new List<string> { "Computers", "Laptop" };
-            Tags = new List<string> { "Computers", "Laptop" };
-            Stock = stock;
-            ProductDetails = productDetails;
-            ProductId = Guid.NewGuid().ToString();
-            ImageURLs = imageURLs;
-
             this.Color = color;
             if (ColorFilter.ContainsKey(color))
                 ColorFilter[color].Add(this);

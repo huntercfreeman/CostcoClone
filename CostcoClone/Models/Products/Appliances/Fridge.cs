@@ -10,30 +10,14 @@ using System.Threading.Tasks;
 
 namespace CostcoClone.Models.Products.Appliances
 {
-    public class Fridge : IProduct, IAppliance, IQuickShipAppliance
+    public class Fridge : Product, IAppliance, IQuickShipAppliance
     {
         public Fridge(string title, decimal price, int stock, MarkupString productDetails, IProductRepository productRepository, List<string> imageURLs)
+            : base(title, price, stock, productDetails, productRepository, imageURLs)
         {
-            Title = title;
-            Price = price;
-            Categories = new List<string> { "Appliances", "Quick Ship Appliances", "Fridge" };
-            Tags = new List<string> { "Appliances", "Quick Ship Appliances", "Fridge" };
-            Stock = stock;
-            ProductDetails = productDetails;
-            ProductId = Guid.NewGuid().ToString();
-            ImageURLs = imageURLs;
+            
 
             productRepository.AddAppliance(this);
         }
-
-        public string Title { get; set; }
-        public decimal Price { get; set; }
-        public List<string> Categories { get; set; }
-        public List<string> Tags { get; set; }
-        public int Stock { get; set; }
-        public MarkupString ProductDetails { get; set; }
-        public string ProductId { get; set; }
-        public List<string> ImageURLs { get; set; }
-        public bool Display { get; set; }
     }
 }
