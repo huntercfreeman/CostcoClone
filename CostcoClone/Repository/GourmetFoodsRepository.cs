@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace CostcoClone.Repository
 {
-    public class GourmetFoodsRepository
+    public class GourmetFoodsRepository : IGourmetFoodsRepository
     {
     }
 }

@@ -31,6 +31,27 @@ namespace CostcoClone
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
             services.AddSingleton<IProductRepository, ProductRepository>();
+            services.AddSingleton<IApplianceRepository, ApplianceRepository>();
+            services.AddSingleton<IBabyRepository, BabyRepository>();
+            services.AddSingleton<IBeautyRepository, BeautyRepository>();
+            services.AddSingleton<IClothingLuggageHandbagsRepository, ClothingLuggageHandbagsRepository>();
+            services.AddSingleton<IComputerRepository, ComputerRepository>();
+            services.AddSingleton<IElectronicsRepository, ElectronicsRepository>();
+            services.AddSingleton<IFloralGiftBasketsRepository, FloralGiftBasketsRepository>();
+            services.AddSingleton<IFoodHouseholdPetRepository, FoodHouseholdPetRepository>();
+            services.AddSingleton<IFurnitureRepository, FurnitureRepository>();
+            services.AddSingleton<IGiftCardsTicketsRepository, GiftCardsTicketsRepository>();
+            services.AddSingleton<IGourmetFoodsRepository, GourmetFoodsRepository>();
+            services.AddSingleton<IHealthPersonalCareRepository, HealthPersonalCareRepository>();
+            services.AddSingleton<IHomeImprovementRepository, HomeImprovementRepository>();
+            services.AddSingleton<IHomeKitchenRepository, HomeKitchenRepository>();
+            services.AddSingleton<IJewelryWatchesSunglassesRepository, JewelryWatchesSunglassesRepository>();
+            services.AddSingleton<IMattressesRepository, MattressesRepository>();
+            services.AddSingleton<IOfficeProducts, OfficeProducts>();
+            services.AddSingleton<IPatioLawnGardenRepository, PatioLawnGardenRepository>();
+            services.AddSingleton<ISportsFitnessRepository, SportsFitnessRepository>();
+            services.AddSingleton<ITiresAutoRepository, TiresAutoRepository>();
+            services.AddSingleton<IToysBooksRepository, ToysBooksRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
