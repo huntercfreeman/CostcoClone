@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CostcoClone.Interfaces.Departments;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -7,5 +8,9 @@ namespace CostcoClone.Repository
 {
     public class GourmetFoodsRepository : IGourmetFoodsRepository
     {
+        public void AddGourmetFoods(IGourmetFoods toyBook)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
