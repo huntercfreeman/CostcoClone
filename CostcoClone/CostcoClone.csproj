@@ -5,6 +5,48 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Repositories\Implementations\Products\Appliance\" />
+    <Folder Include="Repositories\Implementations\Products\Baby\" />
+    <Folder Include="Repositories\Implementations\Products\Beauty\" />
+    <Folder Include="Repositories\Implementations\Products\ClothingLuggageHandbag\" />
+    <Folder Include="Repositories\Implementations\Products\Computer\" />
+    <Folder Include="Repositories\Implementations\Products\Electronics\" />
+    <Folder Include="Repositories\Implementations\Products\FloralGiftBasket\" />
+    <Folder Include="Repositories\Implementations\Products\FoodHouseholdPet\" />
+    <Folder Include="Repositories\Implementations\Products\Furniture\" />
+    <Folder Include="Repositories\Implementations\Products\GiftCardsTickets\" />
+    <Folder Include="Repositories\Implementations\Products\GourmetFoods\" />
+    <Folder Include="Repositories\Implementations\Products\HealthPersonalCare\" />
+    <Folder Include="Repositories\Implementations\Products\HomeImprovement\" />
+    <Folder Include="Repositories\Implementations\Products\HomeKitchen\" />
+    <Folder Include="Repositories\Implementations\Products\JewelryWatchesSunglasses\" />
+    <Folder Include="Repositories\Implementations\Products\Mattresses\" />
+    <Folder Include="Repositories\Implementations\Products\ToysBooks\" />
+    <Folder Include="Repositories\Implementations\Products\TiresAuto\" />
+    <Folder Include="Repositories\Implementations\Products\SportsFitness\" />
+    <Folder Include="Repositories\Implementations\Products\PatioLawnGarden\" />
+    <Folder Include="Repositories\Implementations\Products\OfficeProducts\" />
+    <Folder Include="Repositories\Interfaces\Products\Appliance\" />
+    <Folder Include="Repositories\Interfaces\Products\Baby\" />
+    <Folder Include="Repositories\Interfaces\Products\Beauty\" />
+    <Folder Include="Repositories\Interfaces\Products\ClothingLuggageHandbag\" />
+    <Folder Include="Repositories\Interfaces\Products\Computer\" />
+    <Folder Include="Repositories\Interfaces\Products\Electronics\" />
+    <Folder Include="Repositories\Interfaces\Products\FloralGiftBasket\" />
+    <Folder Include="Repositories\Interfaces\Products\FoodHouseholdPet\" />
+    <Folder Include="Repositories\Interfaces\Products\Furniture\" />
+    <Folder Include="Repositories\Interfaces\Products\GiftCardsTickets\" />
+    <Folder Include="Repositories\Interfaces\Products\GourmetFoods\" />
+    <Folder Include="Repositories\Interfaces\Products\HealthPersonalCare\" />
+    <Folder Include="Repositories\Interfaces\Products\HomeImprovement\" />
+    <Folder Include="Repositories\Interfaces\Products\HomeKitchen\" />
+    <Folder Include="Repositories\Interfaces\Products\JewelryWatchesSunglasses\" />
+    <Folder Include="Repositories\Interfaces\Products\Mattresses\" />
+    <Folder Include="Repositories\Interfaces\Products\OfficeProducts\" />
+    <Folder Include="Repositories\Interfaces\Products\PatioLawnGarden\" />
+    <Folder Include="Repositories\Interfaces\Products\SportsFitness\" />
+    <Folder Include="Repositories\Interfaces\Products\TiresAuto\" />
+    <Folder Include="Repositories\Interfaces\Products\ToysBooks\" />
     <Folder Include="Shared\FooterComponents\" />
   </ItemGroup>
 
