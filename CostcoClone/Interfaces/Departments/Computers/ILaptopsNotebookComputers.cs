@@ -5,7 +5,13 @@ using System.Threading.Tasks;
 
 namespace CostcoClone.Interfaces.Departments.Computers
 {
-    interface ILaptopsNotebookComputers
+    public interface ILaptopsNotebookComputers
     {
+        public int MyProperty { get; set; }
+        public enum Features
+        {
+            Backlit Keyboard,
+
+        }
     }
 }
