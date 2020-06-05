@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace CostcoClone.Repositories.Implementations.Products.Computer
 {
-    public class IComputerSoftwareRepository
+    public class ComputerSoftwareRepository
     {
     }
 }
