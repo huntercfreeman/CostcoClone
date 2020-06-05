@@ -9,9 +9,22 @@ namespace CostcoClone.Repositories.Implementations.Products.Computer
 {
     public class LaptopsNotebookComputersRepository : ILaptopsNotebookComputersRepository
     {
+        private List<ILaptopsNotebookComputers> _laptopsNotebookComputers = new List<ILaptopsNotebookComputers>();
+
+        private Dictionary<string, List<ILaptopsNotebookComputers>> featuresFilter = new Dictionary<string, List<ILaptopsNotebookComputers>>();
+
         public void AddLaptopsNotebookComputer(ILaptopsNotebookComputers laptopsNotebookComputer)
         {
-            throw new NotImplementedException();
+            _laptopsNotebookComputers.Add(laptopsNotebookComputer);
+
+            // calculate filters
+            foreach(string feature in laptopsNotebookComputer.Features)
+            {
+                if (!featuresFilter.ContainsKey(feature))
+                    featuresFilter.Add(feature, new List<ILaptopsNotebookComputers>());
+                featuresFilter[feature].Add(laptopsNotebookComputer);
+            }
+            
         }
 
         public ILaptopsNotebookComputers GetLaptopsNotebookComputerById(string productId)
