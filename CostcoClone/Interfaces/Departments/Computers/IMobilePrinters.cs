@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace CostcoClone.Interfaces.Departments.Computers
 {
-    interface IMobilePrintersRepository
+    interface IMobilePrinters
     {
     }
 }

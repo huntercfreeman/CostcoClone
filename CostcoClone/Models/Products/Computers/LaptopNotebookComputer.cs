@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace CostcoClone.Models.Products.Computers
 {
-    public class LaptopNotebookComputer : Computer, ILaptopsNotebookComputersRepository
+    public class LaptopNotebookComputer : Computer, ILaptopsNotebookComputers
     {
         public LaptopNotebookComputer(string title, decimal price, int stock, MarkupString productDetails, 
             IProductRepository productRepository, List<string> imageURLs, Color color) 

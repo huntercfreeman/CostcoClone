@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CostcoClone.Interfaces.Departments.Computers
 {
-    public interface ILaptopsNotebookComputersRepository
+    public interface ILaptopsNotebookComputers
     {
         public List<string> Features { get; set; }
         public string DeliveryType { get; set; }
