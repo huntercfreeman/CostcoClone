@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CostcoClone.Repositories.Implementations.Products.Computer
 {
-    public class ILaptopsNotebookComputersRepository
+    public class LaptopsNotebookComputersRepository
     {
         public List<string> Features { get; set; }
         public string DeliveryType { get; set; }
