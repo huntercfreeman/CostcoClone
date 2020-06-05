@@ -14,7 +14,7 @@ namespace CostcoClone.Models.Products
         public Computer(string title, decimal price, int stock, MarkupString productDetails, IProductRepository productRepository, List<string> imageURLs)
             : base(title, price, stock, productDetails, productRepository, imageURLs)
         {
-            productRepository.AddComputer(this);
+            
         }
     }
 }

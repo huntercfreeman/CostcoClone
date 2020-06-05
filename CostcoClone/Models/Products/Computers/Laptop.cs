@@ -26,7 +26,7 @@ namespace CostcoClone.Models.Products.Computers
                 ColorFilter[color].Add(this);
             }
 
-            productRepository.AddComputer(this);
+            
         }
 
         

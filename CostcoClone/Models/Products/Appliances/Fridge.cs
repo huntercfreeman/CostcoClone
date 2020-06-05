@@ -17,7 +17,7 @@ namespace CostcoClone.Models.Products.Appliances
         {
             
 
-            productRepository.AddAppliance(this);
+            
         }
     }
 }

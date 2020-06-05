@@ -9,20 +9,20 @@ namespace CostcoClone.Repositories.Implementations.Products.Computer
 {
     public class LaptopsNotebookComputersRepository : ILaptopsNotebookComputersRepository
     {
-        private List<ILaptopsNotebookComputers> _laptopsNotebookComputers = new List<ILaptopsNotebookComputers>();
+        private readonly List<ILaptopsNotebookComputers> _laptopsNotebookComputers = new List<ILaptopsNotebookComputers>();
 
-        private Dictionary<string, List<ILaptopsNotebookComputers>> featuresFilter = new Dictionary<string, List<ILaptopsNotebookComputers>>();
-        private Dictionary<string, List<ILaptopsNotebookComputers>> deliveryTypeFilter = new Dictionary<string, List<ILaptopsNotebookComputers>>();
-        private Dictionary<string, List<ILaptopsNotebookComputers>> resolutionFilter = new Dictionary<string, List<ILaptopsNotebookComputers>>();
-        private Dictionary<string, List<ILaptopsNotebookComputers>> graphicCardFilter = new Dictionary<string, List<ILaptopsNotebookComputers>>();
-        private Dictionary<Color, List<ILaptopsNotebookComputers>> colorFilter = new Dictionary<Color, List<ILaptopsNotebookComputers>>();
-        private Dictionary<string, List<ILaptopsNotebookComputers>> brandFilter = new Dictionary<string, List<ILaptopsNotebookComputers>>();
-        private Dictionary<string, List<ILaptopsNotebookComputers>> computerTypeFilter = new Dictionary<string, List<ILaptopsNotebookComputers>>();
-        private Dictionary<string, List<ILaptopsNotebookComputers>> hardDriveSizeFilter = new Dictionary<string, List<ILaptopsNotebookComputers>>();
-        private Dictionary<string, List<ILaptopsNotebookComputers>> operatingSystemFilter = new Dictionary<string, List<ILaptopsNotebookComputers>>();
-        private Dictionary<string, List<ILaptopsNotebookComputers>> processorFilter = new Dictionary<string, List<ILaptopsNotebookComputers>>();
-        private Dictionary<string, List<ILaptopsNotebookComputers>> screenSizeFilter = new Dictionary<string, List<ILaptopsNotebookComputers>>();
-        private Dictionary<string, List<ILaptopsNotebookComputers>> screenTypeFilter = new Dictionary<string, List<ILaptopsNotebookComputers>>();
+        private readonly Dictionary<string, List<ILaptopsNotebookComputers>> _featuresFilter = new Dictionary<string, List<ILaptopsNotebookComputers>>();
+        private readonly Dictionary<string, List<ILaptopsNotebookComputers>> _deliveryTypeFilter = new Dictionary<string, List<ILaptopsNotebookComputers>>();
+        private readonly Dictionary<string, List<ILaptopsNotebookComputers>> _resolutionFilter = new Dictionary<string, List<ILaptopsNotebookComputers>>();
+        private readonly Dictionary<string, List<ILaptopsNotebookComputers>> _graphicCardFilter = new Dictionary<string, List<ILaptopsNotebookComputers>>();
+        private readonly Dictionary<Color, List<ILaptopsNotebookComputers>> _colorFilter = new Dictionary<Color, List<ILaptopsNotebookComputers>>();
+        private readonly Dictionary<string, List<ILaptopsNotebookComputers>> _brandFilter = new Dictionary<string, List<ILaptopsNotebookComputers>>();
+        private readonly Dictionary<string, List<ILaptopsNotebookComputers>> _computerTypeFilter = new Dictionary<string, List<ILaptopsNotebookComputers>>();
+        private readonly Dictionary<string, List<ILaptopsNotebookComputers>> _hardDriveSizeFilter = new Dictionary<string, List<ILaptopsNotebookComputers>>();
+        private readonly Dictionary<string, List<ILaptopsNotebookComputers>> _operatingSystemFilter = new Dictionary<string, List<ILaptopsNotebookComputers>>();
+        private readonly Dictionary<string, List<ILaptopsNotebookComputers>> _processorFilter = new Dictionary<string, List<ILaptopsNotebookComputers>>();
+        private readonly Dictionary<string, List<ILaptopsNotebookComputers>> _screenSizeFilter = new Dictionary<string, List<ILaptopsNotebookComputers>>();
+        private readonly Dictionary<string, List<ILaptopsNotebookComputers>> _screenTypeFilter = new Dictionary<string, List<ILaptopsNotebookComputers>>();
 
 
         public void AddLaptopsNotebookComputer(ILaptopsNotebookComputers laptopsNotebookComputer)
@@ -32,65 +32,65 @@ namespace CostcoClone.Repositories.Implementations.Products.Computer
             // Features Filter Calculation
             foreach(string feature in laptopsNotebookComputer.Features)
             {
-                if (!featuresFilter.ContainsKey(feature))
-                    featuresFilter.Add(feature, new List<ILaptopsNotebookComputers>());
-                featuresFilter[feature].Add(laptopsNotebookComputer);
+                if (!_featuresFilter.ContainsKey(feature))
+                    _featuresFilter.Add(feature, new List<ILaptopsNotebookComputers>());
+                _featuresFilter[feature].Add(laptopsNotebookComputer);
             }
 
             // DeliveryType Filter Calculation
-            if (!deliveryTypeFilter.ContainsKey(laptopsNotebookComputer.DeliveryType))
-                deliveryTypeFilter.Add(laptopsNotebookComputer.DeliveryType, new List<ILaptopsNotebookComputers>());
-            deliveryTypeFilter[laptopsNotebookComputer.DeliveryType].Add(laptopsNotebookComputer);
+            if (!_deliveryTypeFilter.ContainsKey(laptopsNotebookComputer.DeliveryType))
+                _deliveryTypeFilter.Add(laptopsNotebookComputer.DeliveryType, new List<ILaptopsNotebookComputers>());
+            _deliveryTypeFilter[laptopsNotebookComputer.DeliveryType].Add(laptopsNotebookComputer);
 
             // Resolution Filter Calculation
-            if (!resolutionFilter.ContainsKey(laptopsNotebookComputer.Resolution))
-                resolutionFilter.Add(laptopsNotebookComputer.Resolution, new List<ILaptopsNotebookComputers>());
-            resolutionFilter[laptopsNotebookComputer.Resolution].Add(laptopsNotebookComputer);
+            if (!_resolutionFilter.ContainsKey(laptopsNotebookComputer.Resolution))
+                _resolutionFilter.Add(laptopsNotebookComputer.Resolution, new List<ILaptopsNotebookComputers>());
+            _resolutionFilter[laptopsNotebookComputer.Resolution].Add(laptopsNotebookComputer);
 
             // GraphicCard Filter Calculation
-            if (!graphicCardFilter.ContainsKey(laptopsNotebookComputer.GraphicCard))
-                graphicCardFilter.Add(laptopsNotebookComputer.GraphicCard, new List<ILaptopsNotebookComputers>());
-            graphicCardFilter[laptopsNotebookComputer.GraphicCard].Add(laptopsNotebookComputer);
+            if (!_graphicCardFilter.ContainsKey(laptopsNotebookComputer.GraphicCard))
+                _graphicCardFilter.Add(laptopsNotebookComputer.GraphicCard, new List<ILaptopsNotebookComputers>());
+            _graphicCardFilter[laptopsNotebookComputer.GraphicCard].Add(laptopsNotebookComputer);
 
             // Color Filter Calculation
-            if (!colorFilter.ContainsKey(laptopsNotebookComputer.Color))
-                colorFilter.Add(laptopsNotebookComputer.Color, new List<ILaptopsNotebookComputers>());
-            colorFilter[laptopsNotebookComputer.Color].Add(laptopsNotebookComputer);
+            if (!_colorFilter.ContainsKey(laptopsNotebookComputer.Color))
+                _colorFilter.Add(laptopsNotebookComputer.Color, new List<ILaptopsNotebookComputers>());
+            _colorFilter[laptopsNotebookComputer.Color].Add(laptopsNotebookComputer);
 
             // Brand Filter Calculation
-            if (!brandFilter.ContainsKey(laptopsNotebookComputer.Brand))
-                brandFilter.Add(laptopsNotebookComputer.Brand, new List<ILaptopsNotebookComputers>());
-            brandFilter[laptopsNotebookComputer.Brand].Add(laptopsNotebookComputer);
+            if (!_brandFilter.ContainsKey(laptopsNotebookComputer.Brand))
+                _brandFilter.Add(laptopsNotebookComputer.Brand, new List<ILaptopsNotebookComputers>());
+            _brandFilter[laptopsNotebookComputer.Brand].Add(laptopsNotebookComputer);
 
             // ComputerType Filter Calculation
-            if (!computerTypeFilter.ContainsKey(laptopsNotebookComputer.ComputerType))
-                computerTypeFilter.Add(laptopsNotebookComputer.ComputerType, new List<ILaptopsNotebookComputers>());
-            computerTypeFilter[laptopsNotebookComputer.ComputerType].Add(laptopsNotebookComputer);
+            if (!_computerTypeFilter.ContainsKey(laptopsNotebookComputer.ComputerType))
+                _computerTypeFilter.Add(laptopsNotebookComputer.ComputerType, new List<ILaptopsNotebookComputers>());
+            _computerTypeFilter[laptopsNotebookComputer.ComputerType].Add(laptopsNotebookComputer);
 
             // HardDriveSize Filter Calculation
-            if (!hardDriveSizeFilter.ContainsKey(laptopsNotebookComputer.HardDriveSize))
-                hardDriveSizeFilter.Add(laptopsNotebookComputer.HardDriveSize, new List<ILaptopsNotebookComputers>());
-            hardDriveSizeFilter[laptopsNotebookComputer.HardDriveSize].Add(laptopsNotebookComputer);
+            if (!_hardDriveSizeFilter.ContainsKey(laptopsNotebookComputer.HardDriveSize))
+                _hardDriveSizeFilter.Add(laptopsNotebookComputer.HardDriveSize, new List<ILaptopsNotebookComputers>());
+            _hardDriveSizeFilter[laptopsNotebookComputer.HardDriveSize].Add(laptopsNotebookComputer);
 
             // OperatingSystem Filter Calculation
-            if (!operatingSystemFilter.ContainsKey(laptopsNotebookComputer.OperatingSystem))
-                operatingSystemFilter.Add(laptopsNotebookComputer.OperatingSystem, new List<ILaptopsNotebookComputers>());
-            operatingSystemFilter[laptopsNotebookComputer.OperatingSystem].Add(laptopsNotebookComputer);
+            if (!_operatingSystemFilter.ContainsKey(laptopsNotebookComputer.OperatingSystem))
+                _operatingSystemFilter.Add(laptopsNotebookComputer.OperatingSystem, new List<ILaptopsNotebookComputers>());
+            _operatingSystemFilter[laptopsNotebookComputer.OperatingSystem].Add(laptopsNotebookComputer);
 
             // Processor Filter Calculation
-            if (!processorFilter.ContainsKey(laptopsNotebookComputer.Processor))
-                processorFilter.Add(laptopsNotebookComputer.Processor, new List<ILaptopsNotebookComputers>());
-            processorFilter[laptopsNotebookComputer.Processor].Add(laptopsNotebookComputer);
+            if (!_processorFilter.ContainsKey(laptopsNotebookComputer.Processor))
+                _processorFilter.Add(laptopsNotebookComputer.Processor, new List<ILaptopsNotebookComputers>());
+            _processorFilter[laptopsNotebookComputer.Processor].Add(laptopsNotebookComputer);
 
             // ScreenSize Filter Calculation
-            if (!screenSizeFilter.ContainsKey(laptopsNotebookComputer.ScreenSize))
-                screenSizeFilter.Add(laptopsNotebookComputer.ScreenSize, new List<ILaptopsNotebookComputers>());
-            screenSizeFilter[laptopsNotebookComputer.ScreenSize].Add(laptopsNotebookComputer);
+            if (!_screenSizeFilter.ContainsKey(laptopsNotebookComputer.ScreenSize))
+                _screenSizeFilter.Add(laptopsNotebookComputer.ScreenSize, new List<ILaptopsNotebookComputers>());
+            _screenSizeFilter[laptopsNotebookComputer.ScreenSize].Add(laptopsNotebookComputer);
 
             // ScreenType Filter Calculation
-            if (!screenTypeFilter.ContainsKey(laptopsNotebookComputer.ScreenType))
-                screenTypeFilter.Add(laptopsNotebookComputer.ScreenType, new List<ILaptopsNotebookComputers>());
-            screenTypeFilter[laptopsNotebookComputer.ScreenType].Add(laptopsNotebookComputer);
+            if (!_screenTypeFilter.ContainsKey(laptopsNotebookComputer.ScreenType))
+                _screenTypeFilter.Add(laptopsNotebookComputer.ScreenType, new List<ILaptopsNotebookComputers>());
+            _screenTypeFilter[laptopsNotebookComputer.ScreenType].Add(laptopsNotebookComputer);
         }
 
         public ILaptopsNotebookComputers GetLaptopsNotebookComputerById(string productId)

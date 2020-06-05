@@ -9,6 +9,7 @@ namespace CostcoClone.Repository
 {
     public interface IProductRepository
     {
+
         public void AddProduct(IProduct product);
 
         public IList<IProduct> GetProducts();
