@@ -12,9 +12,27 @@ namespace CostcoClone.Models.Products.Computers
     public class LaptopNotebookComputer : Computer, ILaptopsNotebookComputers
     {
         public LaptopNotebookComputer(string title, decimal price, int stock, MarkupString productDetails, 
-            IProductRepository productRepository, List<string> imageURLs, Color color) 
+            IProductRepository productRepository, List<string> imageURLs, Color color, List<string> features,
+            string deliveryType, string resolution, string graphicCard, string brand, string computerType,
+            string hardDriveSize, string operatingSystem, string processor, string screenSize,
+            string screenType) 
             : base(title, price, stock, productDetails, productRepository, imageURLs)
         {
+            this.Features = features;
+            this.DeliveryType = deliveryType;
+            this.Resolution = resolution;
+            this.GraphicCard = graphicCard;
+            this.Color = color;
+            this.Brand = brand;
+            this.ComputerType = computerType;
+            this.HardDriveSize = hardDriveSize;
+            this.OperatingSystem = operatingSystem;
+            this.Processor = processor;
+            this.ScreenSize = screenSize;
+            this.ScreenType = screenType;
+
+
+            productRepository.ComputerRepository.LaptopsNotebookComputersRepository.AddLaptopsNotebookComputer(this);
         }
 
         public List<string> Features { get; set; }

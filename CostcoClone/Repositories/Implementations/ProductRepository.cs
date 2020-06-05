@@ -15,27 +15,28 @@ namespace CostcoClone.Repository
     public class ProductRepository : IProductRepository
     {
         private List<IProduct> _products = new List<IProduct>();
-        public IApplianceRepository _applianceRepository;
-        public IBabyRepository _babyRepository;
-        public IBeautyRepository _beautyRepository;
-        public IClothingLuggageHandbagsRepository _clothingLuggageHandbagsRepository;
-        public IComputerRepository _computerRepository;
-        public IElectronicsRepository _electronicsRepository;
-        public IFloralGiftBasketsRepository _floralGiftBasketsRepository;
-        public IFoodHouseholdPetRepository _foodHouseholdPetRepository;
-        public IFurnitureRepository _furnitureRepository;
-        public IGiftCardsTicketsRepository _giftCardsTicketsRepository;
-        public IGourmetFoodsRepository _gourmetFoodsRepository;
-        public IHealthPersonalCareRepository _healthPersonalCareRepository;
-        public IHomeImprovementRepository _homeImprovementRepository;
-        public IHomeKitchenRepository _homeKitchenRepository;
-        public IJewelryWatchesSunglassesRepository _jewelryWatchesSunglassesRepository;
-        public IMattressesRepository _mattressesRepository;
-        public IOfficeProductsRepository _officeProductsRepository;
-        public IPatioLawnGardenRepository _patioLawnGardenRepository;
-        public ISportsFitnessRepository _sportsFitnessRepository;
-        public ITiresAutoRepository _tiresAutoRepository;
-        public IToysBooksRepository _toysBooksRepository;
+
+        public IApplianceRepository ApplianceRepository { get; set; }
+        public IBabyRepository BabyRepository { get; set; }
+        public IBeautyRepository BeautyRepository { get; set; }
+        public IClothingLuggageHandbagsRepository ClothingLuggageHandbagsRepository { get; set; }
+        public IComputerRepository ComputerRepository { get; set; }
+        public IElectronicsRepository ElectronicsRepository { get; set; }
+        public IFloralGiftBasketsRepository FloralGiftBasketsRepository { get; set; }
+        public IFoodHouseholdPetRepository FoodHouseholdPetRepository { get; set; }
+        public IFurnitureRepository FurnitureRepository { get; set; }
+        public IGiftCardsTicketsRepository GiftCardsTicketsRepository { get; set; }
+        public IGourmetFoodsRepository GourmetFoodsRepository { get; set; }
+        public IHealthPersonalCareRepository HealthPersonalCareRepository { get; set; }
+        public IHomeImprovementRepository HomeImprovementRepository { get; set; }
+        public IHomeKitchenRepository HomeKitchenRepository { get; set; }
+        public IJewelryWatchesSunglassesRepository JewelryWatchesSunglassesRepository { get; set; }
+        public IMattressesRepository MattressesRepository { get; set; }
+        public IOfficeProductsRepository OfficeProductsRepository { get; set; }
+        public IPatioLawnGardenRepository PatioLawnGardenRepository { get; set; }
+        public ISportsFitnessRepository SportsFitnessRepository { get; set; }
+        public ITiresAutoRepository TiresAutoRepository { get; set; }
+        public IToysBooksRepository ToysBooksRepository { get; set; }
 
         public ProductRepository(IApplianceRepository applianceRepository, IBabyRepository babyRepository, IBeautyRepository beautyRepository,
                                 IClothingLuggageHandbagsRepository clothingLuggageHandbagsRepository, IComputerRepository computerRepository,
@@ -48,27 +49,27 @@ namespace CostcoClone.Repository
                                 IPatioLawnGardenRepository patioLawnGardenRepository, ITiresAutoRepository tiresAutoRepository,
                                 IToysBooksRepository toysBooksRepository, ISportsFitnessRepository sportsFitnessRepository)
         {
-            _applianceRepository = applianceRepository;
-            _babyRepository = babyRepository;
-            _beautyRepository = beautyRepository;
-            _clothingLuggageHandbagsRepository = clothingLuggageHandbagsRepository;
-            _computerRepository = computerRepository;
-            _electronicsRepository = electronicsRepository;
-            _floralGiftBasketsRepository = floralGiftBasketsRepository;
-            _foodHouseholdPetRepository = foodHouseholdPetRepository;
-            _furnitureRepository = furnitureRepository;
-            _giftCardsTicketsRepository = giftCardsTicketsRepository;
-            _gourmetFoodsRepository = gourmetFoodsRepository;
-            _healthPersonalCareRepository = healthPersonalCareRepository;
-            _homeImprovementRepository = homeImprovementRepository;
-            _homeKitchenRepository = homeKitchenRepository;
-            _jewelryWatchesSunglassesRepository = jewelryWatchesSunglassesRepository;
-            _mattressesRepository = mattressesRepository;
-            _officeProductsRepository = officeProductsRepository;
-            _patioLawnGardenRepository = patioLawnGardenRepository;
-            _tiresAutoRepository = tiresAutoRepository;
-            _toysBooksRepository = toysBooksRepository;
-            _sportsFitnessRepository = sportsFitnessRepository;
+            ApplianceRepository = applianceRepository;
+            BabyRepository = babyRepository;
+            BeautyRepository = beautyRepository;
+            ClothingLuggageHandbagsRepository = clothingLuggageHandbagsRepository;
+            ComputerRepository = computerRepository;
+            ElectronicsRepository = electronicsRepository;
+            FloralGiftBasketsRepository = floralGiftBasketsRepository;
+            FoodHouseholdPetRepository = foodHouseholdPetRepository;
+            FurnitureRepository = furnitureRepository;
+            GiftCardsTicketsRepository = giftCardsTicketsRepository;
+            GourmetFoodsRepository = gourmetFoodsRepository;
+            HealthPersonalCareRepository = healthPersonalCareRepository;
+            HomeImprovementRepository = homeImprovementRepository;
+            HomeKitchenRepository = homeKitchenRepository;
+            JewelryWatchesSunglassesRepository = jewelryWatchesSunglassesRepository;
+            MattressesRepository = mattressesRepository;
+            OfficeProductsRepository = officeProductsRepository;
+            PatioLawnGardenRepository = patioLawnGardenRepository;
+            TiresAutoRepository = tiresAutoRepository;
+            ToysBooksRepository = toysBooksRepository;
+            SportsFitnessRepository = sportsFitnessRepository;
 
             Fridge k =
                 new Fridge
