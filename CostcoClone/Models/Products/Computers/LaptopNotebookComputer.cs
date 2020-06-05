@@ -1,4 +1,6 @@
 ﻿using CostcoClone.Interfaces.Departments.Computers;
+using CostcoClone.Repository;
+using Microsoft.AspNetCore.Components;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
@@ -7,9 +9,14 @@ using System.Threading.Tasks;
 
 namespace CostcoClone.Models.Products.Computers
 {
-    public class LaptopNotebookComputer : ILaptopsNotebookComputers
+    public class LaptopNotebookComputer : Computer, ILaptopsNotebookComputers
     {
-        public int MyProperty { get; set; }
+        public LaptopNotebookComputer(string title, decimal price, int stock, MarkupString productDetails, 
+            IProductRepository productRepository, List<string> imageURLs, Color color) 
+            : base(title, price, stock, productDetails, productRepository, imageURLs)
+        {
+        }
+
         public List<string> Features { get; set; }
         public string DeliveryType { get; set; }
         public string Resolution { get; set; }

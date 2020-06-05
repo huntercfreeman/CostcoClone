@@ -8,7 +8,6 @@ namespace CostcoClone.Interfaces.Departments.Computers
 {
     public interface ILaptopsNotebookComputers
     {
-        public int MyProperty { get; set; }
         public List<string> Features { get; set; }
         public string DeliveryType { get; set; }
         public string Resolution { get; set; }
