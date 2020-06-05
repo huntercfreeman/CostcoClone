@@ -9,6 +9,24 @@ namespace CostcoClone.Repositories.Implementations.Products.Computer
 {
     public class LaptopsNotebookComputersRepository : ILaptopsNotebookComputersRepository
     {
-        
+        public void AddLaptopsNotebookComputer(ILaptopsNotebookComputers laptopsNotebookComputer)
+        {
+            throw new NotImplementedException();
+        }
+
+        public ILaptopsNotebookComputers GetLaptopsNotebookComputerById(string productId)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IList<ILaptopsNotebookComputers> GetLaptopsNotebookComputers()
+        {
+            throw new NotImplementedException();
+        }
+
+        public IList<ILaptopsNotebookComputers> GetLaptopsNotebookComputersByTitle(string title)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
