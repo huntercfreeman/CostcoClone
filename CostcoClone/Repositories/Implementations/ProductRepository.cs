@@ -3,7 +3,6 @@ using CostcoClone.Interfaces.Departments;
 using CostcoClone.Models;
 using CostcoClone.Models.Products;
 using CostcoClone.Models.Products.Appliances;
-using CostcoClone.Models.Products.Computers.Laptops;
 using Microsoft.AspNetCore.Components;
 using System;
 using System.Collections.Generic;
@@ -16,27 +15,27 @@ namespace CostcoClone.Repository
     public class ProductRepository : IProductRepository
     {
         private List<IProduct> _products = new List<IProduct>();
-        private IApplianceRepository _applianceRepository;
-        private IBabyRepository _babyRepository;
-        private IBeautyRepository _beautyRepository;
-        private IClothingLuggageHandbagsRepository _clothingLuggageHandbagsRepository;
-        private IComputerRepository _computerRepository;
-        private IElectronicsRepository _electronicsRepository;
-        private IFloralGiftBasketsRepository _floralGiftBasketsRepository;
-        private IFoodHouseholdPetRepository _foodHouseholdPetRepository;
-        private IFurnitureRepository _furnitureRepository;
-        private IGiftCardsTicketsRepository _giftCardsTicketsRepository;
-        private IGourmetFoodsRepository _gourmetFoodsRepository;
-        private IHealthPersonalCareRepository _healthPersonalCareRepository;
-        private IHomeImprovementRepository _homeImprovementRepository;
-        private IHomeKitchenRepository _homeKitchenRepository;
-        private IJewelryWatchesSunglassesRepository _jewelryWatchesSunglassesRepository;
-        private IMattressesRepository _mattressesRepository;
-        private IOfficeProductsRepository _officeProductsRepository;
-        private IPatioLawnGardenRepository _patioLawnGardenRepository;
-        private ISportsFitnessRepository _sportsFitnessRepository;
-        private ITiresAutoRepository _tiresAutoRepository;
-        private IToysBooksRepository _toysBooksRepository;
+        public IApplianceRepository _applianceRepository;
+        public IBabyRepository _babyRepository;
+        public IBeautyRepository _beautyRepository;
+        public IClothingLuggageHandbagsRepository _clothingLuggageHandbagsRepository;
+        public IComputerRepository _computerRepository;
+        public IElectronicsRepository _electronicsRepository;
+        public IFloralGiftBasketsRepository _floralGiftBasketsRepository;
+        public IFoodHouseholdPetRepository _foodHouseholdPetRepository;
+        public IFurnitureRepository _furnitureRepository;
+        public IGiftCardsTicketsRepository _giftCardsTicketsRepository;
+        public IGourmetFoodsRepository _gourmetFoodsRepository;
+        public IHealthPersonalCareRepository _healthPersonalCareRepository;
+        public IHomeImprovementRepository _homeImprovementRepository;
+        public IHomeKitchenRepository _homeKitchenRepository;
+        public IJewelryWatchesSunglassesRepository _jewelryWatchesSunglassesRepository;
+        public IMattressesRepository _mattressesRepository;
+        public IOfficeProductsRepository _officeProductsRepository;
+        public IPatioLawnGardenRepository _patioLawnGardenRepository;
+        public ISportsFitnessRepository _sportsFitnessRepository;
+        public ITiresAutoRepository _tiresAutoRepository;
+        public IToysBooksRepository _toysBooksRepository;
 
         public ProductRepository(IApplianceRepository applianceRepository, IBabyRepository babyRepository, IBeautyRepository beautyRepository,
                                 IClothingLuggageHandbagsRepository clothingLuggageHandbagsRepository, IComputerRepository computerRepository,
@@ -94,39 +93,6 @@ namespace CostcoClone.Repository
                     this,
                     new List<string> { "content/appliances/fridge-c45bedda-ccae-4078-ae48-c8bf0ba21802.jpg" }
                 );
-            WindowsLaptop kz =
-                new WindowsLaptop
-                (
-                    "Dell Inspiron 15 3000 Touchscreen Laptop - 10th Gen Intel Core i7-1065G7 - 1080p",
-                    (decimal)649.99,
-                    10,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/appliances/fridge-c45bedda-ccae-4078-ae48-c8bf0ba21802.jpg" },
-                    Color.Red
-                );
-            WindowsLaptop kze =
-                new WindowsLaptop
-                (
-                    "TestGreen",
-                    (decimal)649.99,
-                    10,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/appliances/fridge-c45bedda-ccae-4078-ae48-c8bf0ba21802.jpg" },
-                    Color.Green
-                );
-            WindowsLaptop kzae =
-                new WindowsLaptop
-                (
-                    "TestRed",
-                    (decimal)649.99,
-                    10,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/appliances/fridge-c45bedda-ccae-4078-ae48-c8bf0ba21802.jpg" },
-                    Color.Red
-                );
         }
 
         
@@ -146,106 +112,6 @@ namespace CostcoClone.Repository
         public IProduct GetProductById(string productId)
         {
             return _products.Where(x => x.ProductId.CompareTo(productId) == 0).FirstOrDefault();
-        }
-
-        public void AddAppliance(IAppliance appliance)
-        {
-            _applianceRepository.AddAppliance(appliance);
-        }
-
-        public void AddBaby(IBaby baby)
-        {
-            _babyRepository.AddBaby(baby);
-        }
-
-        public void AddClothingLuggageHandbags(IClothingLuggageHandbags clothingLuggageHandbags)
-        {
-            _clothingLuggageHandbagsRepository.AddClothingLuggageHandbags(clothingLuggageHandbags);
-        }
-
-        public void AddComputer(IComputers computer)
-        {
-            _computerRepository.AddComputers(computer);
-        }
-
-        public void AddElectronic(IElectronics electronic)
-        {
-            _electronicsRepository.AddElectronics(electronic);
-        }
-
-        public void AddFloralGiftBasket(IFloralGiftBaskets floralGiftBasket)
-        {
-            _floralGiftBasketsRepository.AddFloralGiftBaskets(floralGiftBasket);
-        }
-
-        public void AddFoodhouseholdPet(IFoodhouseholdPet foodhouseholdPet)
-        {
-            _foodHouseholdPetRepository.AddFoodhouseholdPet(foodhouseholdPet);
-        }
-
-        public void AddFurniture(IFurniture furniture)
-        {
-            _furnitureRepository.AddFurniture(furniture);
-        }
-
-        public void AddGiftCardTicket(IGiftCardsTickets giftCardTicket)
-        {
-            _giftCardsTicketsRepository.AddGiftCardsTickets(giftCardTicket);
-        }
-
-        public void AddGourmetFood(IGourmetFoods gourmetFood)
-        {
-            _gourmetFoodsRepository.AddGourmetFoods(gourmetFood);
-        }
-
-        public void AddHealthPersonalCare(IHealthPersonalCare healthPersonalCare)
-        {
-            _healthPersonalCareRepository.AddHealthPersonalCare(healthPersonalCare);
-        }
-
-        public void AddHomeImprovement(IHomeImprovement homeImprovement)
-        {
-            _homeImprovementRepository.AddHomeImprovement(homeImprovement);
-        }
-
-        public void AddHomeKitchen(IHomeKitchen homeKitchen)
-        {
-            _homeKitchenRepository.AddHomeKitchen(homeKitchen);
-        }
-
-        public void AddJewelryWatchSunglasses(IJewelryWatchesSunglasses jewelryWatchesSunglasses)
-        {
-            _jewelryWatchesSunglassesRepository.AddJewelryWatchesSunglasses(jewelryWatchesSunglasses);
-        }
-
-        public void AddMattress(IMattresses mattress)
-        {
-            _mattressesRepository.AddMattresses(mattress);
-        }
-
-        public void AddOfficeProduct(IOfficeProducts officeProduct)
-        {
-            _officeProductsRepository.AddOfficeProducts(officeProduct);
-        }
-
-        public void AddPatioLawnGarden(IPatioLawnGarden patioLawnGarden)
-        {
-            _patioLawnGardenRepository.AddPatioLawnGarden(patioLawnGarden);
-        }
-
-        public void AddSportFitness(ISportsFitness sportFitness)
-        {
-            _sportsFitnessRepository.AddSportsFitness(sportFitness);
-        }
-
-        public void AddTireAuto(ITiresAuto tireAuto)
-        {
-            _tiresAutoRepository.AddTiresAuto(tireAuto);
-        }
-
-        public void AddToyBook(IToysBooks toysBooks)
-        {
-            _toysBooksRepository.AddToyBook(toysBooks);
         }
 
         public void AddProduct(IProduct product)

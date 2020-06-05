@@ -9,7 +9,6 @@
     <Folder Include="Repositories\Implementations\Products\Baby\" />
     <Folder Include="Repositories\Implementations\Products\Beauty\" />
     <Folder Include="Repositories\Implementations\Products\ClothingLuggageHandbag\" />
-    <Folder Include="Repositories\Implementations\Products\Computer\" />
     <Folder Include="Repositories\Implementations\Products\Electronics\" />
     <Folder Include="Repositories\Implementations\Products\FloralGiftBasket\" />
     <Folder Include="Repositories\Implementations\Products\FoodHouseholdPet\" />
@@ -30,7 +29,6 @@
     <Folder Include="Repositories\Interfaces\Products\Baby\" />
     <Folder Include="Repositories\Interfaces\Products\Beauty\" />
     <Folder Include="Repositories\Interfaces\Products\ClothingLuggageHandbag\" />
-    <Folder Include="Repositories\Interfaces\Products\Computer\" />
     <Folder Include="Repositories\Interfaces\Products\Electronics\" />
     <Folder Include="Repositories\Interfaces\Products\FloralGiftBasket\" />
     <Folder Include="Repositories\Interfaces\Products\FoodHouseholdPet\" />
