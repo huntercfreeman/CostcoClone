@@ -1,21 +1,35 @@
-﻿<div>Appliances</div>
-<div>Baby</div>
-<div>Beauty</div>
-<div>Clothing,&nbsp;Luggage&nbsp;&amp;&nbsp;Handbags</div>
-<div>Computers</div>
-<div>Electronics</div>
-<div>Floral&nbsp;&amp;&nbsp;Gift&nbsp;Baskets</div>
-<div>Food,&nbsp;Household&nbsp;&amp;&nbsp;pet</div>
-<div>Furniture</div>
-<div>Gift&nbsp;Cards&nbsp;&amp;&nbsp;Tickets</div>
-<div>Gourmet Foods</div>
-<div>Health &amp;&nbsp;Personal&nbsp;Care</div>
-<div>Home&nbsp;Improvement</div>
-<div>Home&nbsp;&amp;&nbsp;Kitchen</div>
-<div>Jewelry,&nbsp;Watches&nbsp;&amp;&nbsp;Sunglassses</div>
-<div>Mattresses</div>
-<div>Office Products</div>
-<div>Patio, Lawn &amp; Garden</div>
-<div>Sports &amp; Fitness</div>
-<div>Tires &amp; Auto</div>
-<div>Toys &amp; Books</div>
+﻿<div style="display: flex;">
+    <div>
+        <div>Baby</div>
+        <div>Beauty</div>
+        <div>Clothing,&nbsp;Luggage&nbsp;&amp;&nbsp;Handbags</div>
+        <div>Computers</div>
+        <div>Electronics</div>
+        <div>Floral&nbsp;&amp;&nbsp;Gift&nbsp;Baskets</div>
+        <div>Food,&nbsp;Household&nbsp;&amp;&nbsp;pet</div>
+        <div>Furniture</div>
+        <div>Gift&nbsp;Cards&nbsp;&amp;&nbsp;Tickets</div>
+        <div>Gourmet Foods</div>
+        <div>Health &amp;&nbsp;Personal&nbsp;Care</div>
+        <div>Home&nbsp;Improvement</div>
+        <div>Home&nbsp;&amp;&nbsp;Kitchen</div>
+        <div>Jewelry,&nbsp;Watches&nbsp;&amp;&nbsp;Sunglassses</div>
+        <div>Mattresses</div>
+        <div>Office Products</div>
+        <div>Patio, Lawn &amp; Garden</div>
+        <div>Sports &amp; Fitness</div>
+        <div>Tires &amp; Auto</div>
+        <div>Toys &amp; Books</div>
+        <AllDepartmentsItem Title="Appliances" ExpansionCallbackOver="((x) => { Expansion = x; StateHasChanged(); })" ExpansionCallbackOut="(x => Expansion = null)">
+            <div>
+                Hello World!
+            </div>
+        </AllDepartmentsItem>
+    </div>
+    @if (Expansion != null)
+    {
+        <div style="border-left: 1px solid black;">
+            @Expansion
+        </div>
+    }
+</div>
