@@ -1,7 +1,7 @@
 ﻿<div style="border-bottom: 1px solid #ddd;">
     <div style="display: flex; justify-content: space-between;">
         <h5>Category</h5>
-        <a @onclick="(() => IsCollapsed = !IsCollapsed)" href="javascript: void(0);" style="margin-right: 10px; display: flex; align-items: center;">
+        <a @onclick="(() => IsCollapsed = !IsCollapsed)" href="javascript: void(0);" style="margin-right: 10px; display: flex; align-items: center; text-decoration: none;">
             @if (IsCollapsed)
             {
                 <span class="oi oi-plus" aria-hidden="true"></span>
@@ -12,4 +12,17 @@
             }
         </a>
     </div>
+    @if (!IsCollapsed)
+    {
+        <div>
+            @if (CustomContent != null)
+            {
+                @CustomContent
+            }
+            else
+            {
+                <text>Say Hello World !</text>
+            }
+        </div>
+    }
 </div>

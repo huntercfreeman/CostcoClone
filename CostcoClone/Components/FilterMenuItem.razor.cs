@@ -10,5 +10,7 @@ namespace CostcoClone.Components
     {
         [Parameter]
         public bool IsCollapsed { get; set; } = true;
+        [Parameter]
+        public RenderFragment CustomContent { get; set; }
     }
 }
