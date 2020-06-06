@@ -1,1 +1,1 @@
-﻿<div @onmouseover="(() => ExpansionCallbackOver.InvokeAsync(this.ChildContent))" @onmouseout="(() => ExpansionCallbackOut.InvokeAsync(this.ChildContent))">@Title</div>
+﻿<div @onmouseover="(() => ExpansionCallbackOver.InvokeAsync(this.ChildContent))" @onmouseout="(() => ExpansionCallbackOut.InvokeAsync(this.ChildContent))">@((MarkupString)Title)</div>
