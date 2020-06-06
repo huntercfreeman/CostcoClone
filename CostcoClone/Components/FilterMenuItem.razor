@@ -22,7 +22,18 @@
             }
             else
             {
-                <text>Say Hello World !</text>
+                <div style="display: flex; justify-content: space-between;">
+                    @foreach(var item in Filter)
+                    {
+                        <span>
+                            <input type="checkbox">
+                            @item.Key
+                        </span>
+                        <span>
+                            (@item.Value.Count)
+                        </span>
+                    }
+                </div>
             }
         </div>
     }
