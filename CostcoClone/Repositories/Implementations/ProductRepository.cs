@@ -3,6 +3,7 @@ using CostcoClone.Interfaces.Departments;
 using CostcoClone.Models;
 using CostcoClone.Models.Products;
 using CostcoClone.Models.Products.Appliances;
+using CostcoClone.Models.Products.Computers;
 using Microsoft.AspNetCore.Components;
 using System;
 using System.Collections.Generic;
@@ -93,6 +94,28 @@ namespace CostcoClone.Repository
                         Refrigerator Specifications</a></li></ul></figure></div>   </div></div>",
                     this,
                     new List<string> { "content/appliances/fridge-c45bedda-ccae-4078-ae48-c8bf0ba21802.jpg" }
+                );
+
+            LaptopNotebookComputer laptop = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
                 );
         }
 

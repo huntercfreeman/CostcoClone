@@ -11,6 +11,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using CostcoClone.Data;
 using CostcoClone.Repository;
+using CostcoClone.Interfaces.Departments.Computers;
+using CostcoClone.Repositories.Implementations.Products.Computer;
 
 namespace CostcoClone
 {
@@ -30,6 +32,8 @@ namespace CostcoClone
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
+
+            services.AddSingleton<ILaptopsNotebookComputersRepository, LaptopsNotebookComputersRepository>();
             services.AddSingleton<IApplianceRepository, ApplianceRepository>();
             services.AddSingleton<IBabyRepository, BabyRepository>();
             services.AddSingleton<IBeautyRepository, BeautyRepository>();
