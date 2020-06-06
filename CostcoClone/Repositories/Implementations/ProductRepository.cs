@@ -17,6 +17,26 @@ namespace CostcoClone.Repository
     {
         private List<IProduct> _products = new List<IProduct>();
 
+        public IList<IProduct> GetProducts()
+        {
+            return _products;
+        }
+
+        public IList<IProduct> GetProductsByTitle(string title)
+        {
+            return _products.Where(x => x.Title.Contains(title)).ToList();
+        }
+
+        public IProduct GetProductById(string productId)
+        {
+            return _products.Where(x => x.ProductId.CompareTo(productId) == 0).FirstOrDefault();
+        }
+
+        public void AddProduct(IProduct product)
+        {
+            _products.Add(product);
+        }
+
         public IApplianceRepository ApplianceRepository { get; set; }
         public IBabyRepository BabyRepository { get; set; }
         public IBeautyRepository BeautyRepository { get; set; }
@@ -117,30 +137,1965 @@ namespace CostcoClone.Repository
                     "11.6 in.",
                     "Non-touchscreen"
                 );
+            LaptopNotebookComputer laptop1 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop2 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop3 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop4 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop5 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop6 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop7 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop8 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop9 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop10 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop11 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop12 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop13 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop14 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop15 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop16 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop17 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop18 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop19 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop20 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop21 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop22 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop23 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop24 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop25 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop26 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop27 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop28 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop29 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop30 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop31 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop32 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop33 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop34 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop35 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop36 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop37 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop38 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop39 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop40 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop41 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop42 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop43 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop44 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop45 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop46 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop47 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop48 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop49 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop50 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop51 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop52 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop53 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop54 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop55 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop56 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop57 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop58 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop59 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop60 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop61 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop62 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop63 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop64 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop65 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop66 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop67 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop68 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop69 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop70 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop71 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop72 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop73 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop74 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop75 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop76 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop77 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop78 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop79 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+             LaptopNotebookComputer laptop80 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop81 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop82 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop83 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop84 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop85 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop86 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop87 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop88 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop89 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop90 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop91 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop92 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+            LaptopNotebookComputer laptop93 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)150,
+                    0,
+                    (MarkupString)"",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
         }
 
         
 
         
 
-        public IList<IProduct> GetProducts()
-        {
-            return _products;
-        }
-
-        public IList<IProduct> GetProductsByTitle(string title)
-        {
-            return _products.Where(x => x.Title.Contains(title)).ToList();
-        }
-
-        public IProduct GetProductById(string productId)
-        {
-            return _products.Where(x => x.ProductId.CompareTo(productId) == 0).FirstOrDefault();
-        }
-
-        public void AddProduct(IProduct product)
-        {
-            _products.Add(product);
-        }
+        
     }
 }
