@@ -119,7 +119,7 @@ namespace CostcoClone.Repository
             LaptopNotebookComputer laptop = new LaptopNotebookComputer
                 (
                     "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
+                    (decimal)2099.99,
                     0,
                     (MarkupString)"",
                     this,
@@ -140,7 +140,7 @@ namespace CostcoClone.Repository
             LaptopNotebookComputer laptop1 = new LaptopNotebookComputer
                 (
                     "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
+                    (decimal)2699.99,
                     0,
                     (MarkupString)"",
                     this,
@@ -2088,7 +2088,7 @@ namespace CostcoClone.Repository
                     "Windows OS",
                     "Intel Core i3",
                     "11.6 in.",
-                    "Non-touchscreen"
+                    "Touchscreen"
                 );
         }
 
