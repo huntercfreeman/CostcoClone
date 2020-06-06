@@ -121,7 +121,12 @@ namespace CostcoClone.Repository
                     "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
                     (decimal)2099.99,
                     0,
-                    (MarkupString)"",
+                    (MarkupString)@"<div class='product - info - description' style='max - height: none; '>
+
+                                   < span style = 'font-weight:bold;' > Limit 2 Per Member</ span >< br >< br >< span style = 'font-weight:bold;' > Processor & amp; Memory:</ span >< br >< ul >< li > 10th Gen Intel® Core™ i7 - 1065G7 Processor at 1.3GHz </ li >< li > 12GB DDR4-2666 SDRAM </ li >< br ></ ul >< span style = 'font-weight:bold;' > Drives: </ span >< br >< ul >< li > 512GB PCle® NVMe™ M.2 Solid State Drive </ li >< li > No Optical Drive</ li >< br ></ ul >< span style = 'font-weight:bold;' > Operating System: </ span >< br >< ul >< li > Microsoft® Windows 10 Home(64 - bit) </ li >< br ></ ul >< span style = 'font-weight:bold;' > Communications: </ span >< br >< ul >< li > 802.11 Wireless - AC WLAN(1x1) + Bluetooth® 4.2 </ li >< li > HP TrueVision HD Webcam + Integrated Dual Array Digital Microphones</ li >< br ></ ul >< span style = 'font-weight:bold;' > Graphics & amp; Video:</ span > < br >< ul >< li > 14' IPS Anti-Glare WLED-backlit FHD (1920 x 1080) Display</li><li>Integrated Intel® Iris™ Plus Graphics</li><br></ul><span style='font - weight:bold; '>Audio: </span><br><ul><li>HP HD Audio with Stereo Speakers</li><br></ul><span style='font - weight:bold; '>Keyboard: </span><br><ul><li>Full-size Island-style Backlit Keyboard</li><li>HP Imagepad with Multi-Touch Gesture Support</li><br></ul><span style='font - weight:bold; '>Ports: </span><br><ul><li>1x USB 3.1 Gen 1 Type-C </li><li>2x USB 3.1 Gen 1 Type-A</li><li>1x HDMI 1.4b</li><li>1x AC Smart Pin</li><li>1x Combination Headphone/Microphone Jack</li><li>1x Multi-Format SD Media Card Reader </li><br></ul><span style='font - weight:bold; '>Power Supply: </span><br><ul><li>3-Cell 41WHr Lithium-Ion Battery &nbsp;</li><br></ul><span style='font - weight:bold; '>Additional Information: </span><br><ul><li>Dimensions: 12.76' x 8.86' x 0.71' </ li >< li > Approximate Weight: 3.24 lbs </ li ></ ul >
+                                                                                                                                                               
+
+                                                                                                                                                                               </ div > ",
                     this,
                     new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
                     Color.Black,
@@ -139,13 +144,18 @@ namespace CostcoClone.Repository
                 );
             LaptopNotebookComputer laptop1 = new LaptopNotebookComputer
                 (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)2699.99,
-                    0,
-                    (MarkupString)"",
+                    "Apple MacBook Pro 16\" with Touch Bar - Intel Core i7 - 16GB Memory - 512GB SSD",
+                    (decimal)2099.99,
+                    45,
+                    (MarkupString)@"<div class='product - info - description' style='max - height: none; '>
+
+                                   < div style = 'text-align:center;' >< span style = 'font-weight:bold;' > Item may be available in your local warehouse, prices may vary.</ span ></ div >< br >< span style = 'font-weight:bold;' > Limit 2 Per Member</ span >< br >< br >< span style = 'font-weight:bold;' > Processor & amp; Memory:</ span >< br >< ul >< li > 9th Gen 6 - core Intel® Core™ i7 Processor 2.6GHz </ li >< li > 16GB 2666MHz DDR4 RAM </ li >< br ></ ul >< span style = 'font-weight:bold;' > Drives: </ span >< br >< ul >< li > 512GB PCIe Solid State Drive </ li >< li > No Optical Drive</ li >< br ></ ul >< span style = 'font-weight:bold;' > Operating System: </ span >< br >< ul >< li > macOS </ li >< br ></ ul >< span style = 'font-weight:bold;' > Communications: </ span >< br >< ul >< li > 802.11 Wireless - AC + Bluetooth 5.0 </ li >< li > Integrated 720p FaceTime HD Camera</ li >< br ></ ul >< span style = 'font-weight:bold;' > Audio:</ span >< br >< ul >< li > 6 Speaker System with Force-Cancelling Woofers </ li >< br ></ ul >< span style = 'font-weight:bold;' > Graphics & amp; Video: </ span >< br >< ul >< li > 16' LED-Backlit (3072 x 1920) Retina Display with True Tone</li><li>4GB AMD Radeon Pro 5300M Graphics</li><br></ul><span style='font - weight:bold; '>Keyboard: </span><br><ul><li>Full-Size Backlit Magic Keyboard</li><li>Integrated Touch ID Sensor </li><li>Ambient Light Sensor</li><br></ul><span style='font - weight:bold; '>Ports &amp; Slots: </span><br><ul><li>4x Thunderbolt 3 USB-C (Charging and DisplayPort)</li><li>1x Headphone Jack</li><br></ul><span style='font - weight:bold; '>Power Supply: </span><br><ul><li>100WHr Battery</li><br></ul><span style='font - weight:bold; '>Additional Information: </span><br><ul><li>Dimensions: 14.09' x 9.68' x 0.64' </ li >< li > Approximate Weight: Starting at 4.3lbs </ li ></ ul >
+                                                                                                                                                                                               
+
+                                                                                                                                                                                                               </ div > ",
                     this,
                     new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
+                    Color.Gold,
                     new List<string> { "Backlit Keyboard" },
                     "Warehouse Pick-up",
                     "1920 x 1080 (Full HD)",
@@ -165,19 +175,19 @@ namespace CostcoClone.Repository
                     0,
                     (MarkupString)"",
                     this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
+                    new List<string> { "content/products/computers/laptopNotebookComputers/bbbb.png" },
+                    Color.Silver,
+                    new List<string> { "Bluetooth 4.1" },
                     "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
+                    "1366 x 768 (HD)",
+                    "Intel Iris Plus",
+                    "Acer",
+                    "All-in-One",
+                    "128 GB",
+                    "Chrome OS",
+                    "AMD Ryzen 5",
+                    "12 in.",
+                    "Touchscreen"
                 );
             LaptopNotebookComputer laptop3 = new LaptopNotebookComputer
                 (
