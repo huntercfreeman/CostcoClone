@@ -13,6 +13,7 @@ using CostcoClone.Data;
 using CostcoClone.Repository;
 using CostcoClone.Interfaces.Departments.Computers;
 using CostcoClone.Repositories.Implementations.Products.Computer;
+using CostcoClone.Models;
 
 namespace CostcoClone
 {
@@ -32,6 +33,8 @@ namespace CostcoClone
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
+
+            services.AddSingleton<SiteState>();
 
             services.AddSingleton<ILaptopsNotebookComputersRepository, LaptopsNotebookComputersRepository>();
             services.AddSingleton<IApplianceRepository, ApplianceRepository>();

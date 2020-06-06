@@ -15,7 +15,7 @@ namespace CostcoClone.Repositories.Implementations.Products.Computer
         private readonly Dictionary<string, List<ILaptopsNotebookComputers>> _deliveryTypeFilter = new Dictionary<string, List<ILaptopsNotebookComputers>>();
         private readonly Dictionary<string, List<ILaptopsNotebookComputers>> _resolutionFilter = new Dictionary<string, List<ILaptopsNotebookComputers>>();
         private readonly Dictionary<string, List<ILaptopsNotebookComputers>> _graphicCardFilter = new Dictionary<string, List<ILaptopsNotebookComputers>>();
-        private readonly Dictionary<Color, List<ILaptopsNotebookComputers>> _colorFilter = new Dictionary<Color, List<ILaptopsNotebookComputers>>();
+        private readonly Dictionary<string, List<ILaptopsNotebookComputers>> _colorFilter = new Dictionary<string, List<ILaptopsNotebookComputers>>();
         private readonly Dictionary<string, List<ILaptopsNotebookComputers>> _brandFilter = new Dictionary<string, List<ILaptopsNotebookComputers>>();
         private readonly Dictionary<string, List<ILaptopsNotebookComputers>> _computerTypeFilter = new Dictionary<string, List<ILaptopsNotebookComputers>>();
         private readonly Dictionary<string, List<ILaptopsNotebookComputers>> _hardDriveSizeFilter = new Dictionary<string, List<ILaptopsNotebookComputers>>();
@@ -24,13 +24,33 @@ namespace CostcoClone.Repositories.Implementations.Products.Computer
         private readonly Dictionary<string, List<ILaptopsNotebookComputers>> _screenSizeFilter = new Dictionary<string, List<ILaptopsNotebookComputers>>();
         private readonly Dictionary<string, List<ILaptopsNotebookComputers>> _screenTypeFilter = new Dictionary<string, List<ILaptopsNotebookComputers>>();
 
+        public Dictionary<string, Dictionary<string, List<ILaptopsNotebookComputers>>> Filters { get; set; }
+
+
 
         public void AddLaptopsNotebookComputer(ILaptopsNotebookComputers laptopsNotebookComputer)
         {
             _laptopsNotebookComputers.Add(laptopsNotebookComputer);
 
+            Filters = new Dictionary<string, Dictionary<string, List<ILaptopsNotebookComputers>>>();
+
+            Filters.Add("Features", _featuresFilter);
+            Filters.Add("Delivery Type", _deliveryTypeFilter);
+            Filters.Add("Resolution", _resolutionFilter);
+            Filters.Add("Graphic Card", _graphicCardFilter);
+            Filters.Add("Color", _colorFilter);
+            Filters.Add("Brand", _brandFilter);
+            Filters.Add("Computer Type", _computerTypeFilter);
+            Filters.Add("Hard Drive", _hardDriveSizeFilter);
+            Filters.Add("Operating System", _operatingSystemFilter);
+            Filters.Add("Processor", _processorFilter);
+            Filters.Add("Screen Size", _screenSizeFilter);
+            Filters.Add("Screen Type", _screenTypeFilter);
+
+
+
             // Features Filter Calculation
-            foreach(string feature in laptopsNotebookComputer.Features)
+            foreach (string feature in laptopsNotebookComputer.Features)
             {
                 if (!_featuresFilter.ContainsKey(feature))
                     _featuresFilter.Add(feature, new List<ILaptopsNotebookComputers>());
@@ -53,9 +73,9 @@ namespace CostcoClone.Repositories.Implementations.Products.Computer
             _graphicCardFilter[laptopsNotebookComputer.GraphicCard].Add(laptopsNotebookComputer);
 
             // Color Filter Calculation
-            if (!_colorFilter.ContainsKey(laptopsNotebookComputer.Color))
-                _colorFilter.Add(laptopsNotebookComputer.Color, new List<ILaptopsNotebookComputers>());
-            _colorFilter[laptopsNotebookComputer.Color].Add(laptopsNotebookComputer);
+            if (!_colorFilter.ContainsKey(laptopsNotebookComputer.Color.ToString()))
+                _colorFilter.Add(laptopsNotebookComputer.Color.ToString(), new List<ILaptopsNotebookComputers>());
+            _colorFilter[laptopsNotebookComputer.Color.ToString()].Add(laptopsNotebookComputer);
 
             // Brand Filter Calculation
             if (!_brandFilter.ContainsKey(laptopsNotebookComputer.Brand))

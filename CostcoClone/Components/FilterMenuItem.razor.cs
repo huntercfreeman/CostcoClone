@@ -6,11 +6,15 @@ using System.Threading.Tasks;
 
 namespace CostcoClone.Components
 {
-    public partial class FilterMenuItem : ComponentBase
+    public partial class FilterMenuItem<TItem> : ComponentBase
     {
         [Parameter]
         public bool IsCollapsed { get; set; } = true;
         [Parameter]
         public RenderFragment CustomContent { get; set; }
+        [Parameter]
+        public string DisplayText { get; set; }
+        [Parameter]
+        public Dictionary<string, List<TItem>> Filter { get; set; }
     }
 }

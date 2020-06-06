@@ -8,6 +8,8 @@ namespace CostcoClone.Interfaces.Departments.Computers
 {
     public interface ILaptopsNotebookComputersRepository
     {
+
+        public Dictionary<string, Dictionary<string, List<ILaptopsNotebookComputers>>> Filters { get; set; }
         public void AddLaptopsNotebookComputer(ILaptopsNotebookComputers laptopsNotebookComputer);
 
         public IList<ILaptopsNotebookComputers> GetLaptopsNotebookComputers();

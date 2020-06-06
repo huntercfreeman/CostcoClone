@@ -1,17 +1,16 @@
-﻿<div>
+﻿@using Interfaces.Departments.Computers
+
+<div>
     <div style="width: 314.28px;">
         <div style="display: flex; border-bottom: 1px solid #ddd;">
             <h5>Filter Results</h5>
             &nbsp;
             <a href="javascript:void(0);">Clear All</a>
         </div>
-        <FilterMenuItem />
-        <FilterMenuItem />
-        <FilterMenuItem />
-        <FilterMenuItem />
-        <FilterMenuItem />
-        <FilterMenuItem />
-        <FilterMenuItem />
-        <FilterMenuItem />
+        @foreach (var item in ProductRepository.ComputerRepository.LaptopsNotebookComputersRepository.Filters)
+        {
+            <FilterMenuItem TItem="ILaptopsNotebookComputers" DisplayText="@item.Key" Filter="item.Value" />
+        }
+
     </div>
 </div>
