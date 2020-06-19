@@ -8,13 +8,20 @@ using System.Threading.Tasks;
 
 namespace CostcoClone.Components
 {
-    public partial class FilterMenuItemCheckbox<TItem> : ComponentBase
+    public partial class FilterMenuItemCheckbox<TItem> : ComponentBase, IDisposable
     {
         [Inject]
         public SiteState SiteState { get; set; }
         [Parameter]
         public KeyValuePair<string, List<TItem>> Filter { get; set; }
         public bool IsChecked { get; set; }
+
+        public void Dispose()
+        {
+            if (IsChecked)
+                FilterOn();
+        }
+
         protected void FilterOn()
         {
             IsChecked = !IsChecked;
