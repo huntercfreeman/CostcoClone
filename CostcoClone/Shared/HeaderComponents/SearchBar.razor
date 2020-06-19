@@ -5,7 +5,7 @@
 
 @{List<IProduct> products = new List<IProduct>();}
 
-<div style="display: inline-block; width: -webkit-fill-available;">
+<div style="display: flex;">
     <div style="display: inline;">All<span style="font-size: 12px;" class='oi oi-caret-bottom' aria-hidden='true'></span></div>
     <Typeahead ItemType="IProduct" Filter="(async (x) => ProductRepository.GetProductsByTitle(x).ToList())"
                OnAutocomplete="((x) => { products = x; InvokeAsync(StateHasChanged); })" Selector="((IProduct x) => x.Title)" Placeholder="Filter Results">
