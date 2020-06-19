@@ -16,5 +16,12 @@ namespace CostcoClone.Components
         public string DisplayText { get; set; }
         [Parameter]
         public Dictionary<string, List<TItem>> Filter { get; set; }
+        protected void FilterOn(KeyValuePair<string, List<TItem>> filter)
+        {
+            foreach(TItem item in filter.Value)
+            {
+                if(item)
+            }
+        }
     }
 }

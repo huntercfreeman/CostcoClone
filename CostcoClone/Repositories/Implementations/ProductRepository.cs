@@ -19,7 +19,7 @@ namespace CostcoClone.Repository
 
         public IList<IProduct> GetProducts()
         {
-            return _products;
+            return _products.Where(x => x.Display == true).ToList();
         }
 
         public IList<IProduct> GetProductsByTitle(string title)
