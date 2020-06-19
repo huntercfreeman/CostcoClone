@@ -22,7 +22,7 @@ namespace CostcoClone.Components
             {
                 foreach (TItem item in Filter.Value)
                 {
-                    ((IProduct)item).Display = true;
+                    ((IProduct)item).DisplayLinks++;
                 }
                 SiteState.FilterCount++;
             }
@@ -30,7 +30,7 @@ namespace CostcoClone.Components
             {
                 foreach (TItem item in Filter.Value)
                 {
-                    ((IProduct)item).Display = false;
+                    ((IProduct)item).DisplayLinks--;
                 }
                 SiteState.FilterCount--;
             }
