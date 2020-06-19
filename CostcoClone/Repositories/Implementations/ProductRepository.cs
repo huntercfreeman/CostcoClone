@@ -19,7 +19,10 @@ namespace CostcoClone.Repository
 
         public IList<IProduct> GetProducts()
         {
-            return _products.Where(x => x.Display == true).ToList();
+            if (_siteState.IsFiltering)
+                return _products.Where(x => x.Display == true).ToList();
+            else
+                return _products;
         }
 
         public IList<IProduct> GetProductsByTitle(string title)
@@ -58,6 +61,7 @@ namespace CostcoClone.Repository
         public ISportsFitnessRepository SportsFitnessRepository { get; set; }
         public ITiresAutoRepository TiresAutoRepository { get; set; }
         public IToysBooksRepository ToysBooksRepository { get; set; }
+        private SiteState _siteState;
 
         public ProductRepository(IApplianceRepository applianceRepository, IBabyRepository babyRepository, IBeautyRepository beautyRepository,
                                 IClothingLuggageHandbagsRepository clothingLuggageHandbagsRepository, IComputerRepository computerRepository,
@@ -68,8 +72,9 @@ namespace CostcoClone.Repository
                                 IHomeKitchenRepository homeKitchenRepository, IJewelryWatchesSunglassesRepository jewelryWatchesSunglassesRepository,
                                 IMattressesRepository mattressesRepository, IOfficeProductsRepository officeProductsRepository,
                                 IPatioLawnGardenRepository patioLawnGardenRepository, ITiresAutoRepository tiresAutoRepository,
-                                IToysBooksRepository toysBooksRepository, ISportsFitnessRepository sportsFitnessRepository)
+                                IToysBooksRepository toysBooksRepository, ISportsFitnessRepository sportsFitnessRepository, SiteState siteState)
         {
+            _siteState = siteState;
             ApplianceRepository = applianceRepository;
             BabyRepository = babyRepository;
             BeautyRepository = beautyRepository;

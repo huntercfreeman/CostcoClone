@@ -1,0 +1,11 @@
+﻿@typeparam TItem
+
+<div style="display: flex; justify-content: space-between;">
+    <span>
+        <input @onclick="FilterOn" type="checkbox">
+        @Filter.Key
+    </span>
+    <span style="margin-right: 10px;">
+        (@Filter.Value.Count)
+    </span>
+</div>

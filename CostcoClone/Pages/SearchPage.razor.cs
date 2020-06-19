@@ -1,4 +1,5 @@
-﻿using CostcoClone.Repository;
+﻿using CostcoClone.Models;
+using CostcoClone.Repository;
 using Microsoft.AspNetCore.Components;
 using System;
 using System.Collections.Generic;
@@ -11,9 +12,22 @@ namespace CostcoClone.Pages
     {
         [Inject]
         public IProductRepository ProductRepository { get; set; }
+        [Inject]
+        public SiteState SiteState { get; set; }
         [Parameter]
         public string Department { get; set; } = "All";
         [Parameter]
         public string Query { get; set; } = "";
+
+        protected override void OnInitialized()
+        {
+            base.OnInitialized();
+            SiteState.FilterEventHandler += SiteState_FilterEventHandler;
+        }
+
+        private void SiteState_FilterEventHandler(object sender, EventArgs e)
+        {
+            InvokeAsync(StateHasChanged);
+        }
     }
 }

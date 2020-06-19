@@ -24,15 +24,7 @@
             {
                 @foreach(var item in Filter)
                 {
-                    <div style="display: flex; justify-content: space-between;">
-                        <span>
-                            <input @onclick="(() => FilterOn(item))" type="checkbox">
-                            @item.Key
-                        </span>
-                        <span style="margin-right: 10px;">
-                            (@item.Value.Count)
-                        </span>
-                    </div>
+                    <FilterMenuItemCheckbox TItem="TItem" Filter="item"/>
                 }
             }
         </div>
