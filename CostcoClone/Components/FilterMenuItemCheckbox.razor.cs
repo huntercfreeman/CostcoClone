@@ -18,8 +18,7 @@ namespace CostcoClone.Components
 
         public void Dispose()
         {
-            if (IsChecked)
-                FilterOn();
+            if (IsChecked) FilterOn();
         }
 
         protected void FilterOn()
