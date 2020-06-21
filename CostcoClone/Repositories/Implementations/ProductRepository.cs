@@ -121,19 +121,195 @@ namespace CostcoClone.Repository
                     new List<string> { "content/appliances/fridge-c45bedda-ccae-4078-ae48-c8bf0ba21802.jpg" }
                 );
 
-            LaptopNotebookComputer laptop = new LaptopNotebookComputer
+            LaptopNotebookComputer laptop1 = new LaptopNotebookComputer
                 (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)2099.99,
-                    0,
+                    "New Apple MacBook Air 13\" - Intel Core i3 - 8GB Memory - 256GB SSD",
+                    (decimal)949.99,
+                    20,
+                    (MarkupString)@"<div class='panel panel - default'><div class='panel-heading' role='tab' id='pdp-accordion-header-1' data-toggle='collapse' href='#pdp-accordion-collapse-1' aria-expanded='false' aria-controls='pdp-accordion-collapse-1'><p class='panel-title'><a role = 'button' data-toggle='collapse' href='#pdp-accordion-collapse-1' aria-expanded='false' aria-controls='pdp-accordion-collapse-1'>Product Details                </a>			</p>		</div>			<div id = 'pdp-accordion-collapse-1' class='panel-collapse collapse in' role='tabpanel' aria-labelledby='pdp-accordion-header-1'>			<div class='panel-body'>				<span class='view-more-height-default' data-height='600'></span>				<div id = 'product-tab1-espotdetails' >                <!--BEGIN ContentAreaESpot.jsp --><div class='genericESpot' id='WC_ContentAreaESpot_div_1_ProductDetailsESpot_Tab1'>	<div class='caption' style='display:none' id='WC_ContentAreaESpot_div_2_ProductDetailsESpot_Tab1'>[ProductDetailsESpot_Tab1]</div>		<div>			</div>	</div><!-- END ContentAreaESpot.jsp -->		 		</div>				<div class='product-info-description' style='max-height: none;'>							<span style = 'font-weight:bold;' > Limit 2 Per Member</span><br><br><span style = 'font-weight:bold;' > Processor & amp; Memory:</span><br><ul><li>10th Gen Dual-core Intel® Core™ i3 Processor 1.1GHz</li><li>8GB LPDDR3 2133MHz RAM</li><br></ul><span style = 'font-weight:bold;' > Drives: </span><br><ul><li>256GB Solid State Drive</li><li>No Optical Drive</li><br></ul><span style = 'font-weight:bold;' > Operating System: </span><br><ul><li>macOS</li><br></ul><span style = 'font-weight:bold;' > Communications: </span><br><ul><li>802.11 Wireless-AC + Bluetooth 5.0</li><li>Integrated 720p FaceTime HD Camera</li><li>Three-mic array with directional beamforming</li><br></ul><span style = 'font-weight:bold;' > Audio:</span><br><ul><li>Stereo Speakers</li><br></ul><span style = 'font-weight:bold;' > Graphics & amp; Video: </span><br><ul><li>13.3' 2560 x 1600 LED-Backlit Display</li><li>Intel® Iris Plus Graphics</li><br></ul><span style='font-weight:bold;'>Keyboard: </span><br><ul><li>Backlit Magic Keyboard with Force Touch trackpad and Ambient Light Sensor</li><br></ul><span style='font-weight:bold;'>Additional Information: </span><br><ul><li>Dimensions: 11.97' x 8.36' x .16 - .63”</li><li>Approximate Weight: Starting at 2.8lbs</li></ul>									</div>   			</div>		</div>	</div>",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/c.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+
+            LaptopNotebookComputer laptop2 = new LaptopNotebookComputer
+                (
+                    "HP 17.3\" Laptop - 10th Gen Intel Core i5 - 1035G1 - 1080p",
+                    (decimal)599.99,
+                    20,
                     (MarkupString)@"<div class='product - info - description' style='max - height: none; '>
 
-                                   < span style = 'font-weight:bold;' > Limit 2 Per Member</ span >< br >< br >< span style = 'font-weight:bold;' > Processor & amp; Memory:</ span >< br >< ul >< li > 10th Gen Intel® Core™ i7 - 1065G7 Processor at 1.3GHz </ li >< li > 12GB DDR4-2666 SDRAM </ li >< br ></ ul >< span style = 'font-weight:bold;' > Drives: </ span >< br >< ul >< li > 512GB PCle® NVMe™ M.2 Solid State Drive </ li >< li > No Optical Drive</ li >< br ></ ul >< span style = 'font-weight:bold;' > Operating System: </ span >< br >< ul >< li > Microsoft® Windows 10 Home(64 - bit) </ li >< br ></ ul >< span style = 'font-weight:bold;' > Communications: </ span >< br >< ul >< li > 802.11 Wireless - AC WLAN(1x1) + Bluetooth® 4.2 </ li >< li > HP TrueVision HD Webcam + Integrated Dual Array Digital Microphones</ li >< br ></ ul >< span style = 'font-weight:bold;' > Graphics & amp; Video:</ span > < br >< ul >< li > 14' IPS Anti-Glare WLED-backlit FHD (1920 x 1080) Display</li><li>Integrated Intel® Iris™ Plus Graphics</li><br></ul><span style='font - weight:bold; '>Audio: </span><br><ul><li>HP HD Audio with Stereo Speakers</li><br></ul><span style='font - weight:bold; '>Keyboard: </span><br><ul><li>Full-size Island-style Backlit Keyboard</li><li>HP Imagepad with Multi-Touch Gesture Support</li><br></ul><span style='font - weight:bold; '>Ports: </span><br><ul><li>1x USB 3.1 Gen 1 Type-C </li><li>2x USB 3.1 Gen 1 Type-A</li><li>1x HDMI 1.4b</li><li>1x AC Smart Pin</li><li>1x Combination Headphone/Microphone Jack</li><li>1x Multi-Format SD Media Card Reader </li><br></ul><span style='font - weight:bold; '>Power Supply: </span><br><ul><li>3-Cell 41WHr Lithium-Ion Battery &nbsp;</li><br></ul><span style='font - weight:bold; '>Additional Information: </span><br><ul><li>Dimensions: 12.76' x 8.86' x 0.71' </ li >< li > Approximate Weight: 3.24 lbs </ li ></ ul >
+                                   <div style = 'text-align:center;' ><span style = 'font-weight:bold;' > Item may be available in your local warehouse, prices may vary.</ span ></ div ><br ><span style = 'font-weight:bold;' > Limit 5 Per Member</ span ><br ><br ><span style = 'font-weight:bold;' > Processor & amp; Memory:</ span ><br ><ul ><li > 10th Gen Intel Core i5 - 1035G1 Processor 1.0 GHz </ li ><li > 12GB DDR4-2666MHz SDRAM(1 - DIMM)</ li ><br ></ ul ><span style = 'font-weight:bold;' > Drives:</ span ><br ><ul ><li > 1TB 5400RPM SATA Hard Drive</ li ><li > DVD Writer(writes to DVD / CD) </ li ><br ></ ul ><span style = 'font-weight:bold;' > Operating System:</ span ><br ><ul ><li > Microsoft® Windows 10 Home(64 - bit) </ li ><br ></ ul ><span style = 'font-weight:bold;' > Communications:</ span ><br ><ul ><li > 802.11b / g / n / ac + Bluetooth 4.2 </ li ><li > HP TrueVision HD Webcam with Integrated Digital Microphone </ li ><li > 10 / 100 / 1000 Gigabit Ethernet</ li ><br ></ ul ><span style = 'font-weight:bold;' > Graphics & amp; Video: </ span ><br ><ul ><li > 17.3' WLED-backlit FHD, IPS (1920 x 1080) Display </li><li>Intel UHD Graphics</li><br></ul><span style='font - weight:bold; '>Audio: </span><br><ul><li>HD audio with stereo speakers</li><br></ul><span style='font - weight:bold; '>Keyboard: </span><br><ul><li>Full-size island-style backlit keyboard with numeric keypad</li><br></ul><span style='font - weight:bold; '>Ports: </span><br><ul><li>2x USB Type-A </li><li>1x USB 2.0 Type-A</li><li>1x HDMI</li><li>1x RJ-45 (LAN)</li><li>1x Headphone-out/microphone-in combo jack</li><br></ul><span style='font - weight:bold; '>Power Supply: </span><br><ul><li>3-cell 41 Whr Battery</li><br></ul><span style='font - weight:bold; '>Additional Information: </span><br><ul><li>Dimensions: 16.33'W x 10.72'D x 0.96'H </ li ><li > Weight(Approximately): &nbsp; 5.43lbs </ li ></ ul >
+                                                                                                                                                                                            
+
+                                                                                                                                                                                                            </ div > ",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop2.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+
+            LaptopNotebookComputer laptop3 = new LaptopNotebookComputer
+                (
+                    "Lenovo Flex 5 14\" 2 -in -1 Touchscreen Laptop - AMD Ryzen 7 4700U - 1080p",
+                    (decimal)749.99,
+                    20,
+                    (MarkupString)@"<div class='product - info - description' style='max - height: none; '>
+
+                                   <span style = 'font-weight:bold;' > Limit 5 Per Member</ span ><br ><br ><span style = 'font-weight:bold;' > Processor & amp; Memory:</ span > <br ><ul ><li > AMD Ryzen 7 4700U(8 - Core) Processor at 2.0GHz </ li ><li > 16GB DDR4 3200MHz RAM</ li ><br ></ ul ><span style = 'font-weight:bold;' > Operating System: &nbsp;</ span ><br ><ul ><li > Microsoft® Windows 10 Home(64 bit) </ li ><br ></ ul ><span style = 'font-weight:bold;' > Drives: &nbsp;</ span > &nbsp;<br ><ul ><li > 512GB NVMe™ M.2 Solid State Drive </ li ><li > No Optical Drive</ li ><br ></ ul ><span style = 'font-weight:bold;' > Graphics & amp; Video: &nbsp;</ span > &nbsp;<br ><ul ><li > 14.0' Touchscreen IPS LCD with LED-backlit FHD (1920 x 1080) Display</li><li>Integrated AMD Radeon Graphics</li><br></ul><span style='font - weight:bold; '>Communications:</span><br><ul><li>802.11 Wireless-AC (2x2) + Bluetooth® 4.2</li><li>Integrated 720p Webcam with privacy shutter</li><br></ul><span style='font - weight:bold; '>Audio: </span>&nbsp;&nbsp;<br><ul><li>2x 2W Speakers with Dolby Audio DAX3</li><br></ul><span style='font - weight:bold; '>Keyboard:</span><br><ul><li>Backlit Keyboard with Fingerprint Reader</li><br></ul><span style='font - weight:bold; '>Ports &amp; Slots:</span><br><ul><li>1x USB 3.1 Type-C (with Power Delivery)</li><li>2x USB 3.1</li><li>1x HDMI</li><li>1x 4-in-1 Media Card Reader</li><li>1x Combination Headphone/Microphone Jack</li><br></ul><span style='font - weight:bold; '>Battery:</span><br><ul><li>3 cell 52.5 WH Lithium-Polymer Battery</li><br></ul><span style='font - weight:bold; '>Additional Information:</span><br><ul><li>Dimensions: 12.66' L x 8.56' W x 0.82' H </ li ><li > Approximate Weight: 3.63lbs </ li ></ ul >
+                                                                                                                                    
+
+                                                                                                                                                    </ div > ",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop3.jpg" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+
+            LaptopNotebookComputer laptop4 = new LaptopNotebookComputer
+                (
+                    "New Apple MacBook Pro 13.3\" with Touch Bar - 10th Gen Intel Core i5 - 16GB Memory - 512GB SSD - Space Gray",
+                    (decimal)1749.99,
+                    20,
+                    (MarkupString)@"<div class='product - info - description' style='max - height: none; '>
+
+                                   <span style = 'font-weight:bold;' > Limit 2 Per Member</ span ><br ><br ><span style = 'font-weight:bold;' > Processor & amp; Memory:</ span ><br ><ul ><li > 10th Generation Quad - core Intel® Core™ i5 Processor 2.0GHz </ li ><li > 16GB LPDDR4X 3733MHz RAM</ li ><br ></ ul ><span style = 'font-weight:bold;' > Drives: </ span ><br ><ul ><li > 512GB PCIe Solid State Drive </ li ><li > No Optical Drive</ li ><br ></ ul ><span style = 'font-weight:bold;' > Operating System: </ span ><br ><ul ><li > macOS </ li ><br ></ ul ><span style = 'font-weight:bold;' > Communications: </ span ><br ><ul ><li > 802.11 Wireless - AC + Bluetooth 5.0 </ li ><li > Integrated 720p FaceTime HD Camera</ li ><li > Three Microphones </ li ><br ></ ul ><span style = 'font-weight:bold;' > Audio:</ span ><br ><ul ><li > Stereo Speakers with Wide Stereo Sound </ li ><br ></ ul ><span style = 'font-weight:bold;' > Graphics & amp; Video: </ span ><br ><ul ><li > 13.3' LED-Backlit (2560 x 1600) Retina Display with True Tone Technology</li><li>Intel® Iris Plus Graphics </li><br></ul><span style='font - weight:bold; '>Keyboard: </span><br><ul><li>Individual LED-Backlit Keys with Force Touch Trackpad and Ambient Light Sensor</li><li>Integrated Touch ID Sensor </li><br></ul><span style='font - weight:bold; '>Ports &amp; Slots: </span><br><ul><li>4x Thunderbolt 3 USB-C (Charging and DisplayPort)</li><li>1x Headphone Jack</li><br></ul><span style='font - weight:bold; '>Power Supply: </span><br><ul><li>58.0WHr Battery</li><br></ul><span style='font - weight:bold; '>Additional Information: </span><br><ul><li>Dimensions: 11.97' x 8.36' x 0.61”</li><li>Approximate Weight: Starting at 3.1lbs</li></ul>					
+
+                                                                                                                                                                                              </ div > ",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop4.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+
+            LaptopNotebookComputer laptop5 = new LaptopNotebookComputer
+                (
+                    "New Apple MacBook Air 13\" - Intel Core i5 - 8GB Memory - 512GB SSD",
+                    (decimal)1249.99,
+                    20,
+                    (MarkupString)@"<div class='product - info - description' style='max - height: none; '>
+
+                                   <span style = 'font-weight:bold;' > Limit 2 Per Member</ span ><br ><br ><span style = 'font-weight:bold;' > Processor & amp; Memory:</ span ><br ><ul ><li > 10th Gen Quad - core Intel® Core™ i5 Processor 1.1GHz </ li ><br ></ ul ><span style = 'font-weight:bold;' > Drives: </ span ><br ><ul ><li > 512GB Solid State Drive</ li ><li > No Optical Drive</ li ><br ></ ul ><span style = 'font-weight:bold;' > Operating System: </ span ><br ><ul ><li > macOS </ li ><br ></ ul ><span style = 'font-weight:bold;' > Communications: </ span ><br ><ul ><li > 802.11 Wireless - AC + Bluetooth 5.0 </ li ><li > Integrated 720p FaceTime HD Camera</ li ><li > Three - mic array with directional beamforming</ li ><br ></ ul ><span style = 'font-weight:bold;' > Audio:</ span ><br ><ul ><li > Stereo Speakers </ li ><br ></ ul ><span style = 'font-weight:bold;' > Graphics & amp; Video: </ span ><br ><ul ><li > 13.3' 2560 x 1600 LED-Backlit Display</li><li>Intel® Iris Plus Graphics</li><br></ul><span style='font - weight:bold; '>Keyboard: </span><br><ul><li>Backlit Magic Keyboard with Force Touch trackpad and Ambient Light Sensor</li><br></ul><span style='font - weight:bold; '>Additional Information: </span><br><ul><li>Dimensions: 11.97' x 8.36' x .16 - .63”</li><li>Approximate Weight: Starting at 2.8lbs</li></ul>					
+
+                                                                                                                                                                                     </ div > ",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop5.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+
+            LaptopNotebookComputer laptop6 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i3 - 1005G1 - 1080p",
+                    (decimal)449.99,
+                    20,
+                    (MarkupString)@"<div class='product - info - description' style='max - height: none; '>
+
+                                   <div style = 'text-align:center;' > <span style = 'font-weight:bold;' > Item may be available in your local warehouse, prices may vary </ span ></ div ><span style = 'font-weight:bold;' > Limit 5 Per Member</ span ><br ><br ><br ><span style = 'font-weight:bold;' > Processor & amp; Memory:</ span ><br ><ul ><li > 10th Gen Intel® Core™ i3 - 1005G1 Processor at 1.2GHz </ li ><li > 8GB DDR4 2666 SDRAM </ li ><br ></ ul ><span style = 'font-weight:bold;' > Drives: </ span ><br ><ul ><li > 256GB PCIe® NVMe™ M.2 Solid State Drive </ li ><li > No Optical Drive</ li ><br ></ ul ><span style = 'font-weight:bold;' > Operating System: </ span ><br ><ul ><li > Microsoft® Windows 10 in S Mode</ li ><li > Windows 10 in S mode works exclusively with apps from the Microsoft Store within Windows.</ li ><li > All Microsoft Store apps are verified and designed for superior performance and security.</ li ><li > An optional one - way switch out of S mode to Windows 10 Home is available.</ li ><br ></ ul ><span style = 'font-weight:bold;' > Communications: </ span ><br ><ul ><li > 802.11ac(2x2) Wireless + Bluetooth® 5.0 </ li ><li > HP TrueVision HD Webcam + Integrated Digital Microphones</ li ><br ></ ul ><span style = 'font-weight:bold;' > Graphics & amp; Video:</ span > <br ><ul ><li > 14' IPS BrightView WLED-Backlit FHD (1920x1080) Display</li><li>Intel UHD Graphics </li><br></ul><span style='font - weight:bold; '>Audio: </span><br><ul><li>HD Audio with Stereo Speakers</li><br></ul><span style='font - weight:bold; '>Keyboard: </span><br><ul><li>Backlit Keyboard </li><br></ul><span style='font - weight:bold; '>Ports: </span><br><ul><li>1x USB 3.1 Type-C</li><li>2x USB 3.1 Type-A</li><li>1x HDMI 1.4b</li><li>1x Multi-Format Digital Media Card Reader</li><li>1x Combination Headphone-Out/Microphone-In Jack</li><br></ul><span style='font - weight:bold; '>Power Supply: </span><br><ul><li>3-Cell 41WHr Lithium-Ion Battery </li><li>Upt o 10 hours and 15 minutes (mixed usage) </li><br></ul><span style='font - weight:bold; '>Additional Information: </span><br><ul><li>Dimensions: 12.76'W x 8.86'D x 0.71'H </ li ><li > Approximate Weight: 3.24 lbs </ li ></ ul >
+                                                                                                                                                                                           
+
+                                                                                                                                                                                           <figure class='product-manuals visible-xs-block visible-sm-block visible-md-block'>
+	
+
+	
+	<h3>Manuals, Information &amp; Guides</h3>
+	<ul class='list-group product-attachments'>
+	
+						<li class='list-group-item'>
+						
+								<a href = 'https://mobilecontent.costco.com/live/resource/img/static-us-pdf/1420139-Spec_Sheet.pdf' class='pdf-link' target='_blank'>
+									
+										<img class='pdf' src='/wcsstore/CostcoGLOBALSAS/images/pdf.svg' alt='PDF format'>
+									
+								Spec Sheet</a>
+							
+						</li>
+					
+	</ul>
+	
+</figure>
+
+				</div>",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop6.png" },
+                    Color.Black,
+                    new List<string> { "Backlit Keyboard" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+
+            LaptopNotebookComputer laptop7 = new LaptopNotebookComputer
+                (
+                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
+                    (decimal)449.99,
+                    20,
+                    (MarkupString)@"<div class='product - info - description' style='max - height: none; '>
+
+                                   <span style = 'font-weight:bold;' > Limit 2 Per Member</ span ><br ><br ><span style = 'font-weight:bold;' > Processor & amp; Memory:</ span ><br ><ul ><li > 10th Gen Intel® Core™ i7 - 1065G7 Processor at 1.3GHz </ li ><li > 12GB DDR4-2666 SDRAM </ li ><br ></ ul ><span style = 'font-weight:bold;' > Drives: </ span ><br ><ul ><li > 512GB PCle® NVMe™ M.2 Solid State Drive </ li ><li > No Optical Drive</ li ><br ></ ul ><span style = 'font-weight:bold;' > Operating System: </ span ><br ><ul ><li > Microsoft® Windows 10 Home(64 - bit) </ li ><br ></ ul ><span style = 'font-weight:bold;' > Communications: </ span ><br ><ul ><li > 802.11 Wireless - AC WLAN(1x1) + Bluetooth® 4.2 </ li ><li > HP TrueVision HD Webcam + Integrated Dual Array Digital Microphones</ li ><br ></ ul ><span style = 'font-weight:bold;' > Graphics & amp; Video:</ span > <br ><ul ><li > 14' IPS Anti-Glare WLED-backlit FHD (1920 x 1080) Display</li><li>Integrated Intel® Iris™ Plus Graphics</li><br></ul><span style='font - weight:bold; '>Audio: </span><br><ul><li>HP HD Audio with Stereo Speakers</li><br></ul><span style='font - weight:bold; '>Keyboard: </span><br><ul><li>Full-size Island-style Backlit Keyboard</li><li>HP Imagepad with Multi-Touch Gesture Support</li><br></ul><span style='font - weight:bold; '>Ports: </span><br><ul><li>1x USB 3.1 Gen 1 Type-C </li><li>2x USB 3.1 Gen 1 Type-A</li><li>1x HDMI 1.4b</li><li>1x AC Smart Pin</li><li>1x Combination Headphone/Microphone Jack</li><li>1x Multi-Format SD Media Card Reader </li><br></ul><span style='font - weight:bold; '>Power Supply: </span><br><ul><li>3-Cell 41WHr Lithium-Ion Battery &nbsp;</li><br></ul><span style='font - weight:bold; '>Additional Information: </span><br><ul><li>Dimensions: 12.76' x 8.86' x 0.71' </ li ><li > Approximate Weight: 3.24 lbs </ li ></ ul >
                                                                                                                                                                
 
                                                                                                                                                                                </ div > ",
                     this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop7.png" },
                     Color.Black,
                     new List<string> { "Backlit Keyboard" },
                     "Warehouse Pick-up",
@@ -147,166 +323,19 @@ namespace CostcoClone.Repository
                     "11.6 in.",
                     "Non-touchscreen"
                 );
-            LaptopNotebookComputer laptop1 = new LaptopNotebookComputer
-                (
-                    "Apple MacBook Pro 16\" with Touch Bar - Intel Core i7 - 16GB Memory - 512GB SSD",
-                    (decimal)2099.99,
-                    45,
-                    (MarkupString)@"<div class='product - info - description' style='max - height: none; '>
 
-                                   < div style = 'text-align:center;' >< span style = 'font-weight:bold;' > Item may be available in your local warehouse, prices may vary.</ span ></ div >< br >< span style = 'font-weight:bold;' > Limit 2 Per Member</ span >< br >< br >< span style = 'font-weight:bold;' > Processor & amp; Memory:</ span >< br >< ul >< li > 9th Gen 6 - core Intel® Core™ i7 Processor 2.6GHz </ li >< li > 16GB 2666MHz DDR4 RAM </ li >< br ></ ul >< span style = 'font-weight:bold;' > Drives: </ span >< br >< ul >< li > 512GB PCIe Solid State Drive </ li >< li > No Optical Drive</ li >< br ></ ul >< span style = 'font-weight:bold;' > Operating System: </ span >< br >< ul >< li > macOS </ li >< br ></ ul >< span style = 'font-weight:bold;' > Communications: </ span >< br >< ul >< li > 802.11 Wireless - AC + Bluetooth 5.0 </ li >< li > Integrated 720p FaceTime HD Camera</ li >< br ></ ul >< span style = 'font-weight:bold;' > Audio:</ span >< br >< ul >< li > 6 Speaker System with Force-Cancelling Woofers </ li >< br ></ ul >< span style = 'font-weight:bold;' > Graphics & amp; Video: </ span >< br >< ul >< li > 16' LED-Backlit (3072 x 1920) Retina Display with True Tone</li><li>4GB AMD Radeon Pro 5300M Graphics</li><br></ul><span style='font - weight:bold; '>Keyboard: </span><br><ul><li>Full-Size Backlit Magic Keyboard</li><li>Integrated Touch ID Sensor </li><li>Ambient Light Sensor</li><br></ul><span style='font - weight:bold; '>Ports &amp; Slots: </span><br><ul><li>4x Thunderbolt 3 USB-C (Charging and DisplayPort)</li><li>1x Headphone Jack</li><br></ul><span style='font - weight:bold; '>Power Supply: </span><br><ul><li>100WHr Battery</li><br></ul><span style='font - weight:bold; '>Additional Information: </span><br><ul><li>Dimensions: 14.09' x 9.68' x 0.64' </ li >< li > Approximate Weight: Starting at 4.3lbs </ li ></ ul >
-                                                                                                                                                                                               
-
-                                                                                                                                                                                                               </ div > ",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Gold,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop2 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/bbbb.png" },
-                    Color.Silver,
-                    new List<string> { "Bluetooth 4.1" },
-                    "Warehouse Pick-up",
-                    "1366 x 768 (HD)",
-                    "Intel Iris Plus",
-                    "Acer",
-                    "All-in-One",
-                    "128 GB",
-                    "Chrome OS",
-                    "AMD Ryzen 5",
-                    "12 in.",
-                    "Touchscreen"
-                );
-            LaptopNotebookComputer laptop3 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop4 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop5 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop6 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop7 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
             LaptopNotebookComputer laptop8 = new LaptopNotebookComputer
                 (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
+                    "New Apple MacBook Air 13\" - Intel Core i5 - 8GB Memory - 256GB SSD - Space Gray",
+                    (decimal)1049.99,
+                    20,
+                    (MarkupString)@"<div class='product - info - description' style='max - height: none; '>
+
+                                   <span style = 'font-weight:bold;' > Limit 2 Per Member</ span ><br ><br ><span style = 'font-weight:bold;' > Processor & amp; Memory:</ span ><br ><ul ><li > 10th Gen Quad - core Intel® Core™ i5 Processor 1.1GHz </ li ><li > 8GB 3733MHz LPDDR4X RAM </ li ><br ></ ul ><span style = 'font-weight:bold;' > Drives: </ span ><br ><ul ><li > 256GB PCIe-based SSD </ li ><li > No Optical Drive</ li ><br ></ ul ><span style = 'font-weight:bold;' > Operating System: </ span ><br ><ul ><li > macOS </ li ><br ></ ul ><span style = 'font-weight:bold;' > Communications: </ span ><br ><ul ><li > 802.11 Wireless - AC + Bluetooth 5.0 </ li ><li > Integrated 720p FaceTime HD Camera</ li ><li > Three - mic array with directional beamforming</ li ><br ></ ul ><span style = 'font-weight:bold;' > Audio:</ span ><br ><ul ><li > Stereo Speakers </ li ><br ></ ul ><span style = 'font-weight:bold;' > Graphics & amp; Video: </ span ><br ><ul ><li > 13.3' 2560 x 1600 LED-Backlit Display</li><li>Intel® Iris Plus Graphics</li><br></ul><span style='font - weight:bold; '>Ports:</span><br><ul><li>2x Thunderbolt 3 (USB-C) Ports</li><br></ul><span style='font - weight:bold; '>Keyboard: </span><br><ul><li>Backlit Magic Keyboard with Force Touch trackpad and Ambient Light Sensor</li><br></ul><span style='font - weight:bold; '>Additional Information: </span><br><ul><li>Dimensions: 11.97' x 8.36' x .16 - .63”</li><li>Approximate Weight: Starting at 2.8lbs</li></ul>					
+
+                                                                                                                                                                                               </ div > ",
                     this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop8.png" },
                     Color.Black,
                     new List<string> { "Backlit Keyboard" },
                     "Warehouse Pick-up",
@@ -320,14 +349,15 @@ namespace CostcoClone.Repository
                     "11.6 in.",
                     "Non-touchscreen"
                 );
+
             LaptopNotebookComputer laptop9 = new LaptopNotebookComputer
                 (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
+                    "HP Pavilion 15.6\" Touchscreen Laptop - 10th Gen Intel Core i5 - 1035G1 - 1080p",
+                    (decimal)599.99,
+                    20,
+                    (MarkupString)@"<div class='product - info - description' style='max - height: none; '>                                   <div style = 'text-align:center;' ><span style = 'font-weight:bold;' > Item may be available in your local warehouse, prices may vary.</ span ></ div ><br ><span style = 'font-weight:bold;' > Limit 2 per Member</ span ><br ><br ><span style = 'font-weight:bold;' > Processor & amp; Memory:</ span ><br ><ul ><li > 10th Gen Intel® Core™ i5 - 1035G1 Processor at 1.0GHz </ li ><li > 12GB DDR4-2666 SDRAM </ li ><br ></ ul ><span style = 'font-weight:bold;' > Operating System:</ span ><br ><ul ><li > Microsoft® Windows 10 Home(64 bit) </ li ><br ></ ul ><span style = 'font-weight:bold;' > Drives:</ span ><br ><ul ><li > 512GB PCIe NVMe M.2 Solid State Drive </ li ><li > No Optical Drive</ li ><br ></ ul ><span style = 'font-weight:bold;' > Graphics & amp; Video: </ span ><br ><ul ><li > 15.6' Touchscreen WLED-Backlit Full HD Micro-edge IPS (1920 x 1080) Display</li><li>Intel® UHD Graphics </li><br></ul><span style='font - weight:bold; '>Communications:</span><br><ul><li>Intel® Wi-Fi 6 (2x2) &nbsp;+ Bluetooth® 5.0</li><li>HP WideVision HD Camera with Dual Array Digital Microphone</li><li>10/100/1000 Gigabit Ethernet</li><br></ul><span style='font - weight:bold; '>Audio: </span><br><ul><li>B&amp;O Play Audio with Dual Speakers</li><br></ul><span style='font - weight:bold; '>Keyboard: </span><br><ul><li>Full-size Island-style Backlit Keyboard with Numeric Keypad</li><br></ul><span style='font - weight:bold; '>Ports: </span><br><ul><li>1x USB 3.1 Gen 1 Type C</li><li>2x USB 3.1 Gen 1 Type A</li><li>1x HDMI 1.4</li><li>1x RJ-45 </li><li>1x Multi-Format Digital Media Card Reader</li><li>1x Headphone-out/microphone-in combo jack</li><br></ul><span style='font - weight:bold; '>Power Supply: </span><br><ul><li>3-Cell 41WHr lithium-ion prismatic Battery</li><li>Up to 10 hours (mixed usage)</li><br></ul><span style='font - weight:bold; '>Additional Information:</span><br><ul><li>Dimensions: 14.24'W x 9.67'D x 0.70'H </ li ><li > Weight(approximately): 4.08 lbs </ li ></ ul >                                                                                                                                                                                                                                                                                                <figure class='product-manuals visible-xs-block visible-sm-block visible-md-block'>			<h3>Manuals, Information &amp; Guides</h3>	<ul class='list-group product-attachments'>							<li class='list-group-item'>														<a href = 'https://mobilecontent.costco.com/live/resource/img/static-us-pdf/1422467-Spec_Sheet.pdf' class='pdf-link' target='_blank'>																			<img class='pdf' src='/wcsstore/CostcoGLOBALSAS/images/pdf.svg' alt='PDF format'>																	Spec Sheet</a>													</li>						</ul>	</figure>				</div>",
                     this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop9.jpg" },
                     Color.Black,
                     new List<string> { "Backlit Keyboard" },
                     "Warehouse Pick-up",
@@ -341,14 +371,19 @@ namespace CostcoClone.Repository
                     "11.6 in.",
                     "Non-touchscreen"
                 );
+
             LaptopNotebookComputer laptop10 = new LaptopNotebookComputer
                 (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
+                    "New Apple MacBook Pro 13.3\" with Touch Bar - 8th Gen Intel Core i5 - 8GB Memory - 256GB SSD - Space Gray",
+                    (decimal)1249.99,
+                    20,
+                    (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
+					
+							<span style='font-weight:bold;'>Limit 2 Per Member</span><br><br><span style='font-weight:bold;'>Processor &amp; Memory:</span><br><ul><li>8th Generation Quad-core Intel® Core™ i5 Processor 1.4GHz</li><li>8GB LPDDR3 2133MHz RAM </li><br></ul><span style='font-weight:bold;'>Drives: </span><br><ul><li>256GB PCIe Solid State Drive</li><li>No Optical Drive</li><br></ul><span style='font-weight:bold;'>Operating System: </span><br><ul><li>macOS</li><br></ul><span style='font-weight:bold;'>Communications: </span><br><ul><li>802.11 Wireless-AC + Bluetooth 5.0</li><li>Integrated 720p FaceTime HD Camera</li><li>Three Microphones </li><br></ul><span style='font-weight:bold;'>Audio:</span><br><ul><li>Stereo Speakers with Wide Stereo Sound</li><br></ul><span style='font-weight:bold;'>Graphics &amp; Video: </span><br><ul><li>13.3' LED-Backlit (2560 x 1600) Retina Display with True Tone Technology</li><li>Intel® Iris Plus Graphics </li><br></ul><span style='font-weight:bold;'>Keyboard: </span><br><ul><li>Individual LED-Backlit Keys with Force Touch Trackpad and Ambient Light Sensor</li><li>Integrated Touch ID Sensor </li><br></ul><span style='font-weight:bold;'>Ports &amp; Slots: </span><br><ul><li>2x Thunderbolt 3 USB-C (Charging and DisplayPort)</li><li>1x Headphone Jack</li><br></ul><span style='font-weight:bold;'>Power Supply: </span><br><ul><li>58.0WHr Battery</li><br></ul><span style='font-weight:bold;'>Additional Information: </span><br><ul><li>Dimensions: 11.97' x 8.36' x 0.61”</li><li>Approximate Weight: Starting at 3.1lbs</li></ul>					
+						
+				</div>",
                     this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop10.png" },
                     Color.Black,
                     new List<string> { "Backlit Keyboard" },
                     "Warehouse Pick-up",
@@ -362,14 +397,19 @@ namespace CostcoClone.Repository
                     "11.6 in.",
                     "Non-touchscreen"
                 );
+
             LaptopNotebookComputer laptop11 = new LaptopNotebookComputer
                 (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
+                    "Lenovo Flex 5 Series 2-in-1 Touchscreen Laptop - 10th Gen Intel Core i7-1065G7 - 1080p",
+                    (decimal)899.99,
+                    20,
+                    (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
+					
+							<div style='text-align:center;'><span style='font-weight:bold;'>Item may be available in your local warehouse, prices may vary. &nbsp;</span></div><br><span style='font-weight:bold;'>Limit 5 per member</span><br><br><br><span style='font-weight:bold;'>Processor &amp; Memory: </span><br><ul><li>10th Gen Intel® Core™ i7-1065G7 Processor at 1.3GHz</li><li>16GB DDR4 3200MHz RAM</li><br></ul><span style='font-weight:bold;'>Operating System:</span> &nbsp;<br><ul><li>Microsoft® Windows 10 Home</li><br></ul><span style='font-weight:bold;'>Drives: &nbsp;&nbsp;</span><br><ul><li>512GB M.2 NVMe Solid State Drive</li><li>No Optical Drive</li><br></ul><span style='font-weight:bold;'>Graphics &amp; Video: &nbsp;&nbsp;</span><br><ul><li>15.6' Touchscreen LED-Backlit Full HD IPS (1920 x 1080) Display</li><li>Intel® Iris Plus Graphics</li><br></ul><span style='font-weight:bold;'>Communications:</span><br><ul><li>Intel® Wi-Fi 6 (2x2) + and Bluetooth® 4.2</li><li>Integrated Webcam with Privacy Shutter 720p</li><br></ul><span style='font-weight:bold;'>Audio: &nbsp;&nbsp;</span><br><ul><li>Dolby Audio DAX3</li><br></ul><span style='font-weight:bold;'>Keyboard:</span><br><ul><li>Backlit Keyboard</li><li>Fingerprint Reader</li><br></ul><span style='font-weight:bold;'>Ports &amp; Slots:</span><br><ul><li>1x USB 3.1 Type-C</li><li>2x USB 3.1</li><li>1x HDMI</li><li>1x Media Card Reader (4 in 1)</li><li>1x Combination Audio Jack</li><br></ul><span style='font-weight:bold;'>Battery:</span><br><ul><li>3 cell 52.5WH Lithium-Polymer Battery</li><li>Up to 10 Hours</li><br></ul><span style='font-weight:bold;'>Additional Information:</span><br><ul><li>Dimensions: 14.08' x 9.37' x 0.82' </li><li>Approximate Weight: 4.4lbs</li></ul>					
+						
+				</div>",
                     this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop11.png" },
                     Color.Black,
                     new List<string> { "Backlit Keyboard" },
                     "Warehouse Pick-up",
@@ -383,14 +423,19 @@ namespace CostcoClone.Repository
                     "11.6 in.",
                     "Non-touchscreen"
                 );
+
             LaptopNotebookComputer laptop12 = new LaptopNotebookComputer
                 (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
+                    "New Apple MacBook Air 13\" - Intel Core i7 - 16GB Memory - 256GB SSD - Space Gray",
+                    (decimal)1049.99,
+                    20,
+                    (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
+					
+							<span style='font-weight:bold;'>Limit 2 Per Member</span><br><br><span style='font-weight:bold;'>Processor &amp; Memory:</span><br><ul><li>10th Gen Quad-core Intel® Core™ i7 Processor 1.2GHz</li><li>16GB 3733MHz LPDDR4X RAM</li><br></ul><span style='font-weight:bold;'>Drives: </span><br><ul><li>256GB PCIe-based SSD</li><li>No Optical Drive</li><br></ul><span style='font-weight:bold;'>Operating System: </span><br><ul><li>macOS</li><br></ul><span style='font-weight:bold;'>Communications: </span><br><ul><li>802.11 Wireless-AC + Bluetooth 5.0</li><li>Integrated 720p FaceTime HD Camera</li><li>Three-mic array with directional beamforming</li><br></ul><span style='font-weight:bold;'>Audio:</span><br><ul><li>Stereo Speakers</li><br></ul><span style='font-weight:bold;'>Graphics &amp; Video: </span><br><ul><li>13.3' 2560 x 1600 LED-Backlit Display</li><li>Intel® Iris Plus Graphics</li><br></ul><span style='font-weight:bold;'>Ports:</span><br><ul><li>2x Thunderbolt 3 (USB-C) ports</li><br></ul><span style='font-weight:bold;'>Keyboard: </span><br><ul><li>Backlit Magic Keyboard with Force Touch trackpad and Ambient Light Sensor</li><br></ul><span style='font-weight:bold;'>Additional Information: </span><br><ul><li>Dimensions: 11.97' x 8.36' x .16 - .63”</li><li>Approximate Weight: Starting at 2.8lbs</li></ul>					
+						
+				</div>",
                     this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop12.png" },
                     Color.Black,
                     new List<string> { "Backlit Keyboard" },
                     "Warehouse Pick-up",
@@ -404,35 +449,19 @@ namespace CostcoClone.Repository
                     "11.6 in.",
                     "Non-touchscreen"
                 );
-            LaptopNotebookComputer laptop13 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
+
             LaptopNotebookComputer laptop14 = new LaptopNotebookComputer
                 (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
+                    "Lenovo Flex 15.6\" 2 -in -1 Touchscreen Laptop - 10th Gen Intel Core i7 - 1065G7 - GeForce MX330 - 4K UHD - Windows 10 Professional",
+                    (decimal)1199.99,
+                    20,
+                    (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
+					
+							<span style='font-weight:bold;'>Limit 5 Per Member</span><br><br><br><span style='font-weight:bold;'>Processor &amp; Memory: </span><br><ul><li>10th Gen Intel® Core™ i7-1065G7 Processor at 1.3GHz</li><li>16GB DDR4 (1-DIMM) 3200MHz RAM</li><br></ul><span style='font-weight:bold;'>Operating System:</span> &nbsp;<br><ul><li>Microsoft® Windows 10 Professional (64-bit)</li><br></ul><span style='font-weight:bold;'>Drives: &nbsp;&nbsp;</span><br><ul><li>1TB TLC NVMe™ Solid State Drive</li><li>No Optical Drive</li><br></ul><span style='font-weight:bold;'>Graphics &amp; Video:</span> &nbsp;&nbsp;<br><ul><li>15.6' Touchscreen IPS LCD with LED-backlit 4K UHD (3840 x 2160) Display</li><li>2GB NVIDIA® GeForce® MX330 Graphics</li><br></ul><span style='font-weight:bold;'>Communications:</span><br><ul><li>Intel® Wi-Fi 6 (2x2/160) Gig+ and Bluetooth® 4.2</li><li>Integrated 720p Webcam with Privacy Shutter</li><br></ul><span style='font-weight:bold;'>Audio: </span>&nbsp;&nbsp;<br><ul><li>Dolby Audio DAX3</li><br></ul><span style='font-weight:bold;'>Keyboard:</span><br><ul><li>Backlit Keyboard &nbsp;</li><li>Fingerprint Reader</li><br></ul><span style='font-weight:bold;'>Ports &amp; Slots:</span><br><ul><li>1x USB 3.1 Type-C</li><li>2x USB 3.1</li><li>1x HDMI</li><li>1x 4-in-1 Media Card Reader</li><li>1x Headphone/Microphone Combo Jack</li><br></ul><span style='font-weight:bold;'>Battery</span><br><ul><li>3-cell 52.5WH Lithium Polymer Battery</li><br></ul><span style='font-weight:bold;'>Additional Information:</span><br><ul><li>Dimensions: 14.08' L x 9.37' W x 0.82' H</li><li>Approximate Weight: 4.4lbs</li></ul>					
+						
+				</div>",
                     this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop14.png" },
                     Color.Black,
                     new List<string> { "Backlit Keyboard" },
                     "Warehouse Pick-up",
@@ -446,14 +475,19 @@ namespace CostcoClone.Repository
                     "11.6 in.",
                     "Non-touchscreen"
                 );
+
             LaptopNotebookComputer laptop15 = new LaptopNotebookComputer
                 (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
+                    "New Apple MacBook Pro 13.3\" with Touch Bar - 8th Gen Intel Core i5 - 8GB Memory - 512GB SSD - Space Gray",
+                    (decimal)1449.99,
+                    20,
+                    (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
+					
+							<span style='font-weight:bold;'>Limit 2 Per Member</span><br><br><span style='font-weight:bold;'>Processor &amp; Memory:</span><br><ul><li>8th Generation Quad-core Intel® Core™ i5 Processor 1.4GHz</li><li>8GB LPDDR3 2133MHz RAM </li><br></ul><span style='font-weight:bold;'>Drives: </span><br><ul><li>512GB PCIe Solid State Drive</li><li>No Optical Drive</li><br></ul><span style='font-weight:bold;'>Operating System: </span><br><ul><li>macOS</li><br></ul><span style='font-weight:bold;'>Communications: </span><br><ul><li>802.11 Wireless-AC + Bluetooth 5.0</li><li>Integrated 720p FaceTime HD Camera</li><li>Three Microphones </li><br></ul><span style='font-weight:bold;'>Audio:</span><br><ul><li>Stereo Speakers with Wide Stereo Sound</li><br></ul><span style='font-weight:bold;'>Graphics &amp; Video: </span><br><ul><li>13.3' LED-Backlit (2560 x 1600) Retina Display with True Tone Technology</li><li>Intel® Iris Plus Graphics </li><br></ul><span style='font-weight:bold;'>Keyboard: </span><br><ul><li>Individual LED-Backlit Keys with Force Touch Trackpad and Ambient Light Sensor</li><li>Integrated Touch ID Sensor </li><br></ul><span style='font-weight:bold;'>Ports &amp; Slots: </span><br><ul><li>2x Thunderbolt 3 USB-C (Charging and DisplayPort)</li><li>1x Headphone Jack</li><br></ul><span style='font-weight:bold;'>Power Supply: </span><br><ul><li>58.0WHr Battery</li><br></ul><span style='font-weight:bold;'>Additional Information: </span><br><ul><li>Dimensions: 11.97' x 8.36' x 0.61”</li><li>Approximate Weight: Starting at 3.1lbs</li></ul>					
+						
+				</div>",
                     this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop15.png" },
                     Color.Black,
                     new List<string> { "Backlit Keyboard" },
                     "Warehouse Pick-up",
@@ -467,14 +501,19 @@ namespace CostcoClone.Repository
                     "11.6 in.",
                     "Non-touchscreen"
                 );
+
             LaptopNotebookComputer laptop16 = new LaptopNotebookComputer
                 (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
+                    "HP 14\" Laptop - 10th Gen Intel Core i5 - 1035G1 - 1080p",
+                    (decimal)599.99,
+                    20,
+                    (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
+					
+							<span style='font-weight:bold;'>Limit 5 Per Member</span><br><br><span style='font-weight:bold;'>Processor &amp; Memory:</span><br><ul><li>10th Gen Intel® Core™ i5-1035G1 Processor at 1.0GHz</li><li>12GB DDR4 2666 SDRAM</li><br></ul><span style='font-weight:bold;'>Drives: </span><br><ul><li>256GB PCle® NVMe™ M.2 Solid State Drive</li><li>No Optical Drive</li><br></ul><span style='font-weight:bold;'>Operating System: </span><br><ul><li>Microsoft® Windows 10 Home (64-bit)</li><br></ul><span style='font-weight:bold;'>Communications: </span><br><ul><li>802.11 Wireless-AC WLAN (1x1) + Bluetooth® 4.2</li><li>HP TrueVision HD Webcam + Integrated Dual Array Digital Microphones</li><br></ul><span style='font-weight:bold;'>Graphics &amp; Video:</span> <br><ul><li>14' IPS Anti-Glare WLED-backlit FHD (1920 x 1080) Display</li><li>Integrated Intel® UHD Graphics</li><br></ul><span style='font-weight:bold;'>Audio: </span><br><ul><li>HP HD Audio with Stereo Speakers</li><br></ul><span style='font-weight:bold;'>Keyboard: </span><br><ul><li>Full-size Island-style Backlit Keyboard</li><li>HP Imagepad with multi-touch gesture support </li><br></ul><span style='font-weight:bold;'>Ports: </span><br><ul><li>1x USB 3.1 Gen 1 Type-C </li><li>2x USB 3.1 Gen 1 Type-A</li><li>1x HDMI 1.4b</li><li>1x AC Smart Pin</li><li>1x Combination Headphone/Microphone Jack</li><li>1x Multi-format SD Media Card Reader </li><br></ul><span style='font-weight:bold;'>Power Supply: </span><br><ul><li>3-Cell 41WHr Lithium-Ion Battery &nbsp;</li><br></ul><span style='font-weight:bold;'>Additional Information: </span><br><ul><li>Dimensions: 12.76' x 8.86' x 0.71'</li><li>Approximate Weight: 3.24 lbs</li></ul>					
+						
+				</div>",
                     this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop16.png" },
                     Color.Black,
                     new List<string> { "Backlit Keyboard" },
                     "Warehouse Pick-up",
@@ -488,14 +527,19 @@ namespace CostcoClone.Repository
                     "11.6 in.",
                     "Non-touchscreen"
                 );
+
             LaptopNotebookComputer laptop17 = new LaptopNotebookComputer
                 (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
+                    "Dell XPS 13 2-in-1 Touchscreen - 10th Gen Intel Core i7-1065G7 - 4K Ultra HD",
+                    (decimal)1999.99,
+                    20,
+                    (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
+					
+							<span style='font-weight:bold;'>Limit 5 Per Member</span><br><br><span style='font-weight:bold;'>Processor &amp; Memory:</span><br><ul><li>10th Gen Intel® Core™ i7-1065G7 Processor 1.3GHz</li><li>16GB 3733 MHz LPDDR RAM</li><br></ul><span style='font-weight:bold;'>Drives: </span><br><ul><li>512GB PCIe NVMe Solid State Drive</li><li>No Optical Drive</li><br></ul><span style='font-weight:bold;'>Operating System: </span><br><ul><li>Microsoft® Windows 10 Home (64-bit)</li><br></ul><span style='font-weight:bold;'>Communications: </span><br><ul><li>KILLER™ AX1650 (2x2/160) Wi-Fi 6 Gig+ and Bluetooth® 5.0</li><li>Integrated Widescreen HD 720p 2.25mm Webcam</li><br></ul><span style='font-weight:bold;'>Audio</span><br><ul><li>Stereo Speakers with MaxxAudio® Pro</li><br></ul><span style='font-weight:bold;'>Graphics &amp; Video: </span><br><ul><li>13.4' Touchscreen 16:10 UHD+ (3840 x 2400) WLED 4-Sided Narrow Bezel Display</li><li>Integrated Intel® Iris Plus Graphics</li><br></ul><span style='font-weight:bold;'>Keyboard: </span><br><ul><li>Backlit Keyboard</li><li>Fingerprint Reader</li><br></ul><span style='font-weight:bold;'>Ports &amp; Slots: </span><br><ul><li>2x Thunderbolt 3.0 with PowerShare</li><li>1x Combination Headphone/Microphone Jack</li><li>1x Media Card Reader</li><br></ul><span style='font-weight:bold;'>Power Supply: </span><br><ul><li>4-Cell 51WHr Battery</li><br></ul><span style='font-weight:bold;'>Additional Information: </span><br><ul><li>Dimensions (Approximate): 11.69' x 8.15' x 0.51'</li><li>Approximate Weight: 2.9 lbs</li><br></ul>					
+						
+				</div>",
                     this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop17.png" },
                     Color.Black,
                     new List<string> { "Backlit Keyboard" },
                     "Warehouse Pick-up",
@@ -509,14 +553,19 @@ namespace CostcoClone.Repository
                     "11.6 in.",
                     "Non-touchscreen"
                 );
+
             LaptopNotebookComputer laptop18 = new LaptopNotebookComputer
                 (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
+                    "Acer Spin 3 14\" Laptop - 10th Gen Intel Core i5 - 1035G1 - 1080p",
+                    (decimal)649.99,
+                    20,
+                    (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
+					
+							<div style='text-align:center;'><span style='font-weight:bold;'>Item may be available in your local warehouse</span></div><br><span style='font-weight:bold;'>Limit 5 per member</span><br><br><span style='font-weight:bold;'>Processor &amp; Memory:</span><br><ul><li>10th Gen Intel® Core™ i5-1035G1 Processor at 1.0GHz</li><li>8GB LPDDR4 RAM</li><br></ul><span style='font-weight:bold;'>Drives: </span><br><ul><li>256GB NVMe Solid State Drive &nbsp;</li><li>No Optical Drive</li><br></ul><span style='font-weight:bold;'>Operating System: </span><br><ul><li>Microsoft® Windows 10 Home (64-bit)</li><br></ul><span style='font-weight:bold;'>Communications: </span><br><ul><li>Intel® Wi-Fi 6 (2x2) + and Bluetooth® 5.0</li><li>Integrated HD Webcam (1280 x 720) </li><br></ul><span style='font-weight:bold;'>Graphics &amp; Video: </span><br><ul><li>14' Widescreen IPS LED-backlit FHD (1920 x 1080) Touchscreen Display</li><li>Integrated Intel® UHD Graphics</li><br></ul><span style='font-weight:bold;'>Keyboard: </span><br><ul><li>Backlit Keyboard</li><br></ul><span style='font-weight:bold;'>Ports &amp; Slots: </span><br><ul><li>1x USB 3.1 Gen 2 Type-C with Thunderbolt™ 3 Interface</li><li>2x USB 3.2 Gen 1</li><li>1x HDMI 2.0</li><li>1x Combination Headphone/Speaker/Line-Out Jack</li><br></ul><span style='font-weight:bold;'>Power Supply: </span><br><ul><li>Lithium-Ion Battery </li><li>Up to 12-Hour Battery Life (Mixed Usage)</li><br></ul><span style='font-weight:bold;'>Additional Information: </span><br><ul><li>Dimensions: 12.8' x 9.06' x 0.67'</li><li>Approximate Weight: &nbsp;3.31 lbs</li><br></ul><span style='font-weight:bold;'>What's in the Box:</span><br><ul><li>Laptop</li><li>AC Adapter &amp; Power Cord</li><li>Acer Active Stylus</li><li>Protective Sleeve</li></ul>					
+						
+				</div>",
                     this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop18.png" },
                     Color.Black,
                     new List<string> { "Backlit Keyboard" },
                     "Warehouse Pick-up",
@@ -530,14 +579,40 @@ namespace CostcoClone.Repository
                     "11.6 in.",
                     "Non-touchscreen"
                 );
+
             LaptopNotebookComputer laptop19 = new LaptopNotebookComputer
                 (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
+                    "HP Envy x360 15.6\" Touchscreen 2 -in -1 Laptop - AMD Ryzen 5 4500U - 1080p",
+                    (decimal)799.99,
+                    20,
+                    (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
+					
+							<div style='text-align:center;'> <span style='font-weight:bold;'>Item may be available in your local warehouse, prices may vary</span></div><br><span style='font-weight:bold;'>Limit 5 Per Member</span><br><br><span style='font-weight:bold;'>Processor &amp; Memory:</span> <br><ul><li> AMD Ryzen™ 5 4500U Processor at 2.375GHz</li><li> 8 GB DDR4-3200 SDRAM memory</li><br></ul><span style='font-weight:bold;'>Drives:</span> <br><ul><li>512GB PCIe® NVMe™ M.2 Solid State Drive</li><br></ul><span style='font-weight:bold;'>Operating System: </span><br><ul><li>Microsoft® Windows 10 Home (64 bit)</li><br></ul><span style='font-weight:bold;'>Graphics &amp; Video:</span><br><ul><li>15.6' Touchscreen IPS FHD WLED backlit (1920 x 1080) Display </li><li>AMD Radeon™ Graphics</li><br></ul><span style='font-weight:bold;'>Communications: </span><br><ul><li>HD Wide Vision Camera with Integrated Dual Array Digital Microphone</li><li>Intel Wi-Fi 6 (2x2) + Bluetooth 5.0</li><br></ul><span style='font-weight:bold;'>Audio:</span><br><ul><li>Bang &amp; Olufsen with dual speakers</li><br></ul><span style='font-weight:bold;'>Ports &amp; Slots:</span><br><ul><li>1x USB Type-C</li><li>2x USP Type-A</li><li>1x HDMI 2.0 &nbsp;</li><li>1x Media card reader &nbsp;</li><li>1x Headphone/Microphone Combo</li><br></ul><span style='font-weight:bold;'>Power Supply:</span><br><ul><li>4-cell 55 Wh Li-ion polymer battery</li><li>Up to 14 hours and 15 minutes (mixed usage)</li><br></ul><span style='font-weight:bold;'>Additional Information: &nbsp;&nbsp;</span><br><ul><li>Dimensions: 14.13' x 9.69' x 0.68'</li><li>Approximate Weight: 4.53 lb</li><br></ul>					
+						
+<figure class='product-manuals visible-xs-block visible-sm-block visible-md-block'>
+	
+
+	
+	<h3>Manuals, Information &amp; Guides</h3>
+	<ul class='list-group product-attachments'>
+	
+						<li class='list-group-item'>
+						
+								<a href='https://mobilecontent.costco.com/live/resource/img/static-us-pdf/1423738-Spec_Sheet.pdf' class='pdf-link' target='_blank'>
+									
+										<img class='pdf' src='/wcsstore/CostcoGLOBALSAS/images/pdf.svg' alt='PDF format'>
+									
+								Specifications</a>
+							
+						</li>
+					
+	</ul>
+	
+</figure>
+
+				</div>",
                     this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop19.png" },
                     Color.Black,
                     new List<string> { "Backlit Keyboard" },
                     "Warehouse Pick-up",
@@ -551,14 +626,19 @@ namespace CostcoClone.Repository
                     "11.6 in.",
                     "Non-touchscreen"
                 );
+
             LaptopNotebookComputer laptop20 = new LaptopNotebookComputer
                 (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
+                    "New Apple MacBook Pro 13.3\" with Touch Bar - 8th Gen Intel Core i5 - 8GB Memory - 512GB SSD - Silver",
+                    (decimal)1449.99,
+                    20,
+                    (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
+					
+							<span style='font-weight:bold;'>Limit 2 Per Member</span><br><br><span style='font-weight:bold;'>Processor &amp; Memory:</span><br><ul><li>8th Generation Quad-core Intel® Core™ i5 Processor 1.4GHz</li><li>8GB LPDDR3 2133MHz RAM </li><br></ul><span style='font-weight:bold;'>Drives: </span><br><ul><li>512GB PCIe Solid State Drive</li><li>No Optical Drive</li><br></ul><span style='font-weight:bold;'>Operating System: </span><br><ul><li>macOS</li><br></ul><span style='font-weight:bold;'>Communications: </span><br><ul><li>802.11 Wireless-AC + Bluetooth 5.0</li><li>Integrated 720p FaceTime HD Camera</li><li>Three Microphones </li><br></ul><span style='font-weight:bold;'>Audio:</span><br><ul><li>Stereo Speakers with Wide Stereo Sound</li><br></ul><span style='font-weight:bold;'>Graphics &amp; Video: </span><br><ul><li>13.3' LED-Backlit (2560 x 1600) Retina Display with True Tone Technology</li><li>Intel® Iris Plus Graphics </li><br></ul><span style='font-weight:bold;'>Keyboard: </span><br><ul><li>Individual LED-Backlit Keys with Force Touch Trackpad and Ambient Light Sensor</li><li>Integrated Touch ID Sensor </li><br></ul><span style='font-weight:bold;'>Ports &amp; Slots: </span><br><ul><li>2x Thunderbolt 3 USB-C (Charging and DisplayPort)</li><li>1x Headphone Jack</li><br></ul><span style='font-weight:bold;'>Power Supply: </span><br><ul><li>58.0WHr Battery</li><br></ul><span style='font-weight:bold;'>Additional Information: </span><br><ul><li>Dimensions: 11.97' x 8.36' x 0.61”</li><li>Approximate Weight: Starting at 3.1lbs</li></ul>					
+						
+				</div>",
                     this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop20.png" },
                     Color.Black,
                     new List<string> { "Backlit Keyboard" },
                     "Warehouse Pick-up",
@@ -572,14 +652,19 @@ namespace CostcoClone.Repository
                     "11.6 in.",
                     "Non-touchscreen"
                 );
+
             LaptopNotebookComputer laptop21 = new LaptopNotebookComputer
                 (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
+                    "New Apple MacBook Pro 13.3\" with Touch Bar - 10th Gen Intel Core i5 - 16GB Memory - 1TB SSD - Space Gray",
+                    (decimal)1949.99,
+                    20,
+                    (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
+					
+							<span style='font-weight:bold;'>Limit 2 Per Member</span><br><br><span style='font-weight:bold;'>Processor &amp; Memory:</span><br><ul><li>10th Generation Quad-core Intel® Core™ i5 Processor 2.0GHz</li><li>16GB LPDDR4X 3733MHz RAM </li><br></ul><span style='font-weight:bold;'>Drives: </span><br><ul><li>1TB PCIe Solid State Drive</li><li>No Optical Drive</li><br></ul><span style='font-weight:bold;'>Operating System: </span><br><ul><li>macOS</li><br></ul><span style='font-weight:bold;'>Communications: </span><br><ul><li>802.11 Wireless-AC + Bluetooth 5.0</li><li>Integrated 720p FaceTime HD Camera</li><li>Three Microphones </li><br></ul><span style='font-weight:bold;'>Audio:</span><br><ul><li>Stereo Speakers with Wide Stereo Sound</li><br></ul><span style='font-weight:bold;'>Graphics &amp; Video: </span><br><ul><li>13.3' LED-Backlit (2560 x 1600) Retina Display with True Tone Technology</li><li>Intel® Iris Plus Graphics </li><br></ul><span style='font-weight:bold;'>Keyboard: </span><br><ul><li>Individual LED-Backlit Keys with Force Touch Trackpad and Ambient Light Sensor</li><li>Integrated Touch ID Sensor </li><br></ul><span style='font-weight:bold;'>Ports &amp; Slots: </span><br><ul><li>4x Thunderbolt 3 USB-C (Charging and DisplayPort)</li><li>1x Headphone Jack</li><br></ul><span style='font-weight:bold;'>Power Supply: </span><br><ul><li>58.0WHr Battery</li><br></ul><span style='font-weight:bold;'>Additional Information: </span><br><ul><li>Dimensions: 11.97' x 8.36' x 0.61”</li><li>Approximate Weight: Starting at 3.1lbs</li></ul>					
+						
+				</div>",
                     this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop21.png" },
                     Color.Black,
                     new List<string> { "Backlit Keyboard" },
                     "Warehouse Pick-up",
@@ -593,14 +678,19 @@ namespace CostcoClone.Repository
                     "11.6 in.",
                     "Non-touchscreen"
                 );
+
             LaptopNotebookComputer laptop22 = new LaptopNotebookComputer
                 (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
+                    "New Apple MacBook Pro 13.3\" with Touch Bar - 10th Gen Intel Core i5 - 16GB Memory - 512GB SSD - Silver",
+                    (decimal)1749.99,
+                    20,
+                    (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
+					
+							<span style='font-weight:bold;'>Limit 2 Per Member</span><br><br><span style='font-weight:bold;'>Processor &amp; Memory:</span><br><ul><li>10th Generation Quad-core Intel® Core™ i5 Processor 2.0GHz</li><li>16GB LPDDR4X 3733MHz RAM </li><br></ul><span style='font-weight:bold;'>Drives: </span><br><ul><li>512GB PCIe Solid State Drive</li><li>No Optical Drive</li><br></ul><span style='font-weight:bold;'>Operating System: </span><br><ul><li>macOS</li><br></ul><span style='font-weight:bold;'>Communications: </span><br><ul><li>802.11 Wireless-AC + Bluetooth 5.0</li><li>Integrated 720p FaceTime HD Camera</li><li>Three Microphones </li><br></ul><span style='font-weight:bold;'>Audio:</span><br><ul><li>Stereo Speakers with Wide Stereo Sound</li><br></ul><span style='font-weight:bold;'>Graphics &amp; Video: </span><br><ul><li>13.3' LED-Backlit (2560 x 1600) Retina Display with True Tone Technology</li><li>Intel® Iris Plus Graphics </li><br></ul><span style='font-weight:bold;'>Keyboard: </span><br><ul><li>Individual LED-Backlit Keys with Force Touch Trackpad and Ambient Light Sensor</li><li>Integrated Touch ID Sensor </li><br></ul><span style='font-weight:bold;'>Ports &amp; Slots: </span><br><ul><li>4x Thunderbolt 3 USB-C (Charging and DisplayPort)</li><li>1x Headphone Jack</li><br></ul><span style='font-weight:bold;'>Power Supply: </span><br><ul><li>58.0WHr Battery</li><br></ul><span style='font-weight:bold;'>Additional Information: </span><br><ul><li>Dimensions: 11.97' x 8.36' x 0.61”</li><li>Approximate Weight: Starting at 3.1lbs</li></ul>					
+						
+				</div>",
                     this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop22.png" },
                     Color.Black,
                     new List<string> { "Backlit Keyboard" },
                     "Warehouse Pick-up",
@@ -614,14 +704,19 @@ namespace CostcoClone.Repository
                     "11.6 in.",
                     "Non-touchscreen"
                 );
+
             LaptopNotebookComputer laptop23 = new LaptopNotebookComputer
                 (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
+                    "Dell Inspiron 15 7000 Series - 9th Gen Intel Core i7 - GeForce GTX 1050 - 1080p",
+                    (decimal)899.99,
+                    20,
+                    (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
+					
+							<span style='font-weight:bold;'>Processor &amp; Memory:</span><br><ul><li>9th Gen Intel® Core™ i7-9750H Processor 2.6GHz</li><li>8GB DDR4 2666MHz RAM</li><br></ul><span style='font-weight:bold;'>Drives: </span><br><ul><li>256GB PCIe NVMe M.2 Solid State Drive</li><li>No Optical Drive</li><br></ul><span style='font-weight:bold;'>Operating System: </span><br><ul><li>Microsoft® Windows 10 Home (64-bit)</li><br></ul><span style='font-weight:bold;'>Communications: </span><br><ul><li>802.11 Dual Band Wireless-AC 2x2 + Bluetooth 5.0</li><li>Integrated Widescreen HD 720p Webcam with Dual Digital Microphone Array</li><br></ul><span style='font-weight:bold;'>Audio:</span><br><ul><li>Stereo Speakers with MaxxAudio Pro</li><br></ul><span style='font-weight:bold;'>Graphics &amp; Video: </span><br><ul><li>15.6' Anti-Glare LED-Backlit FHD (1920 x 1080) Narrow Border IPS Display</li><li>3GB NVIDIA® GeForce® GTX 1050 Graphics</li><br></ul><span style='font-weight:bold;'>Keyboard: </span><br><ul><li>Backlit Keyboard</li><li>Fingerprint Reader</li><br></ul><span style='font-weight:bold;'>Ports &amp; Slots: </span><br><ul><li>3x USB 3.1 Type-A</li><li>1x USB 3.1 Type-C (Thunderbolt 3)</li><li>1x Combination Headphone/Microphone Jack</li><li>1x HDMI 2.0</li><li>1x Media Card Reader</li><br></ul><span style='font-weight:bold;'>Power Supply: </span><br><ul><li>3-Cell 56WHr Battery</li><br></ul><span style='font-weight:bold;'>Additional Information: </span><br><ul><li>Dimensions: 14.08' x 9.40' x 0.78'</li><li>Approximate Weight: 3.52lbs</li></ul>					
+						
+				</div>",
                     this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop23.png" },
                     Color.Black,
                     new List<string> { "Backlit Keyboard" },
                     "Warehouse Pick-up",
@@ -635,56 +730,19 @@ namespace CostcoClone.Repository
                     "11.6 in.",
                     "Non-touchscreen"
                 );
-            LaptopNotebookComputer laptop24 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop25 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
+
             LaptopNotebookComputer laptop26 = new LaptopNotebookComputer
                 (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
+                    "MSI GL75 Leopard Gaming Laptop - 10th Gen Intel Core i7-10750H - GeForce GTX 1660Ti - 144Hz 1080p Display",
+                    (decimal)1199.99,
+                    20,
+                    (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
+					
+							<br><span style='font-weight:bold;'>Processor &amp; Memory:</span><br><ul><li>10th Gen Intel® Core™ i7-10750H Processor 2.6GHz</li><li>16GB DDR4 2666MHz RAM</li><br></ul><span style='font-weight:bold;'>Drives: </span><br><ul><li>1TB 5400RPM Hard Drive + 256GB NVMe Solid State Drive</li><li>No Optical Drive </li><br></ul><span style='font-weight:bold;'>Operating System: </span><br><ul><li>Microsoft® Windows 10 Home (64-bit)</li><br></ul><span style='font-weight:bold;'>Communications: </span><br><ul><li>Intel® WiFi 6 Gig+ AX201 (2x2) + Bluetooth® 5.0</li><li>Integrated 720p HD Webcam </li><li>10/100/1000 Gigabit Ethernet (RTL8111HS-CG) LAN</li><br></ul><span style='font-weight:bold;'>Graphics &amp; Video: </span><br><ul><li>17.3' FHD (1920 x 1080) 144Hz 3ms 100% sRGB Display</li><li>6GB NVIDIA GeForce® GTX 1660Ti Graphics</li><br></ul><span style='font-weight:bold;'>Audio:</span><br><ul><li>2x 3W Giant Speakers </li><br></ul><span style='font-weight:bold;'>Keyboard: </span><br><ul><li>Single Backlight with Anti-Ghosting Key + Silver Lining</li><br></ul><span style='font-weight:bold;'>Ports &amp; Slots: </span><br><ul><li>1x USB 3.1 Gen 2 Type-C</li><li>3x USB 3.1 Gen 1</li><li>1x HDMI-Out</li><li>1x Media Card Reader</li><li>1x Mini-Display Port mDP v1.2</li><li>1x RJ-45 Connector</li><li>1x Mic-In/Headphone-Out Jack</li><br></ul><span style='font-weight:bold;'>Power Supply: </span><br><ul><li>6-Cell 51Wh Li-Ion Battery </li><br></ul><span style='font-weight:bold;'>Additional Information: </span><br><ul><li>Dimensions: 15.63' x 10.67' x 1.10'</li><li>Approximate Weight: 5.51lbs</li><br></ul>					
+						
+				</div>",
                     this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop26.png" },
                     Color.Black,
                     new List<string> { "Backlit Keyboard" },
                     "Warehouse Pick-up",
@@ -700,12 +758,16 @@ namespace CostcoClone.Repository
                 );
             LaptopNotebookComputer laptop27 = new LaptopNotebookComputer
                 (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
+                    "MSI GF75 Thin Gaming Laptop - 10th Gen Intel Core i5-10300H - GeForce GTX 1650 - 120Hz 1080p Display",
+                    (decimal)799.99,
+                    20,
+                    (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
+					
+							<br><span style='font-weight:bold;'>Processor &amp; Memory:</span><br><ul><li>10th Gen Intel® Core™ i5-10300H Processor 2.6GHz</li><li>8GB DDR4 2666MHz RAM</li><br></ul><span style='font-weight:bold;'>Drives: </span><br><ul><li>512GB NVMe Solid State Drive</li><li>No Optical Drive </li><br></ul><span style='font-weight:bold;'>Operating System: </span><br><ul><li>Microsoft® Windows 10 Home (64-bit)</li><br></ul><span style='font-weight:bold;'>Communications: </span><br><ul><li>Intel® Wi-Fi 6 Gig + AX201 (2x2) + Bluetooth® 5.0</li><li>Integrated 720p HD Webcam </li><li>10/100/1000 Gigabit Ethernet (RTL8111HS-CG) LAN </li><br></ul><span style='font-weight:bold;'>Graphics &amp; Video: </span><br><ul><li>17.3' FHD (1920 x 1080) 120Hz Display</li><li>4GB NVIDIA GeForce® GTX 1650 Graphics</li><br></ul><span style='font-weight:bold;'>Audio:</span><br><ul><li>2x 2W Speakers</li><br></ul><span style='font-weight:bold;'>Keyboard: </span><br><ul><li>Single Backlight with Anti-Ghosting Key + Silver Lining</li><br></ul><span style='font-weight:bold;'>Ports &amp; Slots: </span><br><ul><li>1x USB 3.2 Gen 1 Type-C</li><li>3x USB 3.2 Gen 1</li><li>1x HDMI-Out</li><li>1x RJ-45 Connector</li><li>1x Mic-In/Headphone-Out Jack</li><br></ul><span style='font-weight:bold;'>Power Supply: </span><br><ul><li>3-Cell 51Wh Polymer Battery </li><br></ul><span style='font-weight:bold;'>Additional Information: </span><br><ul><li>Dimensions: 15.63' x 10.24' x 0.9'</li><li>Approximate Weight: 4.85lbs</li><br></ul>					
+						
+				</div>",
                     this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop27.png" },
                     Color.Black,
                     new List<string> { "Backlit Keyboard" },
                     "Warehouse Pick-up",
@@ -721,12 +783,16 @@ namespace CostcoClone.Repository
                 );
             LaptopNotebookComputer laptop28 = new LaptopNotebookComputer
                 (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
+                    "New Apple MacBook Pro 13.3\" with Touch Bar - 10th Gen Intel Core i5 - 16GB Memory - 1TB SSD - Silver",
+                    (decimal)1949.99,
+                    20,
+                    (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
+					
+							<span style='font-weight:bold;'>Limit 2 Per Member</span><br><br><span style='font-weight:bold;'>Processor &amp; Memory:</span><br><ul><li>10th Generation Quad-core Intel® Core™ i5 Processor 2.0GHz</li><li>16GB LPDDR4X 3733MHz RAM </li><br></ul><span style='font-weight:bold;'>Drives: </span><br><ul><li>1TB PCIe Solid State Drive</li><li>No Optical Drive</li><br></ul><span style='font-weight:bold;'>Operating System: </span><br><ul><li>macOS</li><br></ul><span style='font-weight:bold;'>Communications: </span><br><ul><li>802.11 Wireless-AC + Bluetooth 5.0</li><li>Integrated 720p FaceTime HD Camera</li><li>Three Microphones </li><br></ul><span style='font-weight:bold;'>Audio:</span><br><ul><li>Stereo Speakers with Wide Stereo Sound</li><br></ul><span style='font-weight:bold;'>Graphics &amp; Video: </span><br><ul><li>13.3' LED-Backlit (2560 x 1600) Retina Display with True Tone Technology</li><li>Intel® Iris Plus Graphics </li><br></ul><span style='font-weight:bold;'>Keyboard: </span><br><ul><li>Individual LED-Backlit Keys with Force Touch Trackpad and Ambient Light Sensor</li><li>Integrated Touch ID Sensor </li><br></ul><span style='font-weight:bold;'>Ports &amp; Slots: </span><br><ul><li>4x Thunderbolt 3 USB-C (Charging and DisplayPort)</li><li>1x Headphone Jack</li><br></ul><span style='font-weight:bold;'>Power Supply: </span><br><ul><li>58.0WHr Battery</li><br></ul><span style='font-weight:bold;'>Additional Information: </span><br><ul><li>Dimensions: 11.97' x 8.36' x 0.61”</li><li>Approximate Weight: Starting at 3.1lbs</li></ul>					
+						
+				</div>",
                     this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop28.png" },
                     Color.Black,
                     new List<string> { "Backlit Keyboard" },
                     "Warehouse Pick-up",
@@ -740,14 +806,19 @@ namespace CostcoClone.Repository
                     "11.6 in.",
                     "Non-touchscreen"
                 );
+
             LaptopNotebookComputer laptop29 = new LaptopNotebookComputer
                 (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
+                    "New Apple MacBook Pro 13.3\" with Touch Bar - 8th Gen Intel Core i5 - 8GB Memory - 256GB SSD - Silver",
+                    (decimal)1249.99,
+                    20,
+                    (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
+					
+							<span style='font-weight:bold;'>Limit 2 Per Member</span><br><br><span style='font-weight:bold;'>Processor &amp; Memory:</span><br><ul><li>8th Generation Quad-core Intel® Core™ i5 Processor 1.4GHz</li><li>8GB LPDDR3 2133MHz RAM</li><br></ul><span style='font-weight:bold;'>Drives: </span><br><ul><li>256GB PCIe Solid State Drive</li><li>No Optical Drive</li><br></ul><span style='font-weight:bold;'>Operating System: </span><br><ul><li>macOS</li><br></ul><span style='font-weight:bold;'>Communications: </span><br><ul><li>802.11 Wireless-AC + Bluetooth 5.0</li><li>Integrated 720p FaceTime HD Camera</li><li>Three Microphones </li><br></ul><span style='font-weight:bold;'>Audio:</span><br><ul><li>Stereo Speakers with Wide Stereo Sound</li><br></ul><span style='font-weight:bold;'>Graphics &amp; Video: </span><br><ul><li>13.3' LED-Backlit (2560 x 1600) Retina Display with True Tone Technology</li><li>Intel® Iris Plus Graphics </li><br></ul><span style='font-weight:bold;'>Keyboard: </span><br><ul><li>Individual LED-Backlit Keys with Force Touch Trackpad and Ambient Light Sensor</li><li>Integrated Touch ID Sensor </li><br></ul><span style='font-weight:bold;'>Ports &amp; Slots: </span><br><ul><li>2x Thunderbolt 3 USB-C (Charging and DisplayPort)</li><li>1x Headphone Jack</li><br></ul><span style='font-weight:bold;'>Power Supply: </span><br><ul><li>58.0WHr Battery</li><br></ul><span style='font-weight:bold;'>Additional Information: </span><br><ul><li>Dimensions: 11.97' x 8.36' x 0.61”</li><li>Approximate Weight: Starting at 3.1lbs</li></ul>					
+						
+				</div>",
                     this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop29.png" },
                     Color.Black,
                     new List<string> { "Backlit Keyboard" },
                     "Warehouse Pick-up",
@@ -763,12 +834,20 @@ namespace CostcoClone.Repository
                 );
             LaptopNotebookComputer laptop30 = new LaptopNotebookComputer
                 (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
+                    "Dell XPS 13 Touchscreen Laptop - 10th Gen Intel Core i7-1065G7 - 4K Ultra HD",
+                    (decimal)1849.99,
+                    20,
+                    (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
+					
+							<span style='font-weight:bold;'>Limit 5 Per Member</span><br>
+<!-- DO NOT REMOVE THIS -->
+
+<div id='wc-power-page'><div class='wc-responsive wc-layout-computer wc-device-computer wc-12-col wc-wide wc-6-2col wc-4-3col wc-3-4col wc-rf-col-4 wc-rf-break-4-to-4 wc-rf-break-3-to-3 wc-richfeatures-layout-computer' id='wc-aplus'><h1 class='wc-ppp-caption'>Product details have been supplied by the Manufacturer, and are hosted by a third party.</h1><div class='wc-fragment wc-no-focus' data-channel-product-name='' data-compiler-v='2020.7.2.487' data-cpi='100579395' data-gtin='00884116362548' data-is-capdesc-open='false' data-language-code='en' data-module-brand='Dell' data-module-code='dellbtoc' data-module-name='DellBtoC US' data-mpn='XPS9300-7548SLV-PUS' data-produced='2020-06-14 05:08' data-section-caption='Product Overview' data-section-tag='features' data-section-template-code='rich-features' data-vendor-name='XPS9300-7548SLV-PUS' data-wcpc='1583525035181' id='wc-features-ab7b442bfd1941408413027639f6baa3' data-is-reported-view='true'><h2 class='wc-first-header wc-rich-features-center-984' style='max-width:970px !important'>Product Overview</h2><div class='wc-aplus-body'><div class='wc-reset'> <ul class='wc-rich-features wc-rich-content-orientation-banner-image wc-first wc-last wc-no-line-seperator'> <li class='wc-rich-feature-item wc-text-placement-false wc-odd-0 wc-first wc-has-media wc-thumb-large wc-has-no-caption wc-has-no-description wc-last' id='wcr-rf-c2ba80_wcrid1'> <style> .wc-richfeatures-layout-computer ul.wc-rich-content-orientation-banner-image #wcr-rf-c2ba80_wcrid1 { max-width:970px!important; } .wc-richfeatures-layout-computer ul.wc-rich-content-orientation-banner-image #wcr-rf-c2ba80_wcrid1 .wc-rf-banner-image-container { max-width:970px!important; padding-bottom:30.927835%!important; } .wc-richfeatures-layout-computer ul.wc-rich-content-orientation-banner-image #wcr-rf-c2ba80_wcrid1.wc-rf-box-placement-below .wc-rf-banner-image-container, .wc-richfeatures-layout-computer ul.wc-rich-content-orientation-banner-image #wcr-rf-c2ba80_wcrid1.wc-rf-box-location-below .wc-rf-banner-image-container { padding-bottom:0!important; } </style> <div class='wc-rf-banner-image-container'> <img alt='' class='wc-media wc-image wc-rf-banner-image' data-asset-type='image' data-asset-url='/_cp/products/1583525035181/tab-ab7b442b-fd19-4140-8413-027639f6baa3/9f204b14558f400abfb03aae1f82edf2.jpg' height='300' src='https://smedia.webcollage.net/rwvfp/wc/cp/1590014654786_16a7c6bf-0b3e-4369-b638-74e077352b23/module/dellbtoc/_cp/products/1583525035181/tab-ab7b442b-fd19-4140-8413-027639f6baa3/9f204b14558f400abfb03aae1f82edf2.jpg.w1920.jpg' width='970'> </div> </li> </ul> </div></div><div class='wc-clear-both' style='height: 0px !important'></div></div><div class='wc-fragment wc-no-focus' data-channel-product-name='' data-compiler-v='2020.7.2.487' data-cpi='100579395' data-gtin='00884116362548' data-is-capdesc-open='false' data-language-code='en' data-module-brand='Dell' data-module-code='dellbtoc' data-module-name='DellBtoC US' data-mpn='XPS9300-7548SLV-PUS' data-produced='2020-06-14 05:08' data-section-caption='Videos' data-section-tag='demo' data-section-template-code='video-gallery' data-vendor-name='XPS9300-7548SLV-PUS' data-wcpc='1583525035181' id='wc-demo-b42767099a944c81aff3bd290379b6ad' data-is-reported-view='true'><h2>Videos</h2><div class='wc-aplus-body'><div class='wc-video-gallery' data-module-id='dellbtoc' data-resources-base='https://smedia.webcollage.net/rwvfp/wc/cp/1590014654786_16a7c6bf-0b3e-4369-b638-74e077352b23/module/dellbtoc/' style='max-height: 687px;'><iframe frameborder='no' scrolling='no' title='Product Videos' allowfullscreen='true' webkitallowfullscreen='true' mozallowfullscreen='true' id='wcframable1-0' style='width: 100%; height: 687px;' class='data-iframe-viewed'></iframe></div></div><div class='wc-clear-both' style='height: 0px !important'></div></div><div class='wc-fragment wc-no-focus' data-channel-product-name='' data-compiler-v='2020.7.2.487' data-cpi='100579395' data-gtin='00884116362548' data-is-capdesc-open='false' data-language-code='en' data-module-brand='Dell' data-module-code='dellbtoc' data-module-name='DellBtoC US' data-mpn='XPS9300-7548SLV-PUS' data-produced='2020-06-14 05:08' data-section-caption='Features and Benefits' data-section-tag='features' data-section-template-code='rich-features' data-vendor-name='XPS9300-7548SLV-PUS' data-wcpc='1583525035181' id='wc-features-9aab244e41d94b128e2dc85cb07e0ea3' data-is-reported-view='true'><h2 class='wc-rich-features-center-984'>Features and Benefits</h2><div class='wc-aplus-body'><div class='wc-reset'> <ul class='wc-rich-features wc-rich-content-orientation-zigzag-left wc-first wc-no-line-seperator wc-rich-features-center-984'> <li class='wc-rich-feature-item wc-text-placement-false wc-odd-0 wc-first wc-has-media wc-thumb-medium '>  <div class='wc-media-wrap' style='width:300px !important'> <div class='wc-media-inner-wrap' style='max-width:300px !important'> <img alt='' class='wc-media wc-image' data-asset-title='Dell XPS 13 9300 CES 2020' data-asset-type='image' data-asset-url='/_cp/products/1583525035181/tab-9aab244e-41d9-4b12-8e2d-c85cb07e0ea3/bfe879b2b9934ccaae1189dc4c0b697f.jpg' data-asset-wrapper='rich-features' data-height='300' data-section-template-code='rich-features' data-width='300' height='300' module-id='dellbtoc' src='https://smedia.webcollage.net/rwvfp/wc/cp/1590014654786_16a7c6bf-0b3e-4369-b638-74e077352b23/module/dellbtoc/_cp/products/1583525035181/tab-9aab244e-41d9-4b12-8e2d-c85cb07e0ea3/bfe879b2b9934ccaae1189dc4c0b697f.jpg.w1920.jpg' title='Dell XPS 13 9300 CES 2020' wcpc='1583525035181' width='300'> </div> </div> <div class='wc-text-wrap'><h3 class='wc-rich-content-header wc-feature-main-header '>Dell XPS 13 9300 CES 2020</h3> <div class='wc-rich-content-description'> <p><b>Dell XPS 13: Best Laptop of CES 2020<br><br></b>“It’s not one sweeping change, but a host of incremental improvements that catapulted Dell to take the best laptop of CES 2020.” – Laptop Mag</p><br><p><b>XPS 13 9300: Editor’s Choice – Laptops &amp; Mobile</b></p><p>CES EDITORS’ CHOICE AWARDS: THE BEST AND COOLEST TECH TO EXPECT IN 2020 – Reviewed.com</p> </div> </div> </li> <li class='wc-rich-feature-item wc-text-placement-false wc-even-0 wc-has-media wc-thumb-medium '>  <div class='wc-media-wrap' style='width:300px !important'> <div class='wc-media-inner-wrap' style='max-width:300px !important'> <img alt='' class='wc-media wc-image' data-asset-title='XPS 13-inch Laptop' data-asset-type='image' data-asset-url='/_cp/products/1583525035181/tab-9aab244e-41d9-4b12-8e2d-c85cb07e0ea3/60e29b22ac364c119c82a17dcc6caebb.jpg' data-asset-wrapper='rich-features' data-height='400' data-section-template-code='rich-features' data-width='300' height='400' module-id='dellbtoc' src='https://smedia.webcollage.net/rwvfp/wc/cp/1590014654786_16a7c6bf-0b3e-4369-b638-74e077352b23/module/dellbtoc/_cp/products/1583525035181/tab-9aab244e-41d9-4b12-8e2d-c85cb07e0ea3/60e29b22ac364c119c82a17dcc6caebb.jpg.w1920.jpg' title='XPS 13-inch Laptop' wcpc='1583525035181' width='300'> </div> </div> <div class='wc-text-wrap'><h3 class='wc-rich-content-header wc-feature-main-header '>XPS 13-inch Laptop</h3> <div class='wc-rich-content-description'> <p>The all-new XPS 13 laptop is meticulously constructed with machined aluminum and a carbon fiber palm rest, and features a stunning 16:10 4-sided InfinityEdge display.</p><ul><li>13.4 UHD + (3840 x 2400) InfinityEdge Touch Anti-Reflective 500-Nit Display</li><li>10th Generation&nbsp;InteI<sup>®</sup> Core™ i7-1065G7 processor (8MG Cache, 1.3GHz)</li><li>Intel<sup>®</sup> Iris Plus Graphics</li><li>1TB M.2 PCIe NVMe Solid State Drive</li><li>16GB on-board</li><li>Killer Wi-Fi 6 AX1650 + BT5</li></ul> </div> </div> </li> <li class='wc-rich-feature-item wc-text-placement-false wc-odd-0 wc-has-media wc-thumb-large '>  <div class='wc-media-wrap'> <div class='wc-media-inner-wrap'> <img alt='' class='wc-media wc-image' data-asset-title='Display like no other' data-asset-type='image' data-asset-url='/_cp/products/1583525035181/tab-9aab244e-41d9-4b12-8e2d-c85cb07e0ea3/ddb3cbbbcc7d47a5877857e2dbc45a0f.jpg' data-asset-wrapper='rich-features' data-height='1014' data-section-template-code='rich-features' data-width='1920' height='1014' module-id='dellbtoc' src='https://smedia.webcollage.net/rwvfp/wc/cp/1590014654786_16a7c6bf-0b3e-4369-b638-74e077352b23/module/dellbtoc/_cp/products/1583525035181/tab-9aab244e-41d9-4b12-8e2d-c85cb07e0ea3/ddb3cbbbcc7d47a5877857e2dbc45a0f.jpg.w1920.jpg' title='Display like no other' wcpc='1583525035181' width='1920'> </div> </div> <div class='wc-text-wrap'><h3 class='wc-rich-content-header wc-feature-main-header '>Display like no other</h3> <div class='wc-rich-content-description'> <p><strong>Stunning is an understatement:</strong> Dolby Vision™ content can deliver highlights that are up to 40 times brighter, and blacks that are up to 10 times darker. </p><p></p><p><strong>Color that pops: </strong>20% higher contrast ratio then predecessor, the 1500:1 contrast ratio allows you to see the brightest brights and darkest darks.</p><p></p><p><strong>Brighter than ever: </strong>25% brighter then predecessor, 500-nit brightness provides more clarity in bright light like outdoors.</p><p></p><p><strong>Easy on the eyes:</strong> Integrated Eyesafe<sup>®</sup> display technology helps reduce harmful blue light.</p><p></p><p><strong>Unyielding display: </strong>Corning<sup>®</sup> Gorilla<sup>® </sup>Glass 6 is tough, damage resistant, durable, elegant and allows for no flex in its display.</p> </div> </div> </li> <li class='wc-rich-feature-item wc-text-placement-false wc-even-1 wc-has-media wc-thumb-medium wc-last '>  <div class='wc-media-wrap' style='width:480px !important'> <div class='wc-media-inner-wrap' style='max-width:480px !important'> <img alt='' class='wc-media wc-image' data-asset-title='Ready when you are' data-asset-type='image' data-asset-url='/_cp/products/1583525035181/tab-9aab244e-41d9-4b12-8e2d-c85cb07e0ea3/c569cd3b5b424245a3d96ba3f34e8f31.jpg' data-asset-wrapper='rich-features' data-height='350' data-section-template-code='rich-features' data-width='480' height='350' module-id='dellbtoc' src='https://smedia.webcollage.net/rwvfp/wc/cp/1590014654786_16a7c6bf-0b3e-4369-b638-74e077352b23/module/dellbtoc/_cp/products/1583525035181/tab-9aab244e-41d9-4b12-8e2d-c85cb07e0ea3/c569cd3b5b424245a3d96ba3f34e8f31.jpg.w480.jpg' title='Ready when you are' wcpc='1583525035181' width='480'> </div> </div> <div class='wc-text-wrap'><h3 class='wc-rich-content-header wc-feature-main-header '>Ready when you are</h3> <div class='wc-rich-content-description'> <b></b><p><b>Facial recognition technology:</b> The infrared camera with Windows Hello recognizes your face, unlocking your XPS. The fingerprint reader integrated into the power button lets you log on with just a touch.<br><br><b>One-hand open:&nbsp;</b>The new twin coil press fit hinge enables you to open with one hand, while staying stable when you are using the touchscreen.<br><br><b>Boots in seconds:&nbsp;</b>Boot or resume in seconds with standard solid state drives.<br><b><br></b></p> </div> </div> </li> </ul> </div><div class='wc-reset'> <ul class='wc-rich-features wc-rich-content-orientation-three-columns wc-rf-columns wc-no-line-seperator'> <li class='wc-rich-feature-item wc-text-placement-false wc-odd-0 wc-first wc-has-media wc-thumb-small '> <div class='wc-media-wrap'> <div class='wc-media-inner-wrap'> <img alt='' class='wc-media wc-image' data-asset-title='Fingerprint reader' data-asset-type='image' data-asset-url='/_cp/products/1583525035181/tab-9aab244e-41d9-4b12-8e2d-c85cb07e0ea3/71088731aa7d463eb5b572138f93da02.jpg' data-asset-wrapper='rich-features' data-height='240' data-section-template-code='rich-features' data-width='240' height='240' module-id='dellbtoc' src='https://smedia.webcollage.net/rwvfp/wc/cp/1590014654786_16a7c6bf-0b3e-4369-b638-74e077352b23/module/dellbtoc/_cp/products/1583525035181/tab-9aab244e-41d9-4b12-8e2d-c85cb07e0ea3/71088731aa7d463eb5b572138f93da02.jpg.w240.jpg' title='Fingerprint reader' wcpc='1583525035181' width='240'> </div> </div> <h3 class='wc-rich-content-header wc-feature-main-header '>Fingerprint reader</h3> <div class='wc-rich-content-description'> The power button lets you log on with just a touch. </div> </li> <li class='wc-rich-feature-item wc-text-placement-false wc-even-0 wc-has-media wc-thumb-small '> <div class='wc-media-wrap'> <div class='wc-media-inner-wrap'> <img alt='' class='wc-media wc-image' data-asset-title='Lid sensor' data-asset-type='image' data-asset-url='/_cp/products/1583525035181/tab-9aab244e-41d9-4b12-8e2d-c85cb07e0ea3/ebf161613f974bbcafd4c3b434e29a9d.jpg' data-asset-wrapper='rich-features' data-height='240' data-section-template-code='rich-features' data-width='240' height='240' module-id='dellbtoc' src='https://smedia.webcollage.net/rwvfp/wc/cp/1590014654786_16a7c6bf-0b3e-4369-b638-74e077352b23/module/dellbtoc/_cp/products/1583525035181/tab-9aab244e-41d9-4b12-8e2d-c85cb07e0ea3/ebf161613f974bbcafd4c3b434e29a9d.jpg.w240.jpg' title='Lid sensor' wcpc='1583525035181' width='240'> </div> </div> <h3 class='wc-rich-content-header wc-feature-main-header '>Lid sensor</h3> <div class='wc-rich-content-description'> A built in lid sensor allows you to open the lid and power up in milliseconds, no matter what power-state you are in. </div> </li> <li class='wc-rich-feature-item wc-text-placement-false wc-odd-0 wc-has-media wc-thumb-small wc-last '> <div class='wc-media-wrap'> <div class='wc-media-inner-wrap'> <img alt='' class='wc-media wc-image' data-asset-title='Strong but light' data-asset-type='image' data-asset-url='/_cp/products/1583525035181/tab-9aab244e-41d9-4b12-8e2d-c85cb07e0ea3/86b70ed384cf4ef39a149db8807fb89e.jpg' data-asset-wrapper='rich-features' data-height='240' data-section-template-code='rich-features' data-width='240' height='240' module-id='dellbtoc' src='https://smedia.webcollage.net/rwvfp/wc/cp/1590014654786_16a7c6bf-0b3e-4369-b638-74e077352b23/module/dellbtoc/_cp/products/1583525035181/tab-9aab244e-41d9-4b12-8e2d-c85cb07e0ea3/86b70ed384cf4ef39a149db8807fb89e.jpg.w240.jpg' title='Strong but light' wcpc='1583525035181' width='240'> </div> </div> <h3 class='wc-rich-content-header wc-feature-main-header '>Strong but light</h3> <div class='wc-rich-content-description'> Aerospace-inspired carbon fiber used in the design of the black palm rest is strong like aluminum but lighter in weight. </div> </li> </ul> </div><div class='wc-reset'> <ul class='wc-rich-features wc-rich-content-orientation-zigzag wc-last wc-no-line-seperator wc-rich-features-center-984'> <li class='wc-rich-feature-item wc-text-placement-false wc-odd-0 wc-first wc-has-media wc-thumb-large '>  <div class='wc-media-wrap'> <div class='wc-media-inner-wrap'> <img alt='' class='wc-media wc-image' data-asset-title='Sharp Camera' data-asset-type='image' data-asset-url='/_cp/products/1583525035181/tab-9aab244e-41d9-4b12-8e2d-c85cb07e0ea3/94d925c80cdc4651a50ded4281d8ae43.jpg' data-asset-wrapper='rich-features' data-height='515' data-section-template-code='rich-features' data-width='1920' height='515' module-id='dellbtoc' src='https://smedia.webcollage.net/rwvfp/wc/cp/1590014654786_16a7c6bf-0b3e-4369-b638-74e077352b23/module/dellbtoc/_cp/products/1583525035181/tab-9aab244e-41d9-4b12-8e2d-c85cb07e0ea3/94d925c80cdc4651a50ded4281d8ae43.jpg.w1920.jpg' title='Sharp Camera' wcpc='1583525035181' width='1920'> </div> </div> <div class='wc-text-wrap'><h3 class='wc-rich-content-header wc-feature-main-header '>Sharp Camera</h3> <div class='wc-rich-content-description'> A 2.25mm high quality HD webcam gives you the best camera experience.<br><br>A new 4-element lens uses more elements than a typical webcam to deliver sharp video in all areas of the frame, while temporal noise reduction uses advanced noise reduction, significantly improving video quality, especially in dim lighting conditions. <br><br> </div> </div> </li> <li class='wc-rich-feature-item wc-text-placement-false wc-even-1 wc-has-media wc-thumb-large '>  <div class='wc-media-wrap'> <div class='wc-media-inner-wrap'> <img alt='' class='wc-media wc-image' data-asset-title='Tiny but mighty' data-asset-type='image' data-asset-url='/_cp/products/1583525035181/tab-9aab244e-41d9-4b12-8e2d-c85cb07e0ea3/7a389c3ef723455f8992eefe0e857be1.jpg' data-asset-wrapper='rich-features' data-height='826' data-section-template-code='rich-features' data-width='1920' height='826' module-id='dellbtoc' src='https://smedia.webcollage.net/rwvfp/wc/cp/1590014654786_16a7c6bf-0b3e-4369-b638-74e077352b23/module/dellbtoc/_cp/products/1583525035181/tab-9aab244e-41d9-4b12-8e2d-c85cb07e0ea3/7a389c3ef723455f8992eefe0e857be1.jpg.w1920.jpg' title='Tiny but mighty' wcpc='1583525035181' width='1920'> </div> </div> <div class='wc-text-wrap'><h3 class='wc-rich-content-header wc-feature-main-header '>Tiny but mighty</h3> <div class='wc-rich-content-description'> <b><b>Advanced Thermal Engineering:</b>&nbsp;</b>Dual fans separated to spread heat over a larger area, to dual heat pipes to hidden exhaust venting through the hinge, thermal design ensures you have the best performing system in the thinnest form factor possible.<b><br><br>With adaptive performance:&nbsp;</b>This laptop uses adaptive performance based on the latest Intel Dynamic Tuning Technology. With this new predictive and adaptive engine, our laptop is actively changing the power of its CPU to optimize your specific workload, increasing performance when you need it. </div> </div> </li> <li class='wc-rich-feature-item wc-text-placement-false wc-odd-0 wc-has-media wc-thumb-large '>  <div class='wc-media-wrap'> <div class='wc-media-inner-wrap'> <img alt='' class='wc-media wc-image' data-asset-title='Masterful craftsmanship' data-asset-type='image' data-asset-url='/_cp/products/1583525035181/tab-9aab244e-41d9-4b12-8e2d-c85cb07e0ea3/c267a5fcfc3d441ab91675cfc9747856.jpg' data-asset-wrapper='rich-features' data-height='769' data-section-template-code='rich-features' data-width='1453' height='769' module-id='dellbtoc' src='https://smedia.webcollage.net/rwvfp/wc/cp/1590014654786_16a7c6bf-0b3e-4369-b638-74e077352b23/module/dellbtoc/_cp/products/1583525035181/tab-9aab244e-41d9-4b12-8e2d-c85cb07e0ea3/c267a5fcfc3d441ab91675cfc9747856.jpg.w1920.jpg' title='Masterful craftsmanship' wcpc='1583525035181' width='1453'> </div> </div> <div class='wc-text-wrap'><h3 class='wc-rich-content-header wc-feature-main-header '>Masterful craftsmanship</h3> <div class='wc-rich-content-description'> <b>The finest details:&nbsp;</b>Stainless inlayed logos are laser cut out of a sheet of stainless steel and dropped into the machined cut outline by hand.<br><br><b>Materially superior and durable:&nbsp;</b>Precision cut from a block of aluminum in two pieces so there is no variability in construction.<br><br><b>Gleaming sidewalls:&nbsp;</b>Anodizing provides a superior, scratch-resistant surface, but here, edges are dipped a second time to further prevent damage from repeated plugging and unplugging of peripherals. Using this finish on the metal achieves the perfect color without using paint, which could chip away over time.<br><br><b>Sacrifices nothing:&nbsp;</b>Features a 6% thinner design with more power, plus no sacrifice to essentials like the headphone jack or microSD card slot.<br><br><b>Elevated Essentials:&nbsp;</b>Compared to previous models, 17% larger touchpad, 9% larger keycaps. </div> </div> </li> <li class='wc-rich-feature-item wc-text-placement-false wc-even-1 wc-has-media wc-thumb-large '>  <div class='wc-media-wrap'> <div class='wc-media-inner-wrap'> <img alt='' class='wc-media wc-image' data-asset-title='Unleash Your Full PC-Smartphone Productivity' data-asset-type='image' data-asset-url='/_cp/products/1583525035181/tab-9aab244e-41d9-4b12-8e2d-c85cb07e0ea3/fe561c0ea8594702b9943961bc0e9324.jpg' data-asset-wrapper='rich-features' data-height='977' data-section-template-code='rich-features' data-width='1903' height='977' module-id='dellbtoc' src='https://smedia.webcollage.net/rwvfp/wc/cp/1590014654786_16a7c6bf-0b3e-4369-b638-74e077352b23/module/dellbtoc/_cp/products/1583525035181/tab-9aab244e-41d9-4b12-8e2d-c85cb07e0ea3/fe561c0ea8594702b9943961bc0e9324.jpg.w1920.jpg' title='Unleash Your Full PC-Smartphone Productivity' wcpc='1583525035181' width='1903'> </div> </div> <div class='wc-text-wrap'><h3 class='wc-rich-content-header wc-feature-main-header '>Unleash Your Full PC-Smartphone Productivity</h3> <div class='wc-rich-content-description'> <p>Dell Mobile Connect provides a seamless wireless integration between smartphones and PCs, allowing users to make calls, send texts and get notifications on your PC.</p><p></p><p>*Dell Mobile Connect App must be downloaded to your PC and smartphone. File transfer on iOS is limited to photos and videos.</p> </div> </div> </li> <li class='wc-rich-feature-item wc-text-placement-false wc-odd-0 wc-has-media wc-thumb-large '>  <div class='wc-media-wrap'> <div class='wc-media-inner-wrap'> <img alt='' class='wc-media wc-image' data-asset-title='Eco-wise' data-asset-type='image' data-asset-url='/_cp/products/1583525035181/tab-9aab244e-41d9-4b12-8e2d-c85cb07e0ea3/eb50028946b34d6ebe47baf47950417b.jpg' data-asset-wrapper='rich-features' data-height='1269' data-section-template-code='rich-features' data-width='1920' height='1269' module-id='dellbtoc' src='https://smedia.webcollage.net/rwvfp/wc/cp/1590014654786_16a7c6bf-0b3e-4369-b638-74e077352b23/module/dellbtoc/_cp/products/1583525035181/tab-9aab244e-41d9-4b12-8e2d-c85cb07e0ea3/eb50028946b34d6ebe47baf47950417b.jpg.w1920.jpg' title='Eco-wise' wcpc='1583525035181' width='1920'> </div> </div> <div class='wc-text-wrap'><h3 class='wc-rich-content-header wc-feature-main-header '>Eco-wise</h3> <div class='wc-rich-content-description'> <b>Saving our seas:&nbsp;</b>Recognized as a CES<sup>®</sup> 2018 Best of Innovation Awards Honoree, our black packaging trays are a step beyond recycled. 25% percent of the material consists of ocean plastics collected from coastal areas, while the remaining 75% is made up of other recycled plastics.<br><br><b>Energy efficient:</b> The XPS 13 is ENERGY STAR<sup>®</sup> certified.<br><br><b>Safer materials:</b> Free of materials like cadmium, lead, mercury and some phthalates, it’s also EPEAT<sup>®</sup> registered and BFR/PVC-free.<br><br><b>Recycle friendly:&nbsp;</b>90% of the laptop’s parts can be easily recycled or reused, and the white bamboo packaging trays are 100% recyclable. </div> </div> </li> <li class='wc-rich-feature-item wc-text-placement-false wc-even-1 wc-has-media wc-thumb-large wc-has-no-caption wc-has-no-description wc-last '> <div class='wc-media-wrap'> <div class='wc-media-inner-wrap'> <img alt='' class='wc-media wc-image' data-asset-type='image' data-asset-url='/_cp/products/1583525035181/tab-9aab244e-41d9-4b12-8e2d-c85cb07e0ea3/ea3621283a8544aa9463e7e0e5a5306f.jpg' data-asset-wrapper='rich-features' data-height='600' data-section-template-code='rich-features' data-width='1000' height='600' module-id='dellbtoc' src='https://smedia.webcollage.net/rwvfp/wc/cp/1590014654786_16a7c6bf-0b3e-4369-b638-74e077352b23/module/dellbtoc/_cp/products/1583525035181/tab-9aab244e-41d9-4b12-8e2d-c85cb07e0ea3/ea3621283a8544aa9463e7e0e5a5306f.jpg.w1920.jpg' title='' wcpc='1583525035181' width='1000'> </div> </div> <div class='wc-text-wrap'> </div> </li> </ul> </div></div><div class='wc-clear-both' style='height: 0px !important'></div></div><div class='wc-fragment wc-no-focus' data-channel-product-name='' data-compiler-v='2020.7.2.487' data-cpi='100579395' data-gtin='00884116362548' data-is-capdesc-open='false' data-language-code='en' data-module-brand='Dell' data-module-code='dellbtoc' data-module-name='DellBtoC US' data-mpn='XPS9300-7548SLV-PUS' data-produced='2020-06-14 05:08' data-section-caption='360 View' data-section-tag='360-view' data-section-template-code='three-sixty' data-vendor-name='XPS9300-7548SLV-PUS' data-wcpc='1583525035181' id='wc-360-view-52060c6322224355876c17872c319ab9'><h2>360 View</h2><div class='wc-aplus-body'><span> <div class='wc-mediaGalleryThreeSixty' data-module-id='dellbtoc' data-resources-base='https://smedia.webcollage.net/rwvfp/wc/cp/1590014654786_16a7c6bf-0b3e-4369-b638-74e077352b23/module/dellbtoc/' data-wcpc='1583525035181' style='max-height: 515px;'><iframe frameborder='no' scrolling='no' title='Product Views' allowfullscreen='true' webkitallowfullscreen='true' mozallowfullscreen='true' id='wcframable1-1' style='width: 100%; height: 515px;'></iframe></div> <table cellspacing='0' class='wc-gallery-table wc-image-gallery-table' style='display:none;'> <tbody><tr class='wc-first-row wc-last-row'> <td class='wc-first-column wc-last-column wc-image-gallery-table'> <div class='wc-gallery-thumb' style='width: 120px !important;'> <div style='width: 120px !important;height: 90px !important;position:relative!important;' class='wchs'><div style='width: 120px !important;height: 90px !important;' class='wc-thumb-image'><a href='javascript:void(0);' style='display: block !important;' aria-label='undefined Enlarge Image'><img data-asset-type='image' data-asset-url='/_cp/products/1583525035181/tab-52060c63-2222-4355-876c-17872c319ab9/fd9ff8579f964359915b90cdb5c50ae7.png' data-asset-wrapper='three-sixty' data-collection-size='72' data-height='90' data-index-in-collection='0' data-width='120' height='135' module-id='dellbtoc' src='https://smedia.webcollage.net/rwvfp/wc/cp/1590014654786_16a7c6bf-0b3e-4369-b638-74e077352b23/module/dellbtoc/_cp/products/1583525035181/tab-52060c63-2222-4355-876c-17872c319ab9/fd9ff8579f964359915b90cdb5c50ae7.png.w240.png' style='height: 90px !important; width:160px !important;margin-left: -20px !important;border:0 !important;' wcobj='https://smedia.webcollage.net/rwvfp/wc/cp/1590014654786_16a7c6bf-0b3e-4369-b638-74e077352b23/module/dellbtoc/_cp/products/1583525035181/tab-52060c63-2222-4355-876c-17872c319ab9/fd9ff8579f964359915b90cdb5c50ae7.png.w1920.png' wcobj-height='1080' wcobj-type='image/*' wcobj-width='1920' wcpc='1583525035181' width='240' alt=''></a></div><div class='wc-enlage-image' style='position:absolute!important;left:5px;bottom:5px;width:24px!important;height:24px!important;overflow:hidden!important'><img alt='' src='https://scontent.webcollage.net/apps/pp/assets/costco/images/image-gallery/enlarge.png'></div></div> </div> </td> </tr> </tbody></table> </span></div><div class='wc-clear-both' style='height: 0px !important'></div></div><div class='wc-fragment wc-no-focus' data-channel-product-name='' data-compiler-v='2020.7.2.487' data-cpi='100579395' data-gtin='00884116362548' data-is-capdesc-open='false' data-language-code='en' data-module-brand='Dell' data-module-code='dellbtoc' data-module-name='DellBtoC US' data-mpn='XPS9300-7548SLV-PUS' data-produced='2020-06-14 05:08' data-section-caption='Ports and Slots' data-section-tag='demo' data-section-template-code='tour' data-vendor-name='XPS9300-7548SLV-PUS' data-wcpc='1583525035181' id='wc-demo-f69554d257f04a51a3f4bfd9f033fe5f'><h2>Ports and Slots</h2><div class='wc-aplus-body'><div class='wc-tour-container wc-tour-outer' data-resources-base='https://smedia.webcollage.net/rwvfp/wc/cp/1590014654786_16a7c6bf-0b3e-4369-b638-74e077352b23/module/dellbtoc/'> <div class='wc-json-data' style='display: none !important'>{'hideMenu':false,'ipiOnly':false,'tourViews':[{'viewImage':{'sources':[{'src':'/_cp/products/1583525035181/tab-f69554d2-57f0-4a51-a3f4-bfd9f033fe5f/4618d46b2957429caf22294b9aa9372a.jpg.w1920.jpg','width':1148,'height':577},{'src':'/_cp/products/1583525035181/tab-f69554d2-57f0-4a51-a3f4-bfd9f033fe5f/4618d46b2957429caf22294b9aa9372a.jpg.w960.jpg','width':960,'height':483},{'src':'/_cp/products/1583525035181/tab-f69554d2-57f0-4a51-a3f4-bfd9f033fe5f/4618d46b2957429caf22294b9aa9372a.jpg.w480.jpg','width':480,'height':241},{'src':'/_cp/products/1583525035181/tab-f69554d2-57f0-4a51-a3f4-bfd9f033fe5f/4618d46b2957429caf22294b9aa9372a.jpg.w240.jpg','width':240,'height':121}],'src':{'src':'/_cp/products/1583525035181/tab-f69554d2-57f0-4a51-a3f4-bfd9f033fe5f/4618d46b2957429caf22294b9aa9372ajpg.','width':1148,'height':577},'runtimeSrc':{'src':'/_cp/products/1583525035181/tab-f69554d2-57f0-4a51-a3f4-bfd9f033fe5f/4618d46b2957429caf22294b9aa9372ajpg..web.','width':1148,'height':577},'assetWrapper':'tour','editorOriginalName':'4618d46b2957429caf22294b9aa9372a.jpg','isAdaCompliant':false},'hotspots':[{'hotspotX':0.424,'hotspotY':0.8965517,'captionFromAttr':'Thunderbolt™ 3 [(DisplayPort / Power Delivery) (4 lanes of PCI Express Gen 3)','direction':'left'},{'hotspotX':0.4533333,'hotspotY':0.8992043,'captionFromAttr':'3.5mm Headphone/Microphone Combo Jack','direction':'left'},{'hotspotX':0.5186667,'hotspotY':0.8992043,'captionFromAttr':'Thunderbolt™ 3 [(DisplayPort / power delivery) (4 lanes of PCI Express Gen 3)','direction':'left'},{'hotspotX':0.5546666,'hotspotY':0.8938992,'captionFromAttr':'microSD card reader','direction':'left'}]}],'ipiCompatible':false}</div> <div class='wc-tour-container wc-tour-inner-container'><iframe frameborder='no' scrolling='no' title='Interactive Product Tour' allowfullscreen='true' webkitallowfullscreen='true' mozallowfullscreen='true' id='wcframable1-2' style='width: 100%; height: 530.797px;'></iframe></div> </div></div><div class='wc-clear-both' style='height: 0px !important'></div></div><div class='wc-fragment wc-no-focus' data-channel-product-name='' data-compiler-v='2020.7.2.487' data-cpi='100579395' data-gtin='00884116362548' data-is-capdesc-open='false' data-language-code='en' data-module-brand='Dell' data-module-code='dellbtoc' data-module-name='DellBtoC US' data-mpn='XPS9300-7548SLV-PUS' data-produced='2020-06-14 05:08' data-section-caption='Dimensions' data-section-tag='demo' data-section-template-code='tour' data-vendor-name='XPS9300-7548SLV-PUS' data-wcpc='1583525035181' id='wc-demo-84cc15b9fa0b41e2b444bbf9a4a67660'><h2>Dimensions</h2><div class='wc-aplus-body'><div class='wc-tour-container wc-tour-outer' data-resources-base='https://smedia.webcollage.net/rwvfp/wc/cp/1590014654786_16a7c6bf-0b3e-4369-b638-74e077352b23/module/dellbtoc/'> <div class='wc-json-data' style='display: none !important'>{'hideMenu':false,'ipiOnly':false,'tourViews':[{'viewImage':{'sources':[{'src':'/_cp/products/1583525035181/tab-84cc15b9-fa0b-41e2-b444-bbf9a4a67660/a7d55e9b9ea74d5bb148e4e293ec4194.jpg.w1920.jpg','width':1113,'height':463},{'src':'/_cp/products/1583525035181/tab-84cc15b9-fa0b-41e2-b444-bbf9a4a67660/a7d55e9b9ea74d5bb148e4e293ec4194.jpg.w960.jpg','width':960,'height':399},{'src':'/_cp/products/1583525035181/tab-84cc15b9-fa0b-41e2-b444-bbf9a4a67660/a7d55e9b9ea74d5bb148e4e293ec4194.jpg.w480.jpg','width':480,'height':200},{'src':'/_cp/products/1583525035181/tab-84cc15b9-fa0b-41e2-b444-bbf9a4a67660/a7d55e9b9ea74d5bb148e4e293ec4194.jpg.w240.jpg','width':240,'height':100}],'src':{'src':'/_cp/products/1583525035181/tab-84cc15b9-fa0b-41e2-b444-bbf9a4a67660/a7d55e9b9ea74d5bb148e4e293ec4194jpg.','width':1113,'height':463},'runtimeSrc':{'src':'/_cp/products/1583525035181/tab-84cc15b9-fa0b-41e2-b444-bbf9a4a67660/a7d55e9b9ea74d5bb148e4e293ec4194jpg..web.','width':1113,'height':463},'assetWrapper':'tour','editorOriginalName':'a7d55e9b9ea74d5bb148e4e293ec4194.jpg','isAdaCompliant':false},'hotspots':[{'hotspotX':0.1106667,'hotspotY':0.823718,'captionFromAttr':'Height: 0.58\' (14.8mm)','direction':'left'},{'hotspotX':0.652,'hotspotY':0.1442308,'captionFromAttr':'Width: 296mm (11.6\')','direction':'left'},{'hotspotX':0.8826666,'hotspotY':0.5448718,'captionFromAttr':'Depth: 7.8\' (199mm)','direction':'left'}]}],'ipiCompatible':false}</div> <div class='wc-tour-container wc-tour-inner-container'><iframe frameborder='no' scrolling='no' title='Interactive Product Tour' allowfullscreen='true' webkitallowfullscreen='true' mozallowfullscreen='true' id='wcframable1-3' style='width: 100%; height: 421.728px;'></iframe></div> </div></div><div class='wc-clear-both' style='height: 0px !important'></div></div><div id='wc-fragment-terminator' style='width: 100% !important; clear: both !important; height: 0px !important;'></div></div></div>
+<br><span style='font-weight:bold;'>Processor &amp; Memory:</span><br><ul><li>10th Gen Intel® Core™ i7-1065G7 Processor 1.30Ghz</li><li>16GB LPDDR4x 3733MHz RAM</li><br></ul><span style='font-weight:bold;'>Drives: </span><br><ul><li>1TB PCIe NVMe M.2 Solid State Drive</li><li>No Optical Drive</li><br></ul><span style='font-weight:bold;'>Operating System: </span><br><ul><li>Microsoft® Windows 10 Home (64-bit)</li><br></ul><span style='font-weight:bold;'>Graphics &amp; Video: </span><br><ul><li>13.4' Touchscreen InfinityEdge Anti-Reflective 500-Nit 4K Ultra HD (3840 x 2400) Display</li><li>Intel® Iris Plus Graphics</li><br></ul><span style='font-weight:bold;'>Audio:</span><br><ul><li>Stereo Speakers with Waves MaxxAudio® Pro</li><br></ul><span style='font-weight:bold;'>Communications: </span><br><ul><li>KILLER™ AX500 (2x2) Wi-Fi 6 Gig+ and Bluetooth 5.0</li><li>Integrated 720p Webcam</li><br></ul><span style='font-weight:bold;'>Keyboard: </span><br><ul><li>Backlit Keyboard</li><li>Fingerprint Reader</li><br></ul><span style='font-weight:bold;'>Ports &amp; Slots: </span><br><ul><li>2x Thunderbolt™ with (Power Delivery &amp; DisplayPort)</li><li>1x Type-C to USB-A </li><li>1x &nbsp;Headset Jack</li><li>1x MicroSD Card Reader v4.0</li><br></ul><span style='font-weight:bold;'>Power Supply: </span><br><ul><li>4-Cell 52WHr Battery</li><br></ul><span style='font-weight:bold;'>Additional Information: </span><br><ul><li>Dimensions: 11.64' x 7.82' x 0.58'</li><li>Approximate Weight: 2.8 lbs</li></ul>					
+						
+				</div>",
                     this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop30.png" },
                     Color.Black,
                     new List<string> { "Backlit Keyboard" },
                     "Warehouse Pick-up",
@@ -784,12 +863,16 @@ namespace CostcoClone.Repository
                 );
             LaptopNotebookComputer laptop31 = new LaptopNotebookComputer
                 (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
+                    "New Apple MacBook Pro 13.3\" with Touch Bar - 10th Gen Intel Core i5 - 16GB Memory - 1TB SSD - Silver",
+                    (decimal)1949.99,
+                    20,
+                    (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
+					
+							<span style='font-weight:bold;'>Limit 2 Per Member</span><br><br><span style='font-weight:bold;'>Processor &amp; Memory:</span><br><ul><li>10th Generation Quad-core Intel® Core™ i5 Processor 2.0GHz</li><li>16GB LPDDR4X 3733MHz RAM </li><br></ul><span style='font-weight:bold;'>Drives: </span><br><ul><li>1TB PCIe Solid State Drive</li><li>No Optical Drive</li><br></ul><span style='font-weight:bold;'>Operating System: </span><br><ul><li>macOS</li><br></ul><span style='font-weight:bold;'>Communications: </span><br><ul><li>802.11 Wireless-AC + Bluetooth 5.0</li><li>Integrated 720p FaceTime HD Camera</li><li>Three Microphones </li><br></ul><span style='font-weight:bold;'>Audio:</span><br><ul><li>Stereo Speakers with Wide Stereo Sound</li><br></ul><span style='font-weight:bold;'>Graphics &amp; Video: </span><br><ul><li>13.3' LED-Backlit (2560 x 1600) Retina Display with True Tone Technology</li><li>Intel® Iris Plus Graphics </li><br></ul><span style='font-weight:bold;'>Keyboard: </span><br><ul><li>Individual LED-Backlit Keys with Force Touch Trackpad and Ambient Light Sensor</li><li>Integrated Touch ID Sensor </li><br></ul><span style='font-weight:bold;'>Ports &amp; Slots: </span><br><ul><li>4x Thunderbolt 3 USB-C (Charging and DisplayPort)</li><li>1x Headphone Jack</li><br></ul><span style='font-weight:bold;'>Power Supply: </span><br><ul><li>58.0WHr Battery</li><br></ul><span style='font-weight:bold;'>Additional Information: </span><br><ul><li>Dimensions: 11.97' x 8.36' x 0.61”</li><li>Approximate Weight: Starting at 3.1lbs</li></ul>					
+						
+				</div>",
                     this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop31.png" },
                     Color.Black,
                     new List<string> { "Backlit Keyboard" },
                     "Warehouse Pick-up",
@@ -805,12 +888,16 @@ namespace CostcoClone.Repository
                 );
             LaptopNotebookComputer laptop32 = new LaptopNotebookComputer
                 (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
+                    "New Apple MacBook Pro 13.3\" with Touch Bar - 10th Gen Intel Core i5 - 16GB Memory - 1TB SSD - Silver",
+                    (decimal)1949.99,
+                    20,
+                    (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
+					
+							<span style='font-weight:bold;'>Limit 2 Per Member</span><br><br><span style='font-weight:bold;'>Processor &amp; Memory:</span><br><ul><li>10th Generation Quad-core Intel® Core™ i5 Processor 2.0GHz</li><li>16GB LPDDR4X 3733MHz RAM </li><br></ul><span style='font-weight:bold;'>Drives: </span><br><ul><li>1TB PCIe Solid State Drive</li><li>No Optical Drive</li><br></ul><span style='font-weight:bold;'>Operating System: </span><br><ul><li>macOS</li><br></ul><span style='font-weight:bold;'>Communications: </span><br><ul><li>802.11 Wireless-AC + Bluetooth 5.0</li><li>Integrated 720p FaceTime HD Camera</li><li>Three Microphones </li><br></ul><span style='font-weight:bold;'>Audio:</span><br><ul><li>Stereo Speakers with Wide Stereo Sound</li><br></ul><span style='font-weight:bold;'>Graphics &amp; Video: </span><br><ul><li>13.3' LED-Backlit (2560 x 1600) Retina Display with True Tone Technology</li><li>Intel® Iris Plus Graphics </li><br></ul><span style='font-weight:bold;'>Keyboard: </span><br><ul><li>Individual LED-Backlit Keys with Force Touch Trackpad and Ambient Light Sensor</li><li>Integrated Touch ID Sensor </li><br></ul><span style='font-weight:bold;'>Ports &amp; Slots: </span><br><ul><li>4x Thunderbolt 3 USB-C (Charging and DisplayPort)</li><li>1x Headphone Jack</li><br></ul><span style='font-weight:bold;'>Power Supply: </span><br><ul><li>58.0WHr Battery</li><br></ul><span style='font-weight:bold;'>Additional Information: </span><br><ul><li>Dimensions: 11.97' x 8.36' x 0.61”</li><li>Approximate Weight: Starting at 3.1lbs</li></ul>					
+						
+				</div>",
                     this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop32.png" },
                     Color.Black,
                     new List<string> { "Backlit Keyboard" },
                     "Warehouse Pick-up",
@@ -823,1287 +910,6 @@ namespace CostcoClone.Repository
                     "Intel Core i3",
                     "11.6 in.",
                     "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop33 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop34 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop35 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop36 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop37 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop38 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop39 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop40 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop41 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop42 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop43 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop44 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop45 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop46 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop47 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop48 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop49 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop50 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop51 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop52 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop53 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop54 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop55 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop56 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop57 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop58 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop59 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop60 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop61 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop62 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop63 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop64 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop65 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop66 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop67 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop68 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop69 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop70 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop71 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop72 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop73 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop74 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop75 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop76 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop77 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop78 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop79 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-             LaptopNotebookComputer laptop80 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop81 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop82 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop83 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop84 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop85 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop86 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop87 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop88 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop89 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop90 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop91 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop92 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Non-touchscreen"
-                );
-            LaptopNotebookComputer laptop93 = new LaptopNotebookComputer
-                (
-                    "HP 14\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 1080p",
-                    (decimal)150,
-                    0,
-                    (MarkupString)"",
-                    this,
-                    new List<string> { "content/products/computers/laptopNotebookComputers/aaaa.png" },
-                    Color.Black,
-                    new List<string> { "Backlit Keyboard" },
-                    "Warehouse Pick-up",
-                    "1920 x 1080 (Full HD)",
-                    "Integrated Graphics",
-                    "HP",
-                    "2-in-1",
-                    "64 GB",
-                    "Windows OS",
-                    "Intel Core i3",
-                    "11.6 in.",
-                    "Touchscreen"
                 );
         }
 

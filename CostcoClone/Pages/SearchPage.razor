@@ -6,8 +6,10 @@
     <FilterMenu/>
     <GenericGridList TItem="IProduct" Items="@ProductRepository.GetProducts().ToList()">
         <ItemTemplate>
-            <img src="@context.ImageURLs[0]" style="max-width:200px;" />
-            @context.Title
+            <div style="cursor: pointer;" @onclick="(() => NavigateToProduct(context.ProductId))">
+                <img src="@context.ImageURLs[0]" style="max-width:200px;" />
+                @context.Title
+            </div>
         </ItemTemplate>
     </GenericGridList>
 </div>

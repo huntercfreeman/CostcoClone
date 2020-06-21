@@ -11,6 +11,8 @@ namespace CostcoClone.Pages
     public partial class SearchPage : ComponentBase
     {
         [Inject]
+        public NavigationManager NavigationManager { get; set; }
+        [Inject]
         public IProductRepository ProductRepository { get; set; }
         [Inject]
         public SiteState SiteState { get; set; }
@@ -29,5 +31,10 @@ namespace CostcoClone.Pages
         {
             InvokeAsync(StateHasChanged);
         }
+        protected void NavigateToProduct(string Id)
+        {
+            NavigationManager.NavigateTo($"Products/{Id}");
+        }
+
     }
 }
