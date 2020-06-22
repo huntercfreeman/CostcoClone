@@ -11,7 +11,8 @@ namespace CostcoClone.Components
 {
     public partial class FilterMenuItem<TItem> : ComponentBase
     {
-        
+        [Inject]
+        public SiteState SiteState { get; set; }
         [Parameter]
         public bool IsCollapsed { get; set; } = true;
         
@@ -22,5 +23,19 @@ namespace CostcoClone.Components
         [Parameter]
         public Dictionary<string, List<TItem>> Filter { get; set; }
         
+        protected override void OnInitialized()
+        {
+            base.OnInitialized();
+            SiteState.FilterEventHandler += SiteState_FilterEventHandler;
+        }
+
+        private void SiteState_FilterEventHandler(object sender, bool clearAll)
+        {
+            if (clearAll)
+            {
+                IsCollapsed = true;
+                InvokeAsync(StateHasChanged);
+            }
+        }
     }
 }

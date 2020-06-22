@@ -41,7 +41,7 @@ namespace CostcoClone.Components
                 SiteState.FilterCount--;
             }
             
-            SiteState.FilterEventInvoke(new EventArgs());
+            SiteState.FilterEventInvoke(false);
         }
     }
 }

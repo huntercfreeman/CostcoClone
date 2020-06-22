@@ -27,7 +27,7 @@ namespace CostcoClone.Pages
             SiteState.FilterEventHandler += SiteState_FilterEventHandler;
         }
 
-        private void SiteState_FilterEventHandler(object sender, EventArgs e)
+        private void SiteState_FilterEventHandler(object sender, bool clearAll)
         {
             InvokeAsync(StateHasChanged);
         }

@@ -1,4 +1,5 @@
-﻿using CostcoClone.Repository;
+﻿using CostcoClone.Models;
+using CostcoClone.Repository;
 using Microsoft.AspNetCore.Components;
 using System;
 using System.Collections.Generic;
@@ -11,5 +12,12 @@ namespace CostcoClone.Components
     {
         [Inject]
         public IProductRepository ProductRepository { get; set; }
+        [Inject]
+        public SiteState SiteState { get; set; }
+
+        protected void ClearFilters()
+        {
+            SiteState.FilterEventInvoke(true);
+        }
     }
 }

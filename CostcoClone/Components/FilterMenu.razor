@@ -6,7 +6,7 @@
         <div style="display: flex; border-bottom: 1px solid #ddd; justify-content: space-between;">
             <h5>Filter Results</h5>
             
-            <a style="margin-right: 10px;" href="javascript:void(0);">Clear All</a>
+            <a @onclick="ClearFilters" style="margin-right: 10px;" href="javascript:void(0);">Clear All</a>
         </div>
         @foreach (var item in ProductRepository.ComputerRepository.LaptopsNotebookComputersRepository.Filters)
         {

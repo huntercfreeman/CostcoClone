@@ -52,7 +52,9 @@ namespace CostcoClone.Components
         {
             base.OnInitialized();
 
+#pragma warning disable CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
             Spin();
+#pragma warning restore CS4014 // Because this call is not awaited, execution of the current method continues before the call is completed
         }
 
         public string IsSelectedCSS(int index)

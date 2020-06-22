@@ -7,11 +7,11 @@ namespace CostcoClone.Models
 {
     public class SiteState
     {
-        public event EventHandler FilterEventHandler;
-        public void FilterEventInvoke(EventArgs e)
+        public event EventHandler<bool> FilterEventHandler;
+        public void FilterEventInvoke(bool clearAll)
         {
-            EventHandler handler = FilterEventHandler;
-            handler?.Invoke(this, e);
+            EventHandler<bool> handler = FilterEventHandler;
+            handler?.Invoke(this, clearAll);
         }
         public bool IsFiltering 
         {
