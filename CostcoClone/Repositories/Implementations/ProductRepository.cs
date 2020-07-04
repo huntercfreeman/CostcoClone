@@ -199,7 +199,7 @@ namespace CostcoClone.Repository
 
             LaptopNotebookComputer laptop4 = new LaptopNotebookComputer
                 (
-                    "New Apple MacBook Pro 13.3\" with Touch Bar - 10th Gen Intel Core i5 - 16GB Memory - 512GB SSD - Space Gray",
+                    "Apple MacBook Pro 13.3\" with Touch Bar - 10th Gen Intel Core i5 - 16GB Memory - 512GB SSD - Space Gray",
                     (decimal)1749.99,
                     20,
                     (MarkupString)@"<div class='product - info - description' style='max - height: none; '>
@@ -210,7 +210,7 @@ namespace CostcoClone.Repository
                     this,
                     new List<string> { "content/products/computers/laptopNotebookComputers/laptop4.png" },
                     Color.Black,
-                    new List<string> { "Backlit Keyboard", "Bluetooth 5.0" },
+                    new List<string> { "Backlit Keyboard", "Bluetooth 5.0", "Integrated Webcam" },
                     "Warehouse Pick-up",
                     "1920 x 1080 (Full HD)",
                     "Integrated Graphics",
@@ -326,7 +326,7 @@ namespace CostcoClone.Repository
 
             LaptopNotebookComputer laptop8 = new LaptopNotebookComputer
                 (
-                    "New Apple MacBook Air 13\" - Intel Core i5 - 8GB Memory - 256GB SSD - Space Gray",
+                    "Apple MacBook Air 13\" - Intel Core i5 - 8GB Memory - 256GB SSD - Space Gray",
                     (decimal)1049.99,
                     20,
                     (MarkupString)@"<div class='product - info - description' style='max - height: none; '>
@@ -337,7 +337,7 @@ namespace CostcoClone.Repository
                     this,
                     new List<string> { "content/products/computers/laptopNotebookComputers/laptop8.png" },
                     Color.Black,
-                    new List<string> { "Backlit Keyboard", "Bluetooth 5.0" },
+                    new List<string> { "Backlit Keyboard", "Bluetooth 5.0", "Integrated Webcam" },
                     "Warehouse Pick-up",
                     "1920 x 1080 (Full HD)",
                     "Integrated Graphics",
@@ -374,7 +374,7 @@ namespace CostcoClone.Repository
 
             LaptopNotebookComputer laptop10 = new LaptopNotebookComputer
                 (
-                    "New Apple MacBook Pro 13.3\" with Touch Bar - 8th Gen Intel Core i5 - 8GB Memory - 256GB SSD - Space Gray",
+                    "Apple MacBook Pro 13.3\" with Touch Bar - 8th Gen Intel Core i5 - 8GB Memory - 256GB SSD - Space Gray",
                     (decimal)1249.99,
                     20,
                     (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
@@ -385,7 +385,7 @@ namespace CostcoClone.Repository
                     this,
                     new List<string> { "content/products/computers/laptopNotebookComputers/laptop10.png" },
                     Color.Black,
-                    new List<string> { "Backlit Keyboard", "Bluetooth 5.0" },
+                    new List<string> { "Backlit Keyboard", "Bluetooth 5.0", "Integrated Webcam" },
                     "Warehouse Pick-up",
                     "1920 x 1080 (Full HD)",
                     "Integrated Graphics",
@@ -411,7 +411,7 @@ namespace CostcoClone.Repository
                     this,
                     new List<string> { "content/products/computers/laptopNotebookComputers/laptop11.png" },
                     Color.Black,
-                    new List<string> { "Backlit Keyboard" },
+                    new List<string> { "Backlit Keyboard", "Fingerprint Reader", "Integrated Webcam" },
                     "Warehouse Pick-up",
                     "1920 x 1080 (Full HD)",
                     "Integrated Graphics",
@@ -426,7 +426,7 @@ namespace CostcoClone.Repository
 
             LaptopNotebookComputer laptop12 = new LaptopNotebookComputer
                 (
-                    "New Apple MacBook Air 13\" - Intel Core i7 - 16GB Memory - 256GB SSD - Space Gray",
+                    "Apple MacBook Air 13\" - Intel Core i7 - 16GB Memory - 256GB SSD - Space Gray",
                     (decimal)1049.99,
                     20,
                     (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
@@ -437,7 +437,7 @@ namespace CostcoClone.Repository
                     this,
                     new List<string> { "content/products/computers/laptopNotebookComputers/laptop12.png" },
                     Color.Black,
-                    new List<string> { "Backlit Keyboard", "Bluetooth 5.0" },
+                    new List<string> { "Backlit Keyboard", "Bluetooth 5.0", "Integrated Webcam" },
                     "Warehouse Pick-up",
                     "1920 x 1080 (Full HD)",
                     "Integrated Graphics",
@@ -478,7 +478,7 @@ namespace CostcoClone.Repository
 
             LaptopNotebookComputer laptop15 = new LaptopNotebookComputer
                 (
-                    "New Apple MacBook Pro 13.3\" with Touch Bar - 8th Gen Intel Core i5 - 8GB Memory - 512GB SSD - Space Gray",
+                    "Apple MacBook Pro 13.3\" with Touch Bar - 8th Gen Intel Core i5 - 8GB Memory - 512GB SSD - Space Gray",
                     (decimal)1449.99,
                     20,
                     (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
@@ -489,7 +489,7 @@ namespace CostcoClone.Repository
                     this,
                     new List<string> { "content/products/computers/laptopNotebookComputers/laptop15.png" },
                     Color.Black,
-                    new List<string> { "Backlit Keyboard", "Bluetooth 5.0" },
+                    new List<string> { "Backlit Keyboard", "Bluetooth 5.0", "Integrated Webcam" },
                     "Warehouse Pick-up",
                     "1920 x 1080 (Full HD)",
                     "Integrated Graphics",
@@ -541,7 +541,7 @@ namespace CostcoClone.Repository
                     this,
                     new List<string> { "content/products/computers/laptopNotebookComputers/laptop17.png" },
                     Color.Black,
-                    new List<string> { "Backlit Keyboard", "Bluetooth 5.0" },
+                    new List<string> { "Backlit Keyboard", "Bluetooth 5.0", "Fingerprint Reader" },
                     "Warehouse Pick-up",
                     "1920 x 1080 (Full HD)",
                     "Integrated Graphics",
@@ -629,7 +629,7 @@ namespace CostcoClone.Repository
 
             LaptopNotebookComputer laptop20 = new LaptopNotebookComputer
                 (
-                    "New Apple MacBook Pro 13.3\" with Touch Bar - 8th Gen Intel Core i5 - 8GB Memory - 512GB SSD - Silver",
+                    "Apple MacBook Pro 13.3\" with Touch Bar - 8th Gen Intel Core i5 - 8GB Memory - 512GB SSD - Silver",
                     (decimal)1449.99,
                     20,
                     (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
@@ -640,7 +640,7 @@ namespace CostcoClone.Repository
                     this,
                     new List<string> { "content/products/computers/laptopNotebookComputers/laptop20.png" },
                     Color.Black,
-                    new List<string> { "Backlit Keyboard", "Bluetooth 5.0" },
+                    new List<string> { "Backlit Keyboard", "Bluetooth 5.0", "Integrated Webcam" },
                     "Warehouse Pick-up",
                     "1920 x 1080 (Full HD)",
                     "Integrated Graphics",
@@ -655,7 +655,7 @@ namespace CostcoClone.Repository
 
             LaptopNotebookComputer laptop21 = new LaptopNotebookComputer
                 (
-                    "New Apple MacBook Pro 13.3\" with Touch Bar - 10th Gen Intel Core i5 - 16GB Memory - 1TB SSD - Space Gray",
+                    "Apple MacBook Pro 13.3\" with Touch Bar - 10th Gen Intel Core i5 - 16GB Memory - 1TB SSD - Space Gray",
                     (decimal)1949.99,
                     20,
                     (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
@@ -666,7 +666,7 @@ namespace CostcoClone.Repository
                     this,
                     new List<string> { "content/products/computers/laptopNotebookComputers/laptop21.png" },
                     Color.Black,
-                    new List<string> { "Backlit Keyboard", "Bluetooth 5.0" },
+                    new List<string> { "Backlit Keyboard", "Bluetooth 5.0", "Integrated Webcam" },
                     "Warehouse Pick-up",
                     "1920 x 1080 (Full HD)",
                     "Integrated Graphics",
@@ -681,7 +681,7 @@ namespace CostcoClone.Repository
 
             LaptopNotebookComputer laptop22 = new LaptopNotebookComputer
                 (
-                    "New Apple MacBook Pro 13.3\" with Touch Bar - 10th Gen Intel Core i5 - 16GB Memory - 512GB SSD - Silver",
+                    "Apple MacBook Pro 13.3\" with Touch Bar - 10th Gen Intel Core i5 - 16GB Memory - 512GB SSD - Silver",
                     (decimal)1749.99,
                     20,
                     (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
@@ -692,7 +692,7 @@ namespace CostcoClone.Repository
                     this,
                     new List<string> { "content/products/computers/laptopNotebookComputers/laptop22.png" },
                     Color.Black,
-                    new List<string> { "Backlit Keyboard", "Bluetooth 5.0" },
+                    new List<string> { "Backlit Keyboard", "Bluetooth 5.0", "Integrated Webcam" },
                     "Warehouse Pick-up",
                     "1920 x 1080 (Full HD)",
                     "Integrated Graphics",
@@ -783,7 +783,7 @@ namespace CostcoClone.Repository
                 );
             LaptopNotebookComputer laptop28 = new LaptopNotebookComputer
                 (
-                    "New Apple MacBook Pro 13.3\" with Touch Bar - 10th Gen Intel Core i5 - 16GB Memory - 1TB SSD - Silver",
+                    "Apple MacBook Pro 13.3\" with Touch Bar - 10th Gen Intel Core i5 - 16GB Memory - 1TB SSD - Silver",
                     (decimal)1949.99,
                     20,
                     (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
@@ -794,7 +794,7 @@ namespace CostcoClone.Repository
                     this,
                     new List<string> { "content/products/computers/laptopNotebookComputers/laptop28.png" },
                     Color.Black,
-                    new List<string> { "Backlit Keyboard", "Bluetooth 5.0" },
+                    new List<string> { "Backlit Keyboard", "Bluetooth 5.0", "Integrated Webcam" },
                     "Warehouse Pick-up",
                     "1920 x 1080 (Full HD)",
                     "Integrated Graphics",
@@ -809,7 +809,7 @@ namespace CostcoClone.Repository
 
             LaptopNotebookComputer laptop29 = new LaptopNotebookComputer
                 (
-                    "New Apple MacBook Pro 13.3\" with Touch Bar - 8th Gen Intel Core i5 - 8GB Memory - 256GB SSD - Silver",
+                    "Apple MacBook Pro 13.3\" with Touch Bar - 8th Gen Intel Core i5 - 8GB Memory - 256GB SSD - Silver",
                     (decimal)1249.99,
                     20,
                     (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
@@ -820,7 +820,7 @@ namespace CostcoClone.Repository
                     this,
                     new List<string> { "content/products/computers/laptopNotebookComputers/laptop29.png" },
                     Color.Black,
-                    new List<string> { "Backlit Keyboard" },
+                    new List<string> { "Backlit Keyboard", "Integrated Webcam" },
                     "Warehouse Pick-up",
                     "1920 x 1080 (Full HD)",
                     "Integrated Graphics",
@@ -1047,7 +1047,7 @@ namespace CostcoClone.Repository
                     this,
                     new List<string> { "content/products/computers/laptopNotebookComputers/laptop38.png" },
                     Color.Black,
-                    new List<string> { "Backlit Keyboard", "Bluetooth 5.0" },
+                    new List<string> { "Backlit Keyboard", "Bluetooth 5.0", "Integrated Webcam" },
                     "Warehouse Pick-up",
                     "1920 x 1080 (Full HD)",
                     "Integrated Graphics",
@@ -1097,7 +1097,7 @@ namespace CostcoClone.Repository
                     this,
                     new List<string> { "content/products/computers/laptopNotebookComputers/laptop40.png" },
                     Color.Black,
-                    new List<string> { "Backlit Keyboard" },
+                    new List<string> { "Backlit Keyboard", "Integrated Webcam" },
                     "Warehouse Pick-up",
                     "1920 x 1080 (Full HD)",
                     "Integrated Graphics",
@@ -1148,7 +1148,7 @@ namespace CostcoClone.Repository
                     this,
                     new List<string> { "content/products/computers/laptopNotebookComputers/laptop43.png" },
                     Color.Black,
-                    new List<string> { "Backlit Keyboard", "Bluetooth 5.0" },
+                    new List<string> { "Backlit Keyboard", "Bluetooth 5.0", "Integrated Webcam" },
                     "Warehouse Pick-up",
                     "1920 x 1080 (Full HD)",
                     "Integrated Graphics",
@@ -1547,7 +1547,7 @@ namespace CostcoClone.Repository
                     this,
                     new List<string> { "content/products/computers/laptopNotebookComputers/laptop60.png" },
                     Color.Black,
-                    new List<string> { "Bluetooth 5.0" },
+                    new List<string> { "Bluetooth 5.0", "Integrated Webcam" },
                     "Warehouse Pick-up",
                     "1920 x 1080 (Full HD)",
                     "Integrated Graphics",
@@ -1651,7 +1651,7 @@ namespace CostcoClone.Repository
                     this,
                     new List<string> { "content/products/computers/laptopNotebookComputers/laptop64.png" },
                     Color.Black,
-                    new List<string> { "Bluetooth 5.0" },
+                    new List<string> { "Bluetooth 5.0", "Integrated Webcam" },
                     "Warehouse Pick-up",
                     "1920 x 1080 (Full HD)",
                     "Integrated Graphics",
@@ -1924,7 +1924,7 @@ namespace CostcoClone.Repository
                     this,
                     new List<string> { "content/products/computers/laptopNotebookComputers/laptop75.png" },
                     Color.Black,
-                    new List<string> { "Bluetooth 5.0" },
+                    new List<string> { "Bluetooth 5.0", "Fingerprint Reader" },
                     "Warehouse Pick-up",
                     "1920 x 1080 (Full HD)",
                     "Integrated Graphics",
@@ -2101,7 +2101,293 @@ namespace CostcoClone.Repository
                     this,
                     new List<string> { "content/products/computers/laptopNotebookComputers/laptop82.png" },
                     Color.Black,
-                    new List<string> { "Bluetooth 5.0" },
+                    new List<string> { "Bluetooth 5.0", "Fingerprint Reader" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+
+            LaptopNotebookComputer laptop83 = new LaptopNotebookComputer
+                (
+                    "MSI Prestige 15.6\" Laptop - 10th Gen Intel Core i7 - 10510U - GeForce GTX 1650 Max Q - 1080p - Windows 10 Professional",
+                    (decimal)1299.99,
+                    20,
+                    (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
+					
+							<span style='font-weight:bold;'>Limit 5 Per Member</span><br><br><span style='font-weight:bold;'>Processor &amp; Memory:</span><br><ul><li>10th Gen Intel® Core™ i7-10510U Processor 1.8GHz</li><li>16GB DDR4 2666MHz RAM</li><br></ul><span style='font-weight:bold;'>Drives: </span><br><ul><li>512GB NVMe Solid State Drive</li><li>No Optical Drive </li><br></ul><span style='font-weight:bold;'>Operating System: </span><br><ul><li>Microsoft® Windows 10 Professional (64-bit)</li><br></ul><span style='font-weight:bold;'>Communications: </span><br><ul><li>Intel® Wi-Fi AX201 (2x2) Gig+ and Bluetooth® 5.1</li><li>Integrated 720p HD Webcam </li><br></ul><span style='font-weight:bold;'>Graphics &amp; Video: </span><br><ul><li>15.6' IPS Thin Bezel FHD (1920 x 1080) 60Hz AdobeRGB 100% Color Gamut Display</li><li>4GB NVIDIA® GeForce® GTX 1650 Max-Q Graphics</li><br></ul><span style='font-weight:bold;'>Audio:</span><br><ul><li>2x 2W Speakers </li><br></ul><span style='font-weight:bold;'>Keyboard: </span><br><ul><li>White Backlit Keyboard (84-Key)</li><li>Fingerprint Reader</li><br></ul><span style='font-weight:bold;'>Ports &amp; Slots: </span><br><ul><li>2x USB 3.2 Gen 1</li><li>2x Thunderbolt 3</li><li>1x HDMI ( Supports 4K @ 30Hz)</li><li>1x Micro SD Card Reader</li><li>1x Mic-In/Heaphone-Out</li><br></ul><span style='font-weight:bold;'>Power Supply: </span><br><ul><li>4-Cell 82Whr Battery </li><br></ul><span style='font-weight:bold;'>Additional Information: </span><br><ul><li>Dimensions: 14.40'x 9.20'x 0.63'</li><li>Approximate Weight: 3.64lbs</li><li>Includes LAN Cable Dongle</li><br><br><br></ul>					
+						
+				</div>",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop83.png" },
+                    Color.Black,
+                    new List<string> { "Bluetooth 5.1" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+
+            LaptopNotebookComputer laptop84 = new LaptopNotebookComputer
+                (
+                    "Lenovo Flex 15.6\" 2 -in -1 Touchscreen Laptop - 10th Gen Intel Core i7 - 1065G7 - GeForce MX330 - 4K UHD - Windows 10 Professional",
+                    (decimal)779.00,
+                    20,
+                    (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
+					
+							<span style='font-weight:bold;'>Limit 2 Per Member</span><br><br><br><span style='font-weight:bold;'>Processor &amp; Memory: </span><br><ul><li>10th Gen Intel® Core™ i7-1065G7 Processor at 1.3GHz</li><li>16GB DDR4 (1-DIMM) 3200MHz RAM</li><br></ul><span style='font-weight:bold;'>Operating System:</span> &nbsp;<br><ul><li>Microsoft® Windows 10 Professional (64-bit)</li><br></ul><span style='font-weight:bold;'>Drives: &nbsp;&nbsp;</span><br><ul><li>1TB TLC NVMe™ Solid State Drive</li><li>No Optical Drive</li><br></ul><span style='font-weight:bold;'>Graphics &amp; Video:</span> &nbsp;&nbsp;<br><ul><li>15.6' Touchscreen IPS LCD with LED-backlit 4K UHD (3840 x 2160) Display</li><li>2GB NVIDIA® GeForce® MX330 Graphics</li><br></ul><span style='font-weight:bold;'>Communications:</span><br><ul><li>Intel® Wi-Fi 6 (2x2/160) Gig+ and Bluetooth® 4.2</li><li>Integrated 720p Webcam with Privacy Shutter</li><br></ul><span style='font-weight:bold;'>Audio: </span>&nbsp;&nbsp;<br><ul><li>Dolby Audio DAX3</li><br></ul><span style='font-weight:bold;'>Keyboard:</span><br><ul><li>Backlit Keyboard &nbsp;</li><li>Fingerprint Reader</li><br></ul><span style='font-weight:bold;'>Ports &amp; Slots:</span><br><ul><li>1x USB 3.1 Type-C</li><li>2x USB 3.1</li><li>1x HDMI</li><li>1x 4-in-1 Media Card Reader</li><li>1x Headphone/Microphone Combo Jack</li><br></ul><span style='font-weight:bold;'>Battery</span><br><ul><li>3-cell 52.5WH Lithium Polymer Battery</li><br></ul><span style='font-weight:bold;'>Additional Information:</span><br><ul><li>Dimensions: 14.08' L x 9.37' W x 0.82' H</li><li>Approximate Weight: 4.4lbs</li></ul>					
+						
+				</div>",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop84.png" },
+                    Color.Black,
+                    new List<string> { "Fingerprint Reader" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+
+            LaptopNotebookComputer laptop85 = new LaptopNotebookComputer
+                (
+                    "Lenovo Flex 5 14\" 2 -in -1 Touchscreen Laptop - AMD Ryzen 7 4700U - 1080p",
+                    (decimal)749.99,
+                    20,
+                    (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
+					
+							<span style='font-weight:bold;'>Limit 5 Per Member</span><br><br><span style='font-weight:bold;'>Processor &amp; Memory:</span> <br><ul><li>AMD Ryzen 7 4700U (8-Core) Processor at 2.0GHz</li><li>16GB DDR4 3200MHz RAM</li><br></ul><span style='font-weight:bold;'>Operating System: &nbsp;</span><br><ul><li>Microsoft® Windows 10 Home (64 bit)</li><br></ul><span style='font-weight:bold;'>Drives: &nbsp;</span>&nbsp;<br><ul><li>512GB NVMe™ M.2 Solid State Drive</li><li>No Optical Drive</li><br></ul><span style='font-weight:bold;'>Graphics &amp; Video: &nbsp;</span>&nbsp;<br><ul><li>14.0' Touchscreen IPS LCD with LED-backlit FHD (1920 x 1080) Display</li><li>Integrated AMD Radeon Graphics</li><br></ul><span style='font-weight:bold;'>Communications:</span><br><ul><li>802.11 Wireless-AC (2x2) + Bluetooth® 4.2</li><li>Integrated 720p Webcam with privacy shutter</li><br></ul><span style='font-weight:bold;'>Audio: </span>&nbsp;&nbsp;<br><ul><li>2x 2W Speakers with Dolby Audio DAX3</li><br></ul><span style='font-weight:bold;'>Keyboard:</span><br><ul><li>Backlit Keyboard with Fingerprint Reader</li><br></ul><span style='font-weight:bold;'>Ports &amp; Slots:</span><br><ul><li>1x USB 3.1 Type-C (with Power Delivery)</li><li>2x USB 3.1</li><li>1x HDMI</li><li>1x 4-in-1 Media Card Reader</li><li>1x Combination Headphone/Microphone Jack</li><br></ul><span style='font-weight:bold;'>Battery:</span><br><ul><li>3 cell 52.5 WH Lithium-Polymer Battery</li><br></ul><span style='font-weight:bold;'>Additional Information:</span><br><ul><li>Dimensions: 12.66' L x 8.56' W x 0.82' H </li><li>Approximate Weight: 3.63lbs</li></ul>					
+						
+				</div>",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop85.png" },
+                    Color.Black,
+                    new List<string> { "Fingerprint Reader" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+
+            LaptopNotebookComputer laptop86 = new LaptopNotebookComputer
+                (
+                    "HP ENVY 13.3\" Touchscreen Laptop - 10th Gen Intel Core i7 - 10510U - GeForce MX350 - 4K",
+                    (decimal)1299.99,
+                    20,
+                    (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
+					
+							<span style='font-weight:bold;'>Limit 5 Per Member</span><br><br><br><span style='font-weight:bold;'>Processor &amp; Memory:</span><br><ul><li>10th Gen Intel® Core™ i7-10510U Processor at 1.8GHz</li><li>16GB DDR4 2666 RAM </li><br></ul><span style='font-weight:bold;'>Drives: </span><br><ul><li>1.0TB PCIe® NVMe™ M.2 Solid State Drive</li><li>No Optical Drive</li><br></ul><span style='font-weight:bold;'>Operating System: </span><br><ul><li>Microsoft® Windows 10 Home (64 bit)</li><br></ul><span style='font-weight:bold;'>Communications: </span><br><ul><li>Intel® Wi-Fi 6 (2x2/160) Gig+ and Bluetooth® 5.0</li><li>HP Wide Vision HD Webcam with camera shutter</li><li>Integrated Dual Array Digital Microphone </li><br></ul><span style='font-weight:bold;'>Graphics &amp; Video: </span><br><ul><li>13.3' Touchscreen Micro-Edge WLED-backlit IPS 4K Ultra HD (3840 x 2160) Display </li><li>2GB NVIDIA® GeForce® MX350 Graphics</li><br></ul><span style='font-weight:bold;'>Audio: </span><br><ul><li>Bang &amp; Olufsen Audio with Dual Speakers</li><br></ul><span style='font-weight:bold;'>Keyboard: </span><br><ul><li>Full-size island-style backlit keyboard</li><li>Fingerprint Reader</li><li>HP Imagepad with multi-touch gesture support</li><br></ul><span style='font-weight:bold;'>Ports: </span><br><ul><li>1x SuperSpeed USB Type-C (HP Sleep and Charge)</li><li>1x SuperSpeed USB Type-A (HP Sleep and Charge)</li><li>1x SuperSpeed USB Type-A </li><li>1x Micro SD Media Card Reader</li><li>1x AC Smart pin</li><li>1x Headphone/Microphone Combo Jack</li><br></ul><span style='font-weight:bold;'>Power Supply: </span><br><ul><li>3-Cell 51 Wh Li-ion Polymer Battery </li><br></ul><span style='font-weight:bold;'>Additional Information: </span><br><ul><li>Dimensions: 12.07' W x 7.66' L x 0.67' H</li><li>Approximate Weight: &nbsp;2.88lbs</li></ul>					
+						
+				</div>",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop86.png" },
+                    Color.Black,
+                    new List<string> { "Fingerprint Reader" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+
+            LaptopNotebookComputer laptop87 = new LaptopNotebookComputer
+                (
+                    "HP ENVY 15.6\" Touchscreen Laptop - 10th Gen Intel Core i7 - 10750H - GeForce GTX 1660 Ti Max Q - 1080p - Windows 10 Professional",
+                    (decimal)1549.99,
+                    20,
+                    (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
+					
+							<span style='font-weight:bold;'>Limit 5 Per Member</span><br><br><span style='font-weight:bold;'>Processor &amp; Memory:</span><br><ul><li>10th Gen Intel® Core™ i7-10750H 6-Core Processor at 2.6GHz</li><li>16GB DDR4 2933 SDRAM</li><br></ul><span style='font-weight:bold;'>Drives:</span><br><ul><li>512GB PCIe® NVMe™ M.2 Solid State Drive</li><li>No Optical Drive</li><br></ul><span style='font-weight:bold;'>Operating System:</span><br><ul><li>Microsoft® Windows 10 Professional (64 bit)</li><br></ul><span style='font-weight:bold;'>Communications:</span><br><ul><li>Intel® Wi-Fi 6 (2x2/160) Gig+ and Bluetooth® 5.0</li><li>HP Wide Vision HD Webcam with camera shutter </li><li>Integrated Dual Array Digital Microphone </li><br></ul><span style='font-weight:bold;'>Graphics &amp; Video:</span> <br><ul><li>15.6' Touchscreen IPS WLED-backlit FHD (1920 x 1080) Display</li><li>6GB NVIDIA® GeForce® GTX 1660 Ti Max-Q Graphics</li><br></ul><span style='font-weight:bold;'>Audio: </span><br><ul><li>Bang &amp; Olufsen with Dual Speakers</li><br></ul><span style='font-weight:bold;'>Keyboard: </span><br><ul><li>Full-size island-style backlit keyboard &nbsp;</li><li>HP Imagepad with multi-touch gesture support</li><li>Fingerprint Reader</li><br></ul><span style='font-weight:bold;'>Ports: </span><br><ul><li>2x Thunderbolt™ 3 with SuperSpeed USB Type-C (HP Sleep and Charge)</li><li>1x SuperSpeed USB Type-A (HP Sleep and Charge)</li><li>1x SuperSpeed USB Type-A</li><li>1x HDMI 2.0a</li><li>1x AC Smart Pin</li><li>1x Micro SD Media Card Reader</li><li>1x Headphone/Microphone Combo Jack</li><br></ul><span style='font-weight:bold;'>Power Supply: </span><br><ul><li>6-Cell 83Whr Li-ion Polymer Battery</li><li>200W Smart AC Power Adapter</li><br></ul><span style='font-weight:bold;'>Additional Information:</span><br><ul><li>Dimensions: 14.09' W x 9.32' L x 0.73' H</li><li>Approximate Weight: 4.74 lbs</li></ul>					
+						
+				</div>",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop87.png" },
+                    Color.Black,
+                    new List<string> { "Fingerprint Reader" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+
+            LaptopNotebookComputer laptop88 = new LaptopNotebookComputer
+                (
+                    "Lenovo Flex 5 14\" 2 -in -1 Touchscreen Laptop - 10th Gen Intel Core i5 - 1035G1 - 1080p",
+                    (decimal)699.99,
+                    20,
+                    (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
+					
+							<span style='font-weight:bold;'>Limit 5 Per Member</span><br><br><span style='font-weight:bold;'>Processor &amp; Memory:</span> <br><ul><li>10th Gen Intel® Core™ i5-1035G1 Processor at 1.0GHz</li><li>16GB DDR4 3200MHz RAM</li><br></ul><span style='font-weight:bold;'>Operating System: &nbsp;</span><br><ul><li>Microsoft® Windows 10 Home (64 bit)</li><br></ul><span style='font-weight:bold;'>Drives: &nbsp;</span>&nbsp;<br><ul><li>512GB NVMe™ M.2 Solid State Drive</li><li>No Optical Drive</li><br></ul><span style='font-weight:bold;'>Graphics &amp; Video: &nbsp;</span>&nbsp;<br><ul><li>14.0' Touchscreen IPS LCD with LED-backlit FHD (1920 x 1080) Display</li><li>Intel® UHD Graphics</li><br></ul><span style='font-weight:bold;'>Communications:</span><br><ul><li>Intel® Wi-Fi 6 (2x2/160) Gig+ and Bluetooth® 4.2</li><li>Integrated 720p Webcam with privacy shutter</li><br></ul><span style='font-weight:bold;'>Audio: </span>&nbsp;&nbsp;<br><ul><li>2x 2W Speackers with Dolby Audio DAX3</li><br></ul><span style='font-weight:bold;'>Keyboard:</span><br><ul><li>Backlit Keyboard with Fingerprint Reader</li><br></ul><span style='font-weight:bold;'>Ports &amp; Slots:</span><br><ul><li>1x USB 3.1 Type-C with Power Delivery</li><li>2x USB 3.1</li><li>1x HDMI</li><li>1x 4 in 1 Media Card Reader</li><li>1x Combination Headphone/Microphone Jack</li><br></ul><span style='font-weight:bold;'>Battery:</span><br><ul><li>3 cell 52.5 WH Lithium battery</li><br></ul><span style='font-weight:bold;'>Additional Information:</span><br><ul><li>Dimensions: 12.66' x 8.56' x 0.82' </li><li>Approximate Weight: 3.63lbs</li></ul>					
+						
+				</div>",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop88.png" },
+                    Color.Black,
+                    new List<string> { "Fingerprint Reader" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+
+            LaptopNotebookComputer laptop89 = new LaptopNotebookComputer
+                (
+                    "Acer Swift 3 13.5\" Laptop - 10th Gen Intel Core i7 - 1065G7 - 2256 x 1504 Display",
+                    (decimal)1149.99,
+                    20,
+                    (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
+					
+							<span style='font-weight:bold;'>Limit 5 Per Member</span><br><br><br><span style='font-weight:bold;'>Processor &amp; Memory:</span><br><ul><li>10th Gen Intel® Core™ i7-1065G7 Processor at 1.3GHz</li><li>16GB LPDDR4X RAM</li><br></ul><span style='font-weight:bold;'>Drives: </span><br><ul><li>512GB PCIe® NVMe™ Solid State Drive &nbsp;</li><li>No Optical Drive</li><br></ul><span style='font-weight:bold;'>Operating System: </span><br><ul><li>Microsoft® Windows 10 Home (64-bit)</li><br></ul><span style='font-weight:bold;'>Communications: </span><br><ul><li>Intel® Wi-Fi 6 (2x2/160) Gig+ and Bluetooth® 5.0</li><li>Integrated HD Webcam (1280 x 720) </li><br></ul><span style='font-weight:bold;'>Graphics &amp; Video: </span><br><ul><li>13.5' Widescreen IPS LED-backlit 2K (2256 x 1504) Display</li><li>Integrated Intel® Iris® Plus Graphics </li><br></ul><span style='font-weight:bold;'>Audio:</span><br><ul><li>2x Built-in stereo speakers</li><li>Acer TrueHarmony Technology</li><br></ul><span style='font-weight:bold;'>Keyboard: </span><br><ul><li>Backlit Keyboard</li><li>Fingerprint Reader </li><br></ul><span style='font-weight:bold;'>Ports &amp; Slots: </span><br><ul><li>1x USB 3.1 Type-C supporting Thunderbolt™ 3</li><li>1x USB 3.1 Gen 1 (With Power-Off Charging)</li><li>1x USB 2.0 </li><li>1x Headphone/Microphone-in Combination &nbsp;Jack</li><li>1x Kensington Lock Slot</li><li>1x HDMI </li><br></ul><span style='font-weight:bold;'>Power Supply: </span><br><ul><li>Lithium-Ion Battery </li><br></ul><span style='font-weight:bold;'>Additional Information: </span><br><ul><li>Dimensions: 11.91' W x 9.21' L x 0.63' H</li><li>Approximate Weight: &nbsp;2.62 lbs</li></ul>					
+						
+				</div>",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop89.png" },
+                    Color.Black,
+                    new List<string> { "Fingerprint Reader" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+
+            LaptopNotebookComputer laptop90 = new LaptopNotebookComputer
+                (
+                    "MSI Prestige 15.6\" Laptop - 10th Gen Intel Core i7 - 10510U - GeForce GTX 1650 Max Q - 1080p - Windows 10 Professional",
+                    (decimal)1299.99,
+                    20,
+                    (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
+					
+							<span style='font-weight:bold;'>Limit 5 Per Member</span><br><br><span style='font-weight:bold;'>Processor &amp; Memory:</span><br><ul><li>10th Gen Intel® Core™ i7-10510U Processor 1.8GHz</li><li>16GB DDR4 2666MHz RAM</li><br></ul><span style='font-weight:bold;'>Drives: </span><br><ul><li>512GB NVMe Solid State Drive</li><li>No Optical Drive </li><br></ul><span style='font-weight:bold;'>Operating System: </span><br><ul><li>Microsoft® Windows 10 Professional (64-bit)</li><br></ul><span style='font-weight:bold;'>Communications: </span><br><ul><li>Intel® Wi-Fi AX201 (2x2) Gig+ and Bluetooth® 5.1</li><li>Integrated 720p HD Webcam </li><br></ul><span style='font-weight:bold;'>Graphics &amp; Video: </span><br><ul><li>15.6' IPS Thin Bezel FHD (1920 x 1080) 60Hz AdobeRGB 100% Color Gamut Display</li><li>4GB NVIDIA® GeForce® GTX 1650 Max-Q Graphics</li><br></ul><span style='font-weight:bold;'>Audio:</span><br><ul><li>2x 2W Speakers </li><br></ul><span style='font-weight:bold;'>Keyboard: </span><br><ul><li>White Backlit Keyboard (84-Key)</li><li>Fingerprint Reader</li><br></ul><span style='font-weight:bold;'>Ports &amp; Slots: </span><br><ul><li>2x USB 3.2 Gen 1</li><li>2x Thunderbolt 3</li><li>1x HDMI ( Supports 4K @ 30Hz)</li><li>1x Micro SD Card Reader</li><li>1x Mic-In/Heaphone-Out</li><br></ul><span style='font-weight:bold;'>Power Supply: </span><br><ul><li>4-Cell 82Whr Battery </li><br></ul><span style='font-weight:bold;'>Additional Information: </span><br><ul><li>Dimensions: 14.40'x 9.20'x 0.63'</li><li>Approximate Weight: 3.64lbs</li><li>Includes LAN Cable Dongle</li><br><br><br></ul>					
+						
+				</div>",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop90.png" },
+                    Color.Black,
+                    new List<string> { "Fingerprint Reader" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+
+            LaptopNotebookComputer laptop91 = new LaptopNotebookComputer
+                (
+                    "Lenovo Flex 15.6\" 2 -in -1 Touchscreen Laptop - 10th Gen Intel Core i7 - 1065G7 - GeForce MX330 - 4K UHD - Windows 10 Professional",
+                    (decimal)1079.00,
+                    20,
+                    (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
+					
+							<span style='font-weight:bold;'>Limit 2 Per Member</span><br><br><br><span style='font-weight:bold;'>Processor &amp; Memory: </span><br><ul><li>10th Gen Intel® Core™ i7-1065G7 Processor at 1.3GHz</li><li>16GB DDR4 (1-DIMM) 3200MHz RAM</li><br></ul><span style='font-weight:bold;'>Operating System:</span> &nbsp;<br><ul><li>Microsoft® Windows 10 Professional (64-bit)</li><br></ul><span style='font-weight:bold;'>Drives: &nbsp;&nbsp;</span><br><ul><li>1TB TLC NVMe™ Solid State Drive</li><li>No Optical Drive</li><br></ul><span style='font-weight:bold;'>Graphics &amp; Video:</span> &nbsp;&nbsp;<br><ul><li>15.6' Touchscreen IPS LCD with LED-backlit 4K UHD (3840 x 2160) Display</li><li>2GB NVIDIA® GeForce® MX330 Graphics</li><br></ul><span style='font-weight:bold;'>Communications:</span><br><ul><li>Intel® Wi-Fi 6 (2x2/160) Gig+ and Bluetooth® 4.2</li><li>Integrated 720p Webcam with Privacy Shutter</li><br></ul><span style='font-weight:bold;'>Audio: </span>&nbsp;&nbsp;<br><ul><li>Dolby Audio DAX3</li><br></ul><span style='font-weight:bold;'>Keyboard:</span><br><ul><li>Backlit Keyboard &nbsp;</li><li>Fingerprint Reader</li><br></ul><span style='font-weight:bold;'>Ports &amp; Slots:</span><br><ul><li>1x USB 3.1 Type-C</li><li>2x USB 3.1</li><li>1x HDMI</li><li>1x 4-in-1 Media Card Reader</li><li>1x Headphone/Microphone Combo Jack</li><br></ul><span style='font-weight:bold;'>Battery</span><br><ul><li>3-cell 52.5WH Lithium Polymer Battery</li><br></ul><span style='font-weight:bold;'>Additional Information:</span><br><ul><li>Dimensions: 14.08' L x 9.37' W x 0.82' H</li><li>Approximate Weight: 4.4lbs</li></ul>					
+						
+				</div>",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop91.png" },
+                    Color.Black,
+                    new List<string> { "Integrated Webcam" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+
+            LaptopNotebookComputer laptop92 = new LaptopNotebookComputer
+                (
+                    "Lenovo Flex 5 14\" 2 -in -1 Touchscreen Laptop - AMD Ryzen 7 4700U - 1080p",
+                    (decimal)749.99,
+                    20,
+                    (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
+					
+							<span style='font-weight:bold;'>Limit 5 Per Member</span><br><br><span style='font-weight:bold;'>Processor &amp; Memory:</span> <br><ul><li>AMD Ryzen 7 4700U (8-Core) Processor at 2.0GHz</li><li>16GB DDR4 3200MHz RAM</li><br></ul><span style='font-weight:bold;'>Operating System: &nbsp;</span><br><ul><li>Microsoft® Windows 10 Home (64 bit)</li><br></ul><span style='font-weight:bold;'>Drives: &nbsp;</span>&nbsp;<br><ul><li>512GB NVMe™ M.2 Solid State Drive</li><li>No Optical Drive</li><br></ul><span style='font-weight:bold;'>Graphics &amp; Video: &nbsp;</span>&nbsp;<br><ul><li>14.0' Touchscreen IPS LCD with LED-backlit FHD (1920 x 1080) Display</li><li>Integrated AMD Radeon Graphics</li><br></ul><span style='font-weight:bold;'>Communications:</span><br><ul><li>802.11 Wireless-AC (2x2) + Bluetooth® 4.2</li><li>Integrated 720p Webcam with privacy shutter</li><br></ul><span style='font-weight:bold;'>Audio: </span>&nbsp;&nbsp;<br><ul><li>2x 2W Speakers with Dolby Audio DAX3</li><br></ul><span style='font-weight:bold;'>Keyboard:</span><br><ul><li>Backlit Keyboard with Fingerprint Reader</li><br></ul><span style='font-weight:bold;'>Ports &amp; Slots:</span><br><ul><li>1x USB 3.1 Type-C (with Power Delivery)</li><li>2x USB 3.1</li><li>1x HDMI</li><li>1x 4-in-1 Media Card Reader</li><li>1x Combination Headphone/Microphone Jack</li><br></ul><span style='font-weight:bold;'>Battery:</span><br><ul><li>3 cell 52.5 WH Lithium-Polymer Battery</li><br></ul><span style='font-weight:bold;'>Additional Information:</span><br><ul><li>Dimensions: 12.66' L x 8.56' W x 0.82' H </li><li>Approximate Weight: 3.63lbs</li></ul>					
+						
+				</div>",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop92.png" },
+                    Color.Black,
+                    new List<string> { "Integrated Webcam" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+
+            LaptopNotebookComputer laptop93 = new LaptopNotebookComputer
+                (
+                    "Lenovo 11.6\" 2 -in -1 Touchscreen Chromebook Flex 3 - Intel Celeron",
+                    (decimal)299.99,
+                    20,
+                    (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
+					
+							<span style='font-weight:bold;'>Limit 5 Per Member</span><br><br><br><span style='font-weight:bold;'>Processor &amp; Memory:</span> <br><ul><li>Intel® Celeron® N4020 Processor at 1.1GHz</li><li>4GB LPDDR4 2400MHz RAM</li><br></ul><span style='font-weight:bold;'>Operating System: &nbsp;</span><br><ul><li>Chrome OS™</li><br></ul><span style='font-weight:bold;'>Drives: &nbsp;</span>&nbsp;<br><ul><li>32GB eMMC Internal Storage</li><li>No Optical Drive</li><br></ul><span style='font-weight:bold;'>Graphics &amp; Video: &nbsp;</span>&nbsp;<br><ul><li>11.6' Touchscreen IPS LCD with LED-backlit HD (1366 x 768) Display</li><li>Integrated Intel® UHD 600 Graphics</li><br></ul><span style='font-weight:bold;'>Communications:</span><br><ul><li>802.11 Wireless-AC (2x2) + Bluetooth® 4.2</li><li>Integrated 720p Webcam</li><br></ul><span style='font-weight:bold;'>Audio: </span>&nbsp;&nbsp;<br><ul><li>2x 2W Speakers</li><br></ul><span style='font-weight:bold;'>Keyboard:</span><br><ul><li>Standard Keyboard</li><br></ul><span style='font-weight:bold;'>Ports &amp; Slots:</span><br><ul><li>2x USB 3.1 Type-C</li><li>2x USB 3.1</li><li>1x Micro SD Media Card Reader</li><li>1x Kensington Lock Slot</li><li>1x Headphone/Microphone Combo Jack</li><br></ul><span style='font-weight:bold;'>Battery:</span><br><ul><li>3-Cell 42Wh Lithium Polymer Battery</li><br></ul><span style='font-weight:bold;'>Additional Information:</span><br><ul><li>Dimensions: 11.42' L x 8.18' W x 0.70' H </li><li>Approximate Weight: 2.64lbs</li></ul>					
+						
+				</div>",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop93.png" },
+                    Color.Black,
+                    new List<string> { "Integrated Webcam" },
                     "Warehouse Pick-up",
                     "1920 x 1080 (Full HD)",
                     "Integrated Graphics",
