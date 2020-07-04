@@ -359,7 +359,7 @@ namespace CostcoClone.Repository
                     this,
                     new List<string> { "content/products/computers/laptopNotebookComputers/laptop9.jpg" },
                     Color.Black,
-                    new List<string> { "Backlit Keyboard" },
+                    new List<string> { "Backlit Keyboard", "Numeric Keypad" },
                     "Warehouse Pick-up",
                     "1920 x 1080 (Full HD)",
                     "Integrated Graphics",
@@ -541,7 +541,7 @@ namespace CostcoClone.Repository
                     this,
                     new List<string> { "content/products/computers/laptopNotebookComputers/laptop17.png" },
                     Color.Black,
-                    new List<string> { "Backlit Keyboard", "Bluetooth 5.0", "Fingerprint Reader" },
+                    new List<string> { "Backlit Keyboard", "Bluetooth 5.0", "Fingerprint Reader", "Integrated Webcam" },
                     "Warehouse Pick-up",
                     "1920 x 1080 (Full HD)",
                     "Integrated Graphics",
@@ -614,7 +614,7 @@ namespace CostcoClone.Repository
                     this,
                     new List<string> { "content/products/computers/laptopNotebookComputers/laptop19.png" },
                     Color.Black,
-                    new List<string> { "Backlit Keyboard" },
+                    new List<string> { "Backlit Keyboard", "Numeric Keypad" },
                     "Warehouse Pick-up",
                     "1920 x 1080 (Full HD)",
                     "Integrated Graphics",
@@ -917,7 +917,7 @@ namespace CostcoClone.Repository
                     this,
                     new List<string> { "content/products/computers/laptopNotebookComputers/laptop33.png" },
                     Color.Black,
-                    new List<string> { "Backlit Keyboard", "Bluetooth 5.0" },
+                    new List<string> { "Backlit Keyboard", "Bluetooth 5.0", "Numeric Keypad" },
                     "Warehouse Pick-up",
                     "1920 x 1080 (Full HD)",
                     "Integrated Graphics",
@@ -992,7 +992,7 @@ namespace CostcoClone.Repository
                     this,
                     new List<string> { "content/products/computers/laptopNotebookComputers/laptop36.png" },
                     Color.Black,
-                    new List<string> { "Backlit Keyboard" },
+                    new List<string> { "Backlit Keyboard", "Lightweight", "Numeric Keypad" },
                     "Warehouse Pick-up",
                     "1920 x 1080 (Full HD)",
                     "Integrated Graphics",
@@ -1677,7 +1677,7 @@ namespace CostcoClone.Repository
                     this,
                     new List<string> { "content/products/computers/laptopNotebookComputers/laptop65.png" },
                     Color.Black,
-                    new List<string> { "Bluetooth 5.0" },
+                    new List<string> { "Bluetooth 5.0", "Integrated Webcam" },
                     "Warehouse Pick-up",
                     "1920 x 1080 (Full HD)",
                     "Integrated Graphics",
@@ -1924,7 +1924,7 @@ namespace CostcoClone.Repository
                     this,
                     new List<string> { "content/products/computers/laptopNotebookComputers/laptop75.png" },
                     Color.Black,
-                    new List<string> { "Bluetooth 5.0", "Fingerprint Reader" },
+                    new List<string> { "Bluetooth 5.0", "Fingerprint Reader", "Integrated Webcam" },
                     "Warehouse Pick-up",
                     "1920 x 1080 (Full HD)",
                     "Integrated Graphics",
@@ -1968,7 +1968,7 @@ namespace CostcoClone.Repository
                     this,
                     new List<string> { "content/products/computers/laptopNotebookComputers/laptop77.png" },
                     Color.Black,
-                    new List<string> { "Bluetooth 5.0" },
+                    new List<string> { "Bluetooth 5.0", "Integrated Webcam" },
                     "Warehouse Pick-up",
                     "1920 x 1080 (Full HD)",
                     "Integrated Graphics",
@@ -1994,7 +1994,7 @@ namespace CostcoClone.Repository
                     this,
                     new List<string> { "content/products/computers/laptopNotebookComputers/laptop78.png" },
                     Color.Black,
-                    new List<string> { "Bluetooth 5.0" },
+                    new List<string> { "Bluetooth 5.0", "Integrated Webcam", "Numeric Keypad" },
                     "Warehouse Pick-up",
                     "1920 x 1080 (Full HD)",
                     "Integrated Graphics",
@@ -2020,7 +2020,7 @@ namespace CostcoClone.Repository
                     this,
                     new List<string> { "content/products/computers/laptopNotebookComputers/laptop79.png" },
                     Color.Black,
-                    new List<string> { "Bluetooth 5.0" },
+                    new List<string> { "Bluetooth 5.0", "Integrated Webcam" },
                     "Warehouse Pick-up",
                     "1920 x 1080 (Full HD)",
                     "Integrated Graphics",
@@ -2257,7 +2257,7 @@ namespace CostcoClone.Repository
                     this,
                     new List<string> { "content/products/computers/laptopNotebookComputers/laptop88.png" },
                     Color.Black,
-                    new List<string> { "Fingerprint Reader" },
+                    new List<string> { "Fingerprint Reader", "Integrated Webcam" },
                     "Warehouse Pick-up",
                     "1920 x 1080 (Full HD)",
                     "Integrated Graphics",
@@ -2386,6 +2386,59 @@ namespace CostcoClone.Repository
 				</div>",
                     this,
                     new List<string> { "content/products/computers/laptopNotebookComputers/laptop93.png" },
+                    Color.Black,
+                    new List<string> { "Integrated Webcam" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+
+            LaptopNotebookComputer laptop94 = new LaptopNotebookComputer
+                (
+                    "Samsung 12.2\" Touchscreen 2 -in -1 Chromebook - Intel Celeron - 1920 x 1200p - Digital Pen & Bonus Pouch",
+                    (decimal)242.99,
+                    20,
+                    (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
+					
+							
+<br> <br><span style='font-weight:bold;'>Limit 3 per member</span><br><br><span style='font-weight:bold;'>Processor &amp; Memory:</span><br>Intel® Celeron® 3965Y Processor 1.5GHz<br>4GB LPDDR3/Max 4GB<br><br><span style='font-weight:bold;'>Drives: </span><br>64GB eMMC Internal Storage <br>No Optical Drive<br><br><span style='font-weight:bold;'>Operating System:</span> <br>Chrome OS™<br><br><span style='font-weight:bold;'>Communications: </span><br>802.11 Wireless-AC 2x2 WLAN + Bluetooth® V4.0<br>1M Camera (front) and 13M Camera (on keyboard deck)<br><br><span style='font-weight:bold;'>Graphics &amp; Video: </span><br>12.2' Touchscreen FHD (1920 x 1200) Display<br>Integrated Intel® 615 Graphics<br><br><span style='font-weight:bold;'>Keyboard:</span> <br>Standard Keyboard<br><br><span style='font-weight:bold;'>Ports &amp; Slots: </span><br>2x USB 3.1 Type-C<br>1x USB 3.0<br>1x MicroSD Media Card Reader<br><br><span style='font-weight:bold;'>Power Supply: </span><br>3-Cell 39 Wh Battery <br><br><span style='font-weight:bold;'>Additional Information: </span><br>Dimensions: 11.35' x 8.20' x 0.67”<br>Approximate Weight: &nbsp;2.98lbs<br>Compatible with Google Assistant					
+						
+				</div>",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop94.png" },
+                    Color.Black,
+                    new List<string> { "Integrated Webcam" },
+                    "Warehouse Pick-up",
+                    "1920 x 1080 (Full HD)",
+                    "Integrated Graphics",
+                    "HP",
+                    "2-in-1",
+                    "64 GB",
+                    "Windows OS",
+                    "Intel Core i3",
+                    "11.6 in.",
+                    "Non-touchscreen"
+                );
+
+            LaptopNotebookComputer laptop95 = new LaptopNotebookComputer
+                (
+                    "HP 15.6\" Touchscreen Laptop - 10 Gen Intel i5 - 1035G1",
+                    (decimal)549.99,
+                    20,
+                    (MarkupString)@"<div class='product-info-description' style='max-height: none;'>
+					
+							<span style='font-weight:bold;'>Limit 5 Per Member</span><br><br><span style='font-weight:bold;'>Processor &amp; Memory:</span><br><ul><li>10th Gen Intel® Core™ i5-1035G1 Processor at 1.0GHz</li><li>12GB DDR4-2666MHz SDRAM</li><br></ul><span style='font-weight:bold;'>Drives: </span><br><ul><li>1.0TB 5400RPM SATA Hard Drive</li><li>No Optical Drive</li><br></ul><span style='font-weight:bold;'>Operating System: </span><br><ul><li>Microsoft® Windows 10 Home (64 bit)</li><br></ul><span style='font-weight:bold;'>Communications: </span><br><ul><li>802.11 Wireless-AC 1x1 WLAN + Bluetooth® 4.2</li><li>HP TrueVision HD Webcam with Integrated Dual Array Digital Microphones</li><li>10/100/1000GB Ethernet LAN</li><br></ul><span style='font-weight:bold;'>Graphics &amp; Video:</span> <br><ul><li>15.6' Touchscreen SVA WLED-backlit HD (1366 x 768) Display</li><li>Integrated Intel® UHD Graphics</li><br></ul><span style='font-weight:bold;'>Audio: </span><br><ul><li>HD Audio with stereo speakers</li><br></ul><span style='font-weight:bold;'>Keyboard: </span><br><ul><li>Full-size island-style Backlit Keyboard with Numeric Keypad</li><li>Touchpad with Multi-Touch Gesture Support</li><br></ul><span style='font-weight:bold;'>Ports &amp; Slots: </span><br><ul><li>1x SuperSpeed USB Type-C </li><li>2x SuperSpeed USB Type-A</li><li>1x HDMI 1.4b</li><li>1x RJ-45</li><li>1x Multi-Format SD Media Card Reader</li><li>1x AC Smart pin</li><li>1x Headphone/Microphone Combo</li><br></ul><span style='font-weight:bold;'>Power Supply: </span><br><ul><li>3-Cell 41WHr Li-ion Battery &nbsp;</li><br></ul><span style='font-weight:bold;'>Additional Information: </span><br><ul><li>Dimensions: 14.11' x 9.53' x 0.78'</li><li>Approximate Weight: 3.92 lbs</li></ul>					
+						
+				</div>",
+                    this,
+                    new List<string> { "content/products/computers/laptopNotebookComputers/laptop95.png" },
                     Color.Black,
                     new List<string> { "Integrated Webcam" },
                     "Warehouse Pick-up",

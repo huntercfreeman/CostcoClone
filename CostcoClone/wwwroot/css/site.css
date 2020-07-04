@@ -88,3 +88,11 @@ img.branding {
         padding: 30px;
         color: #333;
     }
+
+#wc-power-page {
+    display: none !important;
+}
+
+figure.product-manuals {
+    display: none !important;
+}
