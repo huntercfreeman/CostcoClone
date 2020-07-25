@@ -22,7 +22,7 @@
             }
             else
             {
-                @foreach(var item in Filter)
+                @foreach(var item in Filter.OrderBy(x => x.Key).ToList())
                 {
                     <FilterMenuItemCheckbox TItem="TItem" Filter="item"/>
                 }
